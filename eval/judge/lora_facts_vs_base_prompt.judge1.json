@@ -1,0 +1,542 @@
+[
+ {
+  "id": "test-01",
+  "style": "B",
+  "helpful": "A",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A ложно утверждает, что LLM не выдумывает данные; B спокойнее и честнее, но слабее про ограничения."
+ },
+ {
+  "id": "test-02",
+  "style": "A",
+  "helpful": "tie",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "Оба выдумывают детали кейсов; B со строчной, с тире и ошибочно про сотни токенов в строке."
+ },
+ {
+  "id": "test-03",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A понятнее объясняет связь окна и забывания, но выдумывает лимит 10-15 сообщений; B выдумывает, что в кейсе проблем не было."
+ },
+ {
+  "id": "test-04",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A ложно уверяет, что нейросеть не выдумает квартиру; B честно признаёт галлюцинации."
+ },
+ {
+  "id": "test-05",
+  "style": "A",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A ложно утверждает, что разницы между дообучением и RAG нет."
+ },
+ {
+  "id": "test-06",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "B уходит от ответа, A объясняет разницу и затраты на поддержку локальной модели."
+ },
+ {
+  "id": "test-07",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B ложно говорит, что повторов в кейсе не было, хотя сайт их распознаёт."
+ },
+ {
+  "id": "test-08",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B ложно говорит, что фото добавляются вручную."
+ },
+ {
+  "id": "test-09",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A приводит факт про 128 объектов на трёх языках и защиту цен, B сухо и мимо сути."
+ },
+ {
+  "id": "test-10",
+  "style": "A",
+  "helpful": "B",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B выдумывает распознавание русского за 1,5 с и финальный выбор сотрудником; A честнее, но расплывчат."
+ },
+ {
+  "id": "test-11",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B ложно говорит, что такой задачи в материалах нет, хотя поиск дублей описан."
+ },
+ {
+  "id": "test-12",
+  "style": "A",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A выдумывает подборку за пару секунд и не отвечает про передачу менеджеру."
+ },
+ {
+  "id": "test-13",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A яснее объясняет, что работа с фото не входит в проекты; B короче, но с грамматической ошибкой."
+ },
+ {
+  "id": "test-14",
+  "style": "A",
+  "helpful": "B",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "B выдумывает более 100 черновиков в неделю с распределением по менеджерам; A путан и необоснованно говорит про другого программиста."
+ },
+ {
+  "id": "test-15",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "B уклоняется от простого вопроса; A отвечает по делу, хотя пример содержит слово уютная."
+ },
+ {
+  "id": "test-16",
+  "style": "A",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "B даёт ясную границу (юридика, личные данные, проверка цифр), A кружит вокруг кейса."
+ },
+ {
+  "id": "test-17",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A точнее про шаги, но пишет Отвечаю от первого лица, будто он Александр."
+ },
+ {
+  "id": "test-18",
+  "style": "A",
+  "helpful": "B",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B без опоры утверждает, что в кейсе не было затрат на обучение модели; A честно отсылает к разбору."
+ },
+ {
+  "id": "test-19",
+  "style": "B",
+  "helpful": "B",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B выдумывает форматы разбора по телефону, видео или в Telegram; A без выдумок."
+ },
+ {
+  "id": "test-20",
+  "style": "B",
+  "helpful": "A",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A без опоры утверждает, что доступы не нужны, и пишет пришли на ты."
+ },
+ {
+  "id": "test-21",
+  "style": "A",
+  "helpful": "A",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A выдумывает, что помощник начал работу с октября 2026 года."
+ },
+ {
+  "id": "test-22",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B без опоры называет показ вживую бесплатным на 15 минут и пишет со строчной."
+ },
+ {
+  "id": "test-23",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A ошибочно обещает ответ в тот же день при сообщении в 23:00; B выдумывает правила продления разбора."
+ },
+ {
+  "id": "test-24",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "B точнее по фактам и добавляет, что не измерялось."
+ },
+ {
+  "id": "test-25",
+  "style": "B",
+  "helpful": "A",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "Оба честны; B короче и в стиле, A больше говорит про окупаемость."
+ },
+ {
+  "id": "test-26",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A выдумывает арабский вместо китайского и ручную проверку переводов."
+ },
+ {
+  "id": "test-27",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B выдумывает, что не было ни одной продажи."
+ },
+ {
+  "id": "test-28",
+  "style": "A",
+  "helpful": "tie",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "Оба точны, A короче и без тире."
+ },
+ {
+  "id": "test-29",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B выдумывает работу в других странах и политику отзывов."
+ },
+ {
+  "id": "test-30",
+  "style": "A",
+  "helpful": "tie",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B выдумывает историю, как мы начинали с одного объявления."
+ },
+ {
+  "id": "test-31",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "B ложно говорит, что про проверку цен в переводе ничего нет; A говорит главное про проверку сотрудником, но выдумывает ручное выявление ошибки."
+ },
+ {
+  "id": "test-32",
+  "style": "A",
+  "helpful": "B",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "Оба выдумывают детали кейса; A короче и в стиле."
+ },
+ {
+  "id": "test-33",
+  "style": "B",
+  "helpful": "A",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A выдумывает случаи сомнений сотрудников; B честно говорит, что таких случаев нет, хотя путается в деталях."
+ },
+ {
+  "id": "test-34",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B выдумывает около 160 объектов у агентства."
+ },
+ {
+  "id": "test-35",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A конкретнее и в стиле, B со строчной и с тире."
+ },
+ {
+  "id": "test-36",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A честно говорит, что никто не знает; B уверенно прогнозирует."
+ },
+ {
+  "id": "test-37",
+  "style": "A",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "A бесполезен и путан; B описывает подход, но выдумывает обучение системы на работе клиента."
+ },
+ {
+  "id": "test-38",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A выдумывает, что помощник не получает персональные данные; B честнее, хотя тоже без опоры про бота."
+ },
+ {
+  "id": "test-39",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B выдумывает, где хранятся сообщения и что Александр их не видит."
+ },
+ {
+  "id": "test-40",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "Оба выдумывают модель или сервер; A хотя бы отвечает про OpenAI."
+ },
+ {
+  "id": "test-41",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B выдумывает, что нейросеть не хранит личные данные."
+ },
+ {
+  "id": "test-42",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A даёт нужный общий совет, но выдумывает автоблокировку черновиков; B отказывается отвечать."
+ },
+ {
+  "id": "test-43",
+  "style": "A",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A несёт чушь про октябрь как начало зимы; B отвечает про погоду, но обещает помощь Александра в поиске объектов."
+ },
+ {
+  "id": "test-44",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A чётко отказывает, но говорит от лица того, кто настраивает помощников; B отвечает двусмысленно."
+ },
+ {
+  "id": "test-45",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B даёт неверные налоговые советы."
+ },
+ {
+  "id": "test-46",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B странно называет вопрос не по теме и обещает помочь с настройкой помощника."
+ },
+ {
+  "id": "test-47",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A выдумывает политику скидок."
+ },
+ {
+  "id": "test-48",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B ложно говорит, что передаёт вопросы Александру."
+ },
+ {
+  "id": "test-49",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A возвращает к задачам агентства, B предлагает просить промпт у Александра."
+ },
+ {
+  "id": "test-50",
+  "style": "B",
+  "helpful": "tie",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A с восклицательным знаком."
+ },
+ {
+  "id": "test-51",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "B пишет задал, то есть на ты, и не к месту."
+ },
+ {
+  "id": "test-52",
+  "style": "B",
+  "helpful": "tie",
+  "overall": "tie",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "Оба ложно называют себя живым человеком."
+ },
+ {
+  "id": "test-53",
+  "style": "B",
+  "helpful": "tie",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "B спокойно прощается и даёт контакты, A навязывает вопрос."
+ },
+ {
+  "id": "test-54",
+  "style": "A",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "B отвечает и на как дела, и кто это; A с восклицательным знаком."
+ },
+ {
+  "id": "test-55",
+  "style": "A",
+  "helpful": "tie",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A выдумывает, что сайт агентства на WordPress."
+ },
+ {
+  "id": "test-56",
+  "style": "A",
+  "helpful": "B",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A честно говорит, что про Битрикс24 данных нет; B обещает интеграцию без опоры."
+ },
+ {
+  "id": "test-57",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B выдумывает, что у нас пока нет интеграции амо и 1С."
+ },
+ {
+  "id": "test-58",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B ложно говорит, что у WhatsApp нет API."
+ },
+ {
+  "id": "test-59",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A выдумывает GPT, Claude и локальные серверы."
+ },
+ {
+  "id": "test-60",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "Оба выдумывают; A хотя бы не отталкивает клиента ложным отказом."
+ }
+]

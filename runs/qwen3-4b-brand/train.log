@@ -1,0 +1,28 @@
+08:09:32 INFO torch 2.8.0+cu128, CUDA 12.8, GPU: NVIDIA GeForce RTX 5070 Ti, dtype torch.bfloat16
+08:09:33 INFO модель /root/zc-ft/models/Qwen_Qwen3-4B-Instruct-2507 (qwen3): 4022 млн параметров, шаблон: chat template модели, загрузка 0.8 с
+08:09:33 INFO LoRA r=16 alpha=32 dropout=0.05: обучается 33.0 млн параметров (0.81%)
+08:09:33 INFO датасет train.json: 403 пар (пропущено пустых: 0)
+08:09:33 INFO обучение 385, проверка 18 пар; длина в токенах: средняя 159, макс 276; обрезано 0
+08:09:35 INFO шаг 1/75 | эпоха 0.04 | loss=3.249 | learning_rate=0 | grad_norm=2.372
+08:09:41 INFO шаг 5/75 | эпоха 0.21 | loss=3.053 | learning_rate=0.0002 | grad_norm=1.621
+08:09:49 INFO шаг 10/75 | эпоха 0.41 | loss=2.404 | learning_rate=0.0001976 | grad_norm=0.8516
+08:09:57 INFO шаг 15/75 | эпоха 0.62 | loss=2.111 | learning_rate=0.0001904 | grad_norm=0.7668
+08:10:05 INFO шаг 20/75 | эпоха 0.82 | loss=1.931 | learning_rate=0.0001788 | grad_norm=0.8056
+08:10:11 INFO шаг 25/75 | эпоха 1.00 | loss=1.784 | learning_rate=0.0001633 | grad_norm=2.948
+08:10:12 INFO шаг 25/75 | эпоха 1.00 | eval_loss=1.808
+08:10:20 INFO шаг 30/75 | эпоха 1.21 | loss=1.635 | learning_rate=0.0001448 | grad_norm=0.7206
+08:10:28 INFO шаг 35/75 | эпоха 1.41 | loss=1.579 | learning_rate=0.0001241 | grad_norm=0.8408
+08:10:36 INFO шаг 40/75 | эпоха 1.62 | loss=1.529 | learning_rate=0.0001022 | grad_norm=0.8637
+08:10:44 INFO шаг 45/75 | эпоха 1.82 | loss=1.481 | learning_rate=8.022e-05 | grad_norm=0.9506
+08:10:50 INFO шаг 50/75 | эпоха 2.00 | loss=1.496 | learning_rate=5.919e-05 | grad_norm=3.488
+08:10:50 INFO шаг 50/75 | эпоха 2.00 | eval_loss=1.659
+08:10:58 INFO шаг 55/75 | эпоха 2.21 | loss=1.268 | learning_rate=4.015e-05 | grad_norm=0.9293
+08:11:06 INFO шаг 60/75 | эпоха 2.41 | loss=1.272 | learning_rate=2.403e-05 | grad_norm=0.9861
+08:11:14 INFO шаг 65/75 | эпоха 2.62 | loss=1.272 | learning_rate=1.161e-05 | grad_norm=0.9296
+08:11:21 INFO шаг 70/75 | эпоха 2.82 | loss=1.28 | learning_rate=3.504e-06 | grad_norm=0.9893
+08:11:28 INFO шаг 75/75 | эпоха 3.00 | loss=1.259 | learning_rate=9.788e-08 | grad_norm=3.921
+08:11:28 INFO шаг 75/75 | эпоха 3.00 | eval_loss=1.653
+08:11:28 INFO шаг 75/75 | эпоха 3.00
+08:11:29 INFO шаг 75/75 | эпоха 3.00 | eval_loss=1.653
+08:11:29 INFO обучение заняло 1.9 мин, train loss 1.6929, eval loss 1.6532028913497925, пик памяти GPU 10.1 ГБ
+08:11:29 INFO адаптер сохранён: runs/qwen3-4b-brand/adapter

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="386" viewBox="0 0 940 386" role="img" aria-labelledby="t d">
+<title id="t">Стиль бренда и числа не из справки: 60 отложенных вопросов</title>
+<desc id="d">ruGPT-3 small, код урока как есть: в стиле 0 из 60, с числами или контактами не из справки 18; Qwen3-4B без дообучения: в стиле 0 из 60, с числами или контактами не из справки 45; Qwen3-4B, длинный промпт: стиль и факты: в стиле 0 из 60, с числами или контактами не из справки 4; Qwen3-4B, дообучение без фактов: в стиле 54 из 60, с числами или контактами не из справки 9; Qwen3-4B, дообучение и справка с фактами: в стиле 52 из 60, с числами или контактами не из справки 0; то же в Ollama, GGUF Q4_K_M: в стиле 56 из 60, с числами или контактами не из справки 2</desc>
+<style>
+svg{--surface:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;--grid:#e1e0d9;--base:#c3c2b7;--accent:#2a78d6}
+@media (prefers-color-scheme: dark){svg{--surface:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;--grid:#2c2c2a;--base:#383835;--accent:#3987e5}}
+text{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;fill:var(--ink2);font-size:13px}
+.title{fill:var(--ink);font-size:17px;font-weight:600}.sub{font-size:12.5px}.h{fill:var(--ink);font-size:13px;font-weight:600}
+.lab{fill:var(--ink);font-size:13px}.lab.strong,.val.strong{font-weight:600;fill:var(--ink)}.val{font-variant-numeric:tabular-nums}
+.tick{fill:var(--muted);font-size:11px;font-variant-numeric:tabular-nums}.note{fill:var(--muted);font-size:11.5px}
+.grid{stroke:var(--grid);stroke-width:1}.accent{fill:var(--accent)}.muted{fill:var(--muted)}.base{fill:var(--base)}
+.bg{fill:var(--surface)}
+</style>
+<rect class="bg" width="940" height="386" rx="10"/>
+<text class="title" x="24" y="34">Стиль держит дообучение, цифры и контакты держит справка</text>
+<text class="sub" x="24" y="55">60 отложенных вопросов, найденные пересказы убраны из обучения; Qwen3-4B-Instruct-2507, LoRA на 385 парах</text>
+<text class="lab" x="24" y="118.0">ruGPT-3 small, код урока как есть</text>
+<text class="lab" x="24" y="152.0">Qwen3-4B без дообучения</text>
+<text class="lab" x="24" y="186.0">Qwen3-4B, длинный промпт: стиль и факты</text>
+<text class="lab" x="24" y="220.0">Qwen3-4B, дообучение без фактов</text>
+<text class="lab strong" x="24" y="254.0">Qwen3-4B, дообучение и справка с фактами</text>
+<text class="lab" x="24" y="288.0">то же в Ollama, GGUF Q4_K_M</text>
+<text class="h" x="330" y="84">Ответов в стиле бренда (из 60)</text>
+<line class="grid" x1="330.0" y1="104" x2="330.0" y2="314"/>
+<text class="tick" x="330.0" y="330" text-anchor="middle">0</text>
+<line class="grid" x1="418.3" y1="104" x2="418.3" y2="314"/>
+<text class="tick" x="418.3" y="330" text-anchor="middle">20</text>
+<line class="grid" x1="506.7" y1="104" x2="506.7" y2="314"/>
+<text class="tick" x="506.7" y="330" text-anchor="middle">40</text>
+<line class="grid" x1="595.0" y1="104" x2="595.0" y2="314"/>
+<text class="tick" x="595.0" y="330" text-anchor="middle">60</text>
+<rect class="base" x="330.0" y="106.0" width="2" height="16"/>
+<text class="val" x="336.0" y="119.0">0</text>
+<rect class="base" x="330.0" y="140.0" width="2" height="16"/>
+<text class="val" x="336.0" y="153.0">0</text>
+<rect class="base" x="330.0" y="174.0" width="2" height="16"/>
+<text class="val" x="336.0" y="187.0">0</text>
+<path class="muted" d="M330.0,208.0 h234.5 a4.0,4.0 0 0 1 4.0,4.0 v8.0 a4.0,4.0 0 0 1 -4.0,4.0 h-234.5 z"/>
+<text class="val" x="574.5" y="221.0">54</text>
+<path class="accent" d="M330.0,242.0 h225.7 a4.0,4.0 0 0 1 4.0,4.0 v8.0 a4.0,4.0 0 0 1 -4.0,4.0 h-225.7 z"/>
+<text class="val strong" x="565.7" y="255.0">52</text>
+<path class="muted" d="M330.0,276.0 h243.3 a4.0,4.0 0 0 1 4.0,4.0 v8.0 a4.0,4.0 0 0 1 -4.0,4.0 h-243.3 z"/>
+<text class="val" x="583.3" y="289.0">56</text>
+<text class="h" x="635" y="84">Числа, контакты не из справки</text>
+<line class="grid" x1="635.0" y1="104" x2="635.0" y2="314"/>
+<text class="tick" x="635.0" y="330" text-anchor="middle">0</text>
+<line class="grid" x1="723.3" y1="104" x2="723.3" y2="314"/>
+<text class="tick" x="723.3" y="330" text-anchor="middle">20</text>
+<line class="grid" x1="811.7" y1="104" x2="811.7" y2="314"/>
+<text class="tick" x="811.7" y="330" text-anchor="middle">40</text>
+<line class="grid" x1="900.0" y1="104" x2="900.0" y2="314"/>
+<text class="tick" x="900.0" y="330" text-anchor="middle">60</text>
+<path class="muted" d="M635.0,106.0 h75.5 a4.0,4.0 0 0 1 4.0,4.0 v8.0 a4.0,4.0 0 0 1 -4.0,4.0 h-75.5 z"/>
+<text class="val" x="720.5" y="119.0">18</text>
+<path class="muted" d="M635.0,140.0 h194.8 a4.0,4.0 0 0 1 4.0,4.0 v8.0 a4.0,4.0 0 0 1 -4.0,4.0 h-194.8 z"/>
+<text class="val" x="839.8" y="153.0">45</text>
+<path class="muted" d="M635.0,174.0 h13.7 a4.0,4.0 0 0 1 4.0,4.0 v8.0 a4.0,4.0 0 0 1 -4.0,4.0 h-13.7 z"/>
+<text class="val" x="658.7" y="187.0">4</text>
+<path class="muted" d="M635.0,208.0 h35.8 a4.0,4.0 0 0 1 4.0,4.0 v8.0 a4.0,4.0 0 0 1 -4.0,4.0 h-35.8 z"/>
+<text class="val" x="680.8" y="221.0">9</text>
+<rect class="base" x="635.0" y="242.0" width="2" height="16"/>
+<text class="val strong" x="641.0" y="255.0">0</text>
+<path class="muted" d="M635.0,276.0 h4.8 a4.0,4.0 0 0 1 4.0,4.0 v8.0 a4.0,4.0 0 0 1 -4.0,4.0 h-4.8 z"/>
+<text class="val" x="649.8" y="289.0">2</text>
+<text class="note" x="24" y="354">Стиль: линтер style/STYLE.md, все 9 правил. Длинный промпт без учёта типографики проходит 35 из 60: длинное тире</text>
+<text class="note" x="24" y="370">осталось во всех 60 ответах. Числа и контакты — грубая автопроверка с ложными срабатываниями (src/fact_check.py); выдумки по смыслу считали судьи.</text>
+</svg>

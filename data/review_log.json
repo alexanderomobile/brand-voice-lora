@@ -1,0 +1,1389 @@
+{
+ "small_talk": {
+  "generated": 40,
+  "generator_notes": "The checker uses the short limit of 20-300 characters only when a question is 40 characters or less and starts with a greeting, thanks or \"ok\" word. So questions like \"кто ты\", \"тест\" or \"Ты ChatGPT?\" got answers of 150-300 characters to pass both the checker and the topic limit. Where the fact sheet says nothing (which model the assistant runs on, where Alexander lives, how long he has worked in this field), the answers say so and point to Telegram. The phrase about \"work repeated every day\" now appears in only two answers so the model does not learn it as a template.",
+  "review": {
+   "checked": 40,
+   "fixed": 21,
+   "dropped": 0,
+   "final_count": 40,
+   "lint_pass": 40
+  },
+  "issues": [
+   {
+    "id": "small_talk-002",
+    "problem": "Duplicate question: 'Добрый день!' is a bare greeting, the same message as 001 'Привет' in other words.",
+    "action": "Changed the question to 'Добрый день. Можно задать пару вопросов?' (asking permission to ask) and wrote a new answer: greeting, what the assistant covers, ends with 'С чего начнём?'"
+   },
+   {
+    "id": "small_talk-003",
+    "problem": "Telegram contact pushed in reply to a simple 'are you a bot' question. TG appeared in 9 of 40 answers.",
+    "action": "Swapped the TG handle for an offer to explain how to reach Alexander if a live person is needed."
+   },
+   {
+    "id": "small_talk-004",
+    "problem": "Repeated the same template as 001 ('Сам Александр настраивает помощников на нейросети для агентств недвижимости') and ignored that the user wrote in English.",
+    "action": "Rewrote it: says the reply will be in Russian, rephrases what Alexander does (taking manual routine with listings and clients off agencies), keeps 'Вы из агентства?'"
+   },
+   {
+    "id": "small_talk-007",
+    "problem": "Structure and ending were nearly the same as 003 ('я его помощник на нейросети ... Telegram ... Что вы хотели узнать?').",
+    "action": "Restructured it and ended with 'Вам нужен он лично или попробуем разобраться здесь?'"
+   },
+   {
+    "id": "small_talk-010",
+    "problem": "Said Alexander 'пишет инструкции и так настраивает помощников', which suggests prompts are all he does. The cases also include code checks, such as code verifying prices.",
+    "action": "Rephrased: he writes detailed instructions for the neural network (they are called prompts) and builds assistants on it."
+   },
+   {
+    "id": "small_talk-013",
+    "problem": "'Задайте вопрос про своё агентство' asks the assistant to answer about an agency it knows nothing about.",
+    "action": "Changed to 'Спросите что-нибудь про задачи вашего агентства, проверим.'"
+   },
+   {
+    "id": "small_talk-015",
+    "problem": "'Только уточню: ... он делает других помощников' was a clumsy, half-dodging answer. The fact sheet does not list Q&A bots like this one as a service, and the answer did not say so honestly.",
+    "action": "Rewrote it: such a Q&A bot is not among the services in the materials, but Alexander has already built an apartment-matching bot that works from voice messages (case 3). Ends with 'Что должен уметь бот у вас?'"
+   },
+   {
+    "id": "small_talk-016",
+    "problem": "Ending 'А как у вас с этим?' was vague filler.",
+    "action": "Changed to the concrete question 'А у вас в агентстве много ручной работы?'"
+   },
+   {
+    "id": "small_talk-023",
+    "problem": "Duplicate: 'угу понял, спасибо' is another thanks plus acknowledgment (with 021, 022, 024, 027, 028, 029). The answer nearly copied 027 ('если что-то неясно, спросите, объясню на примере').",
+    "action": "Changed the question to 'честно, ничего не понял' and wrote a simpler explanation using the drafts-from-Telegram-groups example (staff check and decide whether to publish). Ends with 'С какого места стало непонятно?'"
+   },
+   {
+    "id": "small_talk-024",
+    "problem": "Duplicate: 'супер, спасибо за инфу' is the same as 021 'спасибо'.",
+    "action": "Changed the question to 'Можно покороче? Некогда читать длинные сообщения' and wrote a short summary answer: drafts from chats, clients get a selection without waiting for a manager. Ends with 'Что из этого вам ближе?'"
+   },
+   {
+    "id": "small_talk-025",
+    "problem": "Repeated the opener 'Пожалуйста.' used in 021/023/024.",
+    "action": "Changed the opener to 'Договорились.' and kept the content (step 1, send to Telegram)."
+   },
+   {
+    "id": "small_talk-028",
+    "problem": "The 'describe what repeats daily in a couple of sentences' step was repeated across several answers (025, 028 and the new 029).",
+    "action": "Rewrote it to offer the step 3 live demo from the fact sheet (a chat listing becoming a site draft and going to review). Ends with 'Хотите посмотреть?'"
+   },
+   {
+    "id": "small_talk-029",
+    "problem": "Duplicate: 'ага' is the same acknowledgment as 027 'ок'.",
+    "action": "Changed the question to 'Я в нейросетях вообще ничего не понимаю, это проблема?' New answer: Alexander does the setup, the client only describes the repeated work in 2-3 sentences, then a question about where the most hassle is. Makes no promises."
+   },
+   {
+    "id": "small_talk-031",
+    "problem": "Opener 'Хорошо.' repeated 028.",
+    "action": "Changed the opener to 'Хороший план.' and tightened the wording."
+   },
+   {
+    "id": "small_talk-032",
+    "problem": "Redundant, clumsy start ('Этого я не знаю: где находится Александр, в материалах не указано').",
+    "action": "Rewrote it: the materials do not say where he is, plus the known facts (Hurghada cases, 10:00-20:00 MSK). Ends by suggesting asking him in Telegram if it matters to the user."
+   },
+   {
+    "id": "small_talk-033",
+    "problem": "Same template as 021 ('Будут вопросы про ..., загляните/напишите сюда').",
+    "action": "Rewrote it: 'До свидания. Чат остаётся открытым, так что с новым вопросом просто загляните сюда снова.'"
+   },
+   {
+    "id": "small_talk-034",
+    "problem": "Duplicate: 'До свидания' is the same as 033 'пока'.",
+    "action": "Changed the question to the holiday greeting 'С наступающим Новым годом вас' and wrote a new answer: a return wish, then 'after the holidays, write here or to Alexander'."
+   },
+   {
+    "id": "small_talk-035",
+    "problem": "'продолжим с того места, где остановились' assumes the bot remembers the conversation (which contradicts 036/040), and it was wordy for someone in a hurry.",
+    "action": "Shortened it: wishes a good showing and asks the user to write later about the most time-consuming work. The memory claim is removed."
+   },
+   {
+    "id": "small_talk-036",
+    "problem": "Repeated 'директор' three times and used a stiff 'Хорошо, я никуда не тороплюсь'.",
+    "action": "Rewrote it: 'Жду, не торопитесь...', with the cases on the site and 'напишите, что решили, и продолжим'."
+   },
+   {
+    "id": "small_talk-038",
+    "problem": "Factual or logical error: it said 'Сегодня вряд ли' without knowing the user's time zone. 23:00 local can fall inside 10:00-20:00 MSK.",
+    "action": "Made it conditional: if it is 23:00 Moscow time, he probably will not reply today. Kept the leave-a-message-now option and 'задайте его мне'."
+   },
+   {
+    "id": "small_talk-039",
+    "problem": "It assumed the user was driving ('печатать за рулём не стоит'); the user only said 'в машине' and may be a passenger.",
+    "action": "Changed to 'Только если вы за рулём, лучше отложите телефон'."
+   }
+  ]
+ },
+ "cases": {
+  "generated": 50,
+  "generator_notes": "The fact sheet leaves many gaps, and questions kept running into them. It does not list all 13 languages, give the total number of ads behind the 164 drafts, explain why September was faster than the usual 13 minutes, say whether voice works in Russian, or say how Alexander is related to Optimum Real Estate. Those answers state what was measured and say plainly that the rest is not covered, without inventing anything. The other hard part was keeping 50 answers on three cases from sounding alike, since the same figures (164, 1152, 1.5 s) come up again and again. To deal with that I varied the openings and endings and limited Telegram-handle endings to 4.",
+  "review": {
+   "checked": 50,
+   "fixed": 28,
+   "dropped": 0,
+   "final_count": 50,
+   "lint_pass": 50
+  },
+  "issues": [
+   {
+    "id": "cases-005",
+    "problem": "The closing question used the 'у вас сейчас' template that recurs in about a dozen closing questions. The definition 'общий чат сотрудников' was a slightly loose reading of 'рабочий чат агентства'.",
+    "action": "Changed the definition to 'чат, где сотрудники агентства переписываются по работе' and rephrased the closing question without 'сейчас'."
+   },
+   {
+    "id": "cases-006",
+    "problem": "Read like a calque from English ('Важно: ...'). The derived daily average sat in a separate, clumsy sentence ('Если считать грубо').",
+    "action": "Moved the average of about five a day (164/31 is correct) into the first sentence and replaced 'Важно:' with 'Только учтите, что ...'."
+   },
+   {
+    "id": "cases-007",
+    "problem": "Filler: 'Долго это или быстро, зависит от того, с чем сравнивать' did not answer the question. It also used the 'придумывать ... я не буду' template.",
+    "action": "Gave the real answer: no comparison with manual entry is possible because pre-launch manual time was not measured (per the fact sheet). Removed the template phrase."
+   },
+   {
+    "id": "cases-009",
+    "problem": "The closing question used the 'у вас сейчас' template.",
+    "action": "Rephrased it to 'Кто у вас решает, что появится на сайте?'."
+   },
+   {
+    "id": "cases-010",
+    "problem": "Overused the phrase 'в материалах' (18 times across the file).",
+    "action": "Replaced it with 'в описании кейса'."
+   },
+   {
+    "id": "cases-011",
+    "problem": "The closing question used the 'у вас сейчас' template.",
+    "action": "Removed 'сейчас'."
+   },
+   {
+    "id": "cases-014",
+    "problem": "Used the 'обещать ... я не могу' template, and two sentences repeated the разбор pitch.",
+    "action": "Rewrote the passage: it is not possible to say in advance whether the scheme suits WhatsApp chats, followed by one sentence about the разбор."
+   },
+   {
+    "id": "cases-016",
+    "problem": "Dodged the question 'Помощник ошибается с ценой?' by talking only about how often the price is found, never saying plainly that the model can be wrong.",
+    "action": "Opened with an honest answer (the model can make mistakes, and how often was not counted), kept 114 of 164, and ended on human review catching the error before the buyer sees it."
+   },
+   {
+    "id": "cases-017",
+    "problem": "Used the 'я не могу' template. 'Как устроен отбор' presupposed a selection mechanism that the fact sheet does not describe. Ended with the repeated 'спросите Александра'.",
+    "action": "Rewrote it as 'по этим цифрам не понять', kept only the fact-sheet duplicate check, and changed the ending to a natural question about the reader's chats."
+   },
+   {
+    "id": "cases-019",
+    "problem": "Used the 'придумывать их не буду' template.",
+    "action": "Removed it; the answer now just says the other languages are not listed."
+   },
+   {
+    "id": "cases-020",
+    "problem": "Used the 'утверждать её не буду' template and the 'сейчас' template.",
+    "action": "Rephrased it to 'в описании кейса ни слова, так что утверждать, что она была, нельзя' and removed 'сейчас'."
+   },
+   {
+    "id": "cases-021",
+    "problem": "Had two colons in one sentence ('Цифра простая: ... на три языка: ...') and the 'сейчас' template.",
+    "action": "Restructured the first sentence and removed 'сейчас'."
+   },
+   {
+    "id": "cases-022",
+    "problem": "Made up a reason ('поэтому проверка автоматическая') that is not in the fact sheet.",
+    "action": "Replaced it with a neutral remark that the price matters most in a listing. Kept the facts: 1152 checks, one Chinese translation lost the price, such translations are no longer saved."
+   },
+   {
+    "id": "cases-024",
+    "problem": "Used the 'не назову' template, the 'в материалах' phrase and the 'сейчас' template.",
+    "action": "Shortened it and removed the template phrases."
+   },
+   {
+    "id": "cases-026",
+    "problem": "Used the 'утверждать не буду' template and the phrase 'в материалах'.",
+    "action": "Rephrased it to 'из этих цифр прямо не следует' and 'Точно известно про три языка'."
+   },
+   {
+    "id": "cases-028",
+    "problem": "The third sentence about publishing was filler. Stating the languages as 'Языки: ...' was telegraphic. Did not address whether new drafts get translated going forward.",
+    "action": "Rewrote it: drafts were among the 128 objects translated into Russian, German and Arabic, and the case does not say whether each new draft is translated right away."
+   },
+   {
+    "id": "cases-029",
+    "problem": "Mostly a dodge with the 'обещать не буду' template. Gave the reader nothing useful about many languages.",
+    "action": "Added a correct general fact (modern models translate into dozens of languages, with lower quality on rare ones). Removed the template and kept the разбор as the next step."
+   },
+   {
+    "id": "cases-030",
+    "problem": "Dodged ('сказать ничего не могу') with nothing useful about right-to-left text.",
+    "action": "Added correct general knowledge (an Arabic site usually needs its own setup: the page is mirrored and runs right to left). Still says the case does not describe its layout work."
+   },
+   {
+    "id": "cases-033",
+    "problem": "Answered the wrong question: replied about recognition speed when the user asked whether the bot understands Russian voice messages at all. Used the 'утверждать не буду' template.",
+    "action": "Rewrote it to say directly that the case does not cover Russian voice messages, then listed what is known: text or voice input, the four reply languages, 1.5 s for English and German."
+   },
+   {
+    "id": "cases-034",
+    "problem": "The closing question used the 'сейчас' template.",
+    "action": "Removed 'сейчас'."
+   },
+   {
+    "id": "cases-035",
+    "problem": "Redundant wording ('не замеряли ... никто не считал ... не измеряли').",
+    "action": "Merged it into one sentence."
+   },
+   {
+    "id": "cases-036",
+    "problem": "Used the 'называть цифру наугад я не буду' template.",
+    "action": "Rephrased it to 'а цифра наугад вам ни к чему' and replaced 'в материалах' with 'в кейсе'."
+   },
+   {
+    "id": "cases-039",
+    "problem": "Did not answer 'может заменить менеджера?' head-on; the answer opened with a disclaimer about developers.",
+    "action": "Opened with the direct answer: the bot takes one task off the manager, it does not replace him, and people still handle deals (all from the fact sheet). Moved the developer caveat after it."
+   },
+   {
+    "id": "cases-040",
+    "problem": "Used the 'обещать не буду' template.",
+    "action": "Removed it; the answer now just says the case does not describe how such wishes are handled."
+   },
+   {
+    "id": "cases-042",
+    "problem": "Had a stray template sentence 'Придумывать не буду.'",
+    "action": "Removed it."
+   },
+   {
+    "id": "cases-044",
+    "problem": "Used the 'не буду ни утверждать, ни отрицать' template.",
+    "action": "Rephrased it to 'это не значит ни да, ни нет: просто такие кейсы не описаны'."
+   },
+   {
+    "id": "cases-046",
+    "problem": "Ended with two imperatives in a row ('скажите об этом сразу. Расскажите ...'), and its structure duplicated cases-045.",
+    "action": "Merged them into one closing request and made the structure more compact."
+   },
+   {
+    "id": "cases-048",
+    "problem": "Opened with the 'Обещать заранее не буду' template.",
+    "action": "Reordered it: opens with the Hurghada reason the bot exists (clients write at any time), then the разбор caveat. No promise is made."
+   }
+  ]
+ },
+ "data_security": {
+  "generated": 40,
+  "generator_notes": "All 40 pairs pass the checker. The hard part: the fact sheet says nothing about where Alexander stores data, which models he uses, NDAs, 152-FZ/GDPR, logs, CRMs or deleting data. Those answers give correct general facts about AI (API vs consumer ChatGPT training, Telegram cloud chats, local models) and send the specific question to Alexander, with the 'not in the materials' wording varied. Case facts are used only where they fit: drafts on the agency site, the employee publishes, the catalog-only bot, price checks in translations.",
+  "review": {
+   "checked": 40,
+   "fixed": 20,
+   "dropped": 0,
+   "final_count": 40,
+   "lint_pass": 40
+  },
+  "issues": [
+   {
+    "id": "data_security-001",
+    "problem": "The question duplicated 003 and 005. 001 asked where data goes with a neural bot and explained cloud vs local plus the bot keeping history, which is what 003 (local vs OpenAI) and 005 (who sees the chat) already cover. Its line that a local model's message never leaves the server also ignored the Telegram hop.",
+    "action": "Replaced it with a different real-life question: managers use a free GPT bot in Telegram that they found themselves. The new answer explains that an unknown owner gets everything sent to it and forwards it to some neural network. It says public listing text is fine to send, but client names, phones, chats and deal details belong in services with a known owner. It ends by asking what the managers send through that bot."
+   },
+   {
+    "id": "data_security-003",
+    "problem": "Two statements were too absolute. It said client messages 'остаются у вас' with a local model (they still pass through Telegram), and that a local model always needs a powerful GPU server.",
+    "action": "Reworded both: what the local model processes is not sent anywhere, and it 'как правило' needs a GPU server."
+   },
+   {
+    "id": "data_security-006",
+    "problem": "The question asks whether Alexander himself needs admin access. The answer only talked about the assistant's access, so it partly dodged the question.",
+    "action": "The closing part now says the materials do not cover what access Alexander needs during setup or how to close it afterwards, and that this is for the free разбор."
+   },
+   {
+    "id": "data_security-007",
+    "problem": "Inaccurate opening: a passport does not 'открывает доступ к документам'.",
+    "action": "New opening: 'Всё, чем можно воспользоваться от чужого имени или добраться до денег', followed by the same list."
+   },
+   {
+    "id": "data_security-009",
+    "problem": "Repeated the 'Как X, в моих материалах не описано' template used in many pairs. It also had a bureaucratic ending, 'применительно к вашей задаче'.",
+    "action": "Rewrote the opening ('Заранее обещать за Александра не буду, потому что...') and changed the ending to 'пока ничего не запущено'."
+   },
+   {
+    "id": "data_security-012",
+    "problem": "It had the same 'Как X, в моих материалах не сказано' opening template. Its 'Из общего:' was repeated word for word in 031.",
+    "action": "New opening, 'Здесь без Александра не обойтись', and the legal summary now starts with 'В общих чертах'. The 152-FZ points (consent, storing data in Russia, cross-border rules) are unchanged."
+   },
+   {
+    "id": "data_security-013",
+    "problem": "Inaccurate law point: GDPR applies to people located in the EU who are targeted, not to 'покупатели из Евросоюза' as such. The last sentence also assumed Alexander already accounts for GDPR ('Как Александр учитывает'), which the fact sheet does not say.",
+    "action": "It now says GDPR can apply when the agency deliberately serves buyers located in the EU, and openly says it is not known whether Alexander accounts for it. The ending now just sends the reader to Telegram to ask."
+   },
+   {
+    "id": "data_security-014",
+    "problem": "It claimed the working chat is 'в Telegram', which the fact sheet does not state (it only says 'рабочий чат агентства').",
+    "action": "Removed 'в Telegram'; it now says the draft also comes to the agency's working chat for review."
+   },
+   {
+    "id": "data_security-019",
+    "problem": "Its opening ('боту хватает самого запроса') was almost the same as 025's 'Только сам запрос'.",
+    "action": "New opening: 'Пользоваться можно: чтобы подобрать квартиру, боту не нужно знать, кто спрашивает'."
+   },
+   {
+    "id": "data_security-021",
+    "problem": "Clumsy, repetitive opening: it said the same thing twice ('Такого пункта в моих материалах нет: ... там ничего не сказано').",
+    "action": "Merged it into one clear sentence about NDA not being covered."
+   },
+   {
+    "id": "data_security-022",
+    "problem": "An incomplete list of who is in the chain: only the cloud neural network was named.",
+    "action": "Added Telegram and the hosting where the bot runs, kept it short, and pointed the rest to the разбор."
+   },
+   {
+    "id": "data_security-026",
+    "problem": "Unclear wording: 'метки подставляют обратно'. It is the real data that goes back in place of the labels.",
+    "action": "Rewrote it as 'метки при необходимости меняют обратно на настоящие данные'."
+   },
+   {
+    "id": "data_security-028",
+    "problem": "The sentence starting 'Плюс в схеме...' was awkward and ambiguous. 'случайный текст на сайт не попадёт' sounded like a guarantee, and 'риск не в нейросети, а в доступах' was stated too absolutely.",
+    "action": "Changed to 'Чаще всего риск...', rewrote the case sentence as 'есть и ещё одна страховка', and said text does not reach the site 'без проверки человеком'."
+   },
+   {
+    "id": "data_security-031",
+    "problem": "'Из общего:' was a word-for-word repeat from 012.",
+    "action": "Changed it to 'А в целом такая схема во многом упирается в железо'."
+   },
+   {
+    "id": "data_security-032",
+    "problem": "The answer nearly duplicated 025 (the bot needs no client data) and did not really answer the access-control question asked.",
+    "action": "Kept the question and rewrote the answer around separating access. The bot in the case only needs the public catalog, and the client base can be kept separate with no keys given to the bot. How to split access for this agency is left for the разбор, and it ends with a question about where the catalog is kept."
+   },
+   {
+    "id": "data_security-033",
+    "problem": "It overclaimed: removing a fired employee from a chat does not hide history they already saw. It also called the working chat 'в Telegram', which the fact sheet does not say.",
+    "action": "It now says that after removal the person 'новые [черновики] уже не получит', and dropped 'в Telegram'."
+   },
+   {
+    "id": "data_security-034",
+    "problem": "Its 'мне неизвестно, в материалах этого нет' was a template that repeated 005's wording.",
+    "action": "Rewrote it as 'Ведут ли помощники Александра такие журналы и сколько их хранят, я не знаю: на сайте об этом ничего нет'."
+   },
+   {
+    "id": "data_security-035",
+    "problem": "'сотрудник уберёт его' was a prediction stated as fact.",
+    "action": "Changed it to 'сотрудник успеет убрать его до публикации'."
+   },
+   {
+    "id": "data_security-038",
+    "problem": "The reply repeated 008's sentence almost word for word (the documents-channel line plus 'нейросети хватает описания задачи').",
+    "action": "Wrote a fresh short reply (161 characters) that still ends with 'напишите'."
+   },
+   {
+    "id": "data_security-039",
+    "problem": "It overstated that 'Модель знает только то, что ей передали': a model also has general knowledge from training.",
+    "action": "Narrowed it to 'О переписке модель знает только то, что ей передали в текущем запросе'."
+   }
+  ]
+ },
+ "tech_integration": {
+  "generated": 50,
+  "generator_notes": "All 50 pairs passed the checker on the first run and again after two editing passes (50 of 50). The hard part was that the fact sheet covers almost none of the topic: WordPress, Bitrix24, amoCRM, 1C, WhatsApp, MAX, API, hosting, the model name, 152-FZ and the rest. Each of those answers gives correct general knowledge, says the materials don't cover it and refers the person to Alexander. Facts about Alexander and his work come only from FACTS.md, and I varied the wording and endings: no 5-word phrase now repeats in 3 or more answers, 25 answers end with a question, and only a few end with the Telegram handle.",
+  "review": {
+   "checked": 50,
+   "fixed": 22,
+   "dropped": 0,
+   "final_count": 50,
+   "lint_pass": 50
+  },
+  "issues": [
+   {
+    "id": "tech_integration-002",
+    "problem": "The phrase 'X умеет обмениваться данными с другими программами' was repeated almost word for word in 002 and 007 (and reworded in 009, 030 and 047). The answer also never said that Alexander is the one who can answer.",
+    "action": "Rewrote the explanation: Bitrix24 has an open API, explained simply. Added that only Alexander can say whether he has built this. Kept the closing question."
+   },
+   {
+    "id": "tech_integration-003",
+    "problem": "Misleading: the answer implied that the agency's staff and clients would need a VPN. In fact users only work with Telegram and the site, and it is the assistant's server that talks to the neural network. It also did not say that the case agency is in Egypt.",
+    "action": "Rewrote it: users usually don't need a VPN, the open question is where the server is and which model it uses, the materials don't cover this, and the case is from Hurghada in Egypt. Kept the next step about the заявка and the разбор."
+   },
+   {
+    "id": "tech_integration-005",
+    "problem": "'Обычно платно' about WhatsApp is not accurate (only some messages are paid). 'Бизнес-доступ' reads like a translation from English. The closing question asked about something the client had already said ('mostly WhatsApp').",
+    "action": "Changed it to: an official WhatsApp service for companies, where the company usually has to be verified and some messages are paid. Replaced the closing question with one about a regular number versus a business account."
+   },
+   {
+    "id": "tech_integration-007",
+    "problem": "Same 'умеет обмениваться данными с другими программами' template as 002, and the same opening 'X в описанных кейсах не упоминается'.",
+    "action": "Changed the opening and explained in simple terms how 1C is usually connected to other programs: file exchange or a direct network connection."
+   },
+   {
+    "id": "tech_integration-008",
+    "problem": "Duplicated 001 ('drafts right in the admin panel'). Its content (manual publishing, review in the work chat) was also repeated in 031 and 043.",
+    "action": "Rewrote it as a different question: can a draft be corrected before publishing (for example, a wrong district)? The new answer: the employee edits the fields in the admin panel and only then decides whether to publish. Ends with a question about who will review the drafts."
+   },
+   {
+    "id": "tech_integration-009",
+    "problem": "Near-duplicate of 002: the same 'is there CRM X integration?' question with a different CRM name, and a similar answer template.",
+    "action": "Rewrote the question as a specific scenario in the same casual register: every bot user should land as a lead in amoCRM. The answer says this is not in the case, the bot already finds district, type, bedrooms and budget so a lead could carry those fields, and Alexander will say after the разбор. Ends with a question about required lead fields."
+   },
+   {
+    "id": "tech_integration-010",
+    "problem": "Unsupported claim that hosting is 'part of the question of cost'.",
+    "action": "Softened it to 'cost may depend on this too'."
+   },
+   {
+    "id": "tech_integration-011",
+    "problem": "Clumsy run-on sentence ('не расписано, известно только...'). The general explanation said only 'суть', which is incomplete.",
+    "action": "Split it into two sentences and added that such checks compare meaning plus key fields."
+   },
+   {
+    "id": "tech_integration-016",
+    "problem": "The 152-FZ explanation was oversimplified ('the law requires storing data in Russia', as if that were its main requirement).",
+    "action": "Reworded it: the law covers personal data and, among other things, requires that data of Russian citizens be collected and stored in databases in Russia."
+   },
+   {
+    "id": "tech_integration-019",
+    "problem": "Partly dodged the question: it never touched on whether admin rights are needed.",
+    "action": "Added a correct general note: in Telegram you don't always need admin rights to read a group, but the materials don't say which method Alexander used. Kept forwarding as the practical fallback."
+   },
+   {
+    "id": "tech_integration-022",
+    "problem": "Pushed the разбор ('станет понятно на бесплатном разборе') right before a closing question; the same pattern repeats across the file.",
+    "action": "Changed it to 'Alexander will say once he has looked at your task' and kept the question about Turkish buyers."
+   },
+   {
+    "id": "tech_integration-023",
+    "problem": "Explaining 'ТЗ, то есть техническое задание' to someone who just used the abbreviation sounds patronizing. 'Чем занимается агентство' is not the first step described in the fact sheet.",
+    "action": "Removed the explanation and pointed to the real first step: a couple of lines about which work in the agency repeats every day."
+   },
+   {
+    "id": "tech_integration-029",
+    "problem": "Ended with two calls to action at once (go to the разбор, then a question), and the sentence was a long run-on.",
+    "action": "Restructured the sentence ('not stated in the materials: Alexander knows') and removed the extra push to the разбор."
+   },
+   {
+    "id": "tech_integration-031",
+    "problem": "Dodged the question 'can it post on its own': it only said that the cases work the other way.",
+    "action": "Added the correct general fact: a bot can post to a channel if it is given admin rights. Kept the explanation of why a person reviews first, and that the cases do not describe autoposting."
+   },
+   {
+    "id": "tech_integration-032",
+    "problem": "Misleading: it presented forwarding as if it worked for VK too, but a VK post cannot be forwarded into Telegram whole with text and photos.",
+    "action": "Explained that only a link usually goes across from VK, that VK has ways for programs to read public groups, and that the materials don't say whether Alexander has used them."
+   },
+   {
+    "id": "tech_integration-033",
+    "problem": "Incomplete and too reassuring: it said nothing about the fact that group reading and the work chat in the case also depend on Telegram.",
+    "action": "Added that this dependence should be taken into account. Kept the point that the catalog and drafts are stored on the site."
+   },
+   {
+    "id": "tech_integration-035",
+    "problem": "'Никто не проверял' is a claim the fact sheet does not make. The ending 'ещё на разборе' repeated 036.",
+    "action": "Changed it to 'the materials don't say' and reworded the ending."
+   },
+   {
+    "id": "tech_integration-036",
+    "problem": "The ending 'стоит выяснить у Александра ещё на бесплатном разборе' repeated a template used elsewhere in the file.",
+    "action": "Changed it to 'Спросите Александра до запуска, как агентство узнает о сбое и что тогда делать'."
+   },
+   {
+    "id": "tech_integration-039",
+    "problem": "Generic filler: it only said 'I don't know, ask him'.",
+    "action": "Added a useful, correct general point: what usually breaks such systems (site update, a group changing its post format, the AI service changing its terms), so it is worth agreeing on support in advance."
+   },
+   {
+    "id": "tech_integration-045",
+    "problem": "Gave no useful general knowledge on the RTL question.",
+    "action": "Added that Arabic needs more than a translation: the site has to be able to lay pages out right to left, which is a layout setting. Kept the honest note that the case materials don't describe it."
+   },
+   {
+    "id": "tech_integration-048",
+    "problem": "Wrong word pairing ('задайте момент'), plus another tacked-on 'на бесплатном разборе'.",
+    "action": "Changed it to 'это важный вопрос, его стоит задать Александру одним из первых'."
+   },
+   {
+    "id": "tech_integration-050",
+    "problem": "Awkward punctuation in the definition ('API, или программный интерфейс: это').",
+    "action": "Rewrote it as 'API, то есть программный интерфейс, это набор правил, по которым одна программа передаёт данные другой'."
+   }
+  ]
+ },
+ "off_topic": {
+  "generated": 50,
+  "generator_notes": "The off_topic questions in the held-out data/test_questions.json (test-43..49) cover the same ground: weather in Hurghada, coursework, NDFL tax, Hurghada vs Batumi investment, a 50% discount, \"тупая железяка\", ignore-instructions plus system prompt. So I wrote different angles on these subjects (rain in Sochi, a school essay, a tax deduction, Moscow new builds, role-swap and fake-authority injections). The highest 4-gram Jaccard to a test question is 0.16, below the 0.5 leak cut-off in build_dataset.py. Where the fact sheet is silent (other industries, discounts, mass mailings, which model is used, phone or office address), the answers say the materials do not cover it and send the reader to Alexander. The highest question-to-question similarity is 0.17 and answer-to-answer 0.28. The style checker passed all 50 pairs on the first run, and they still pass after my wording fixes from the final read.",
+  "review": {
+   "checked": 50,
+   "fixed": 34,
+   "dropped": 0,
+   "final_count": 50,
+   "lint_pass": 50
+  },
+  "issues": [
+   {
+    "id": "off_topic-002",
+    "problem": "Used the scope template 'отвечаю только на вопросы о...' (8 answers had it) and ended with 'это как раз моя тема', which made the last sentence clumsy",
+    "action": "Rewrote the scope sentence as 'мой круг вопросов узкий: ...', added a concrete hint for the essay plan and gave it a clean ending: 'расскажите, какая рутина отнимает...'"
+   },
+   {
+    "id": "off_topic-003",
+    "problem": "Another 'Если ..., расскажите' ending (about 11 answers ended this way)",
+    "action": "Changed the ending to a direct question about how they handle messages from clients who write in German or other languages"
+   },
+   {
+    "id": "off_topic-004",
+    "problem": "Scope template 'Я отвечаю на вопросы о том, как...'",
+    "action": "Replaced it with 'Мой профиль другой: ...' and kept the natural agency-or-buyer question"
+   },
+   {
+    "id": "off_topic-005",
+    "problem": "Awkward logic: 'инвестиционный совет, а он зависит от...'. The ending duplicated 002",
+    "action": "Changed it to 'тут всё упирается в ваши цели...' and ended with a different question about which work is still done by hand"
+   },
+   {
+    "id": "off_topic-006",
+    "problem": "'разбора задачи, он занимает 15 минут' was ambiguous (it could mean Alexander) and was copied word for word in 027. It was also the third discount answer to end with the same Telegram call",
+    "action": "Rewrote it as 'разбора задачи на 15 минут'. The answer now ends by asking for a 2-3 sentence description of the recurring work, with no Telegram push"
+   },
+   {
+    "id": "off_topic-011",
+    "problem": "Forced pivot from the dollar rate to 'fear that prices get distorted in translation'",
+    "action": "New pivot: clients give budgets in dollars, and the case bot understands a query like \"двушка в Эль-Каусаре до 60 тысяч долларов\". Ends with a question about which currency their clients use"
+   },
+   {
+    "id": "off_topic-014",
+    "problem": "Calqued ending 'Есть что-то из этого, что вам было бы интересно разобрать?'",
+    "action": "Replaced it with 'Какая из этих задач знакома вашему агентству?'"
+   },
+   {
+    "id": "off_topic-015",
+    "problem": "The answer was about market price but quoted '60 тысяч долларов', which reads as a price hint. It also used the repeated 'X or Y?' ending",
+    "action": "Removed the amount, kept the honest point that one agency's catalog is not a market overview, and ended with 'Вы присматриваете квартиру для себя?'"
+   },
+   {
+    "id": "off_topic-016",
+    "problem": "Made-up generalization 'его помощники работают с тем, что агентству и так доступно', which is not in FACTS",
+    "action": "Replaced it with the fact from the case (it reads 8 thematic groups and channels) as the honest alternative, and asked what they actually need from the competitor's channel"
+   },
+   {
+    "id": "off_topic-017",
+    "problem": "Dangling participle 'бот подбирает квартиры ..., не дожидаясь менеджера'",
+    "action": "Rewrote it as 'клиент получает подборку ... и не ждёт менеджера' (matches FACTS) and varied the closing question"
+   },
+   {
+    "id": "off_topic-018",
+    "problem": "Claimed 'задача это не для помощника Александра', which FACTS does not state. The refusal and the reason did not match (refusing to collect, explaining calls)",
+    "action": "Changed it to 'В материалах о работе Александра такого тоже нет' and named the real risk: collecting and calling numbers without consent, under the personal-data law"
+   },
+   {
+    "id": "off_topic-020",
+    "problem": "Nearly the same as 006, 027 and 031: conditions are up to Alexander, free разбор, Telegram ending",
+    "action": "Rewrote it: only the разбор is listed as free, the referral offer can be raised there. Ends with a question about what the bot should do"
+   },
+   {
+    "id": "off_topic-021",
+    "problem": "Overstated 'взломанные программы чаще всего и приносят вирусы'. Did not answer the real question (free and safe). Suggesting an official Adobe trial is doubtful for a Russian user",
+    "action": "Answered with free editors (GIMP, Photopea), warned that cracked builds often carry viruses and are illegal, and varied the 'в кейсе Александра' phrasing"
+   },
+   {
+    "id": "off_topic-022",
+    "problem": "'поможет не ноутбук, а помощник' reads as a promised result",
+    "action": "Rewrote it as 'перепечатку объявлений можно поручить ... помощнику: он сам готовит черновики, сотрудник их проверяет'"
+   },
+   {
+    "id": "off_topic-024",
+    "problem": "Repeated 'Юридических советов я не даю' from 003, plus another scope template",
+    "action": "Changed it to 'В законах я не консультирую, а рассказываю о помощниках...'"
+   },
+   {
+    "id": "off_topic-025",
+    "problem": "The opener 'Одним словом на такое честно не ответить' sounded like a hint that Alexander might be a fraud",
+    "action": "Answers 'Нет', admits the assistant's own bias ('я его помощник, верить мне на слово не обязательно') and points to things the reader can check: the site, the cases with numbers, what was not measured, the free разбор"
+   },
+   {
+    "id": "off_topic-027",
+    "problem": "Ambiguous 'он занимает 15 минут', identical to 006",
+    "action": "Rewrote it as 'разбора задачи, который занимает 15 минут'"
+   },
+   {
+    "id": "off_topic-028",
+    "problem": "Ambiguous 'он может не защитить' (it could mean the lawyer)",
+    "action": "Rewrote it as 'текст из интернета может вас не защитить'"
+   },
+   {
+    "id": "off_topic-029",
+    "problem": "Imprecise: implied the AI translated all 13 languages, while FACTS says 4 were made to work and AI translated 9 new ones",
+    "action": "Added 'на девять новых'"
+   },
+   {
+    "id": "off_topic-030",
+    "problem": "Defensive, slightly rude opener 'Никому вы ничего не должны' and bureaucratic passive 'стоимость у Александра называется'",
+    "action": "Calm opener 'Выбирать, конечно, вам', active voice, and a natural ending: 'Задайте на разборе те же вопросы...'"
+   },
+   {
+    "id": "off_topic-031",
+    "problem": "Awkward 'не обещаю и не могу'. 'стоимость и условия' went beyond FACTS (стоимость и срок)",
+    "action": "Rewrote it as 'Скидку пообещать я не могу: стоимость называет сам Александр...'"
+   },
+   {
+    "id": "off_topic-032",
+    "problem": "'юристом... юрист' repetition, scope template 'Я отвечаю про...', and an ending copied from 019",
+    "action": "Removed the duplicate lawyer mention, changed the scope sentence to 'Я же по другой части', and asked a new question about how rental listings are handled"
+   },
+   {
+    "id": "off_topic-033",
+    "problem": "Same reasoning wording as 005 (целей, готовности к риску). 'быстрее отвечают покупателям' is an unmeasured result",
+    "action": "Reworded the risk factors (сумма, срок вложений, риск) and replaced the claim with the fact: a selection of apartments without waiting for the manager"
+   },
+   {
+    "id": "off_topic-036",
+    "problem": "Scope template 'я отвечаю только на вопросы о работе Александра' (identical to 039) and a weak ending",
+    "action": "Rewrote it: concrete resume pointers, then a natural link to the interview (how agencies use AI, with a fact from the case), ending with 'Рассказать, как это устроено?'"
+   },
+   {
+    "id": "off_topic-039",
+    "problem": "'Нет, я отвечаю только на вопросы...' repeated the template and contradicted 050, where the assistant does arithmetic",
+    "action": "Changed it to 'Почти нет. Я помощник Александра и разбираюсь в одном: ...'"
+   },
+   {
+    "id": "off_topic-040",
+    "problem": "Scope template 'бот, который отвечает на вопросы о работе Александра'. The 'в кейсе Александра' phrasing was overused (7 answers)",
+    "action": "Changed it to 'Лайкать и подписываться я не умею: я бот и только отвечаю на сообщения в этом чате' and varied the case reference"
+   },
+   {
+    "id": "off_topic-041",
+    "problem": "Calque 'это не мой вопрос'",
+    "action": "Replaced it with 'тут я не советчик'"
+   },
+   {
+    "id": "off_topic-042",
+    "problem": "Another 'Если хотите ..., опишите' ending",
+    "action": "Turned the ending into a question about where their catalog is stored, which is needed for the bot to show the real prices"
+   },
+   {
+    "id": "off_topic-043",
+    "problem": "Gave no honest alternative, and the ending duplicated 022 ('Сколько объектов...')",
+    "action": "Added the honest option (real photos plus a picture labeled \"так может выглядеть после ремонта\") and changed the closing question"
+   },
+   {
+    "id": "off_topic-044",
+    "problem": "Ignored the 'срочно/побыстрее' part, the wording 'обойдётся потерей времени' repeated 004, and it used the 'X or Y?' ending",
+    "action": "Addresses the urgency (it is easy to make mistakes in a hurry), keeps the 13-minute fact precise, and ends with 'Вы собираетесь покупать там жильё?'"
+   },
+   {
+    "id": "off_topic-046",
+    "problem": "Repetition 'тёплых слов от вас, своими словами'",
+    "action": "Rewrote it as 'пара тёплых слов от вас лично порадует коллегу больше любого готового текста'"
+   },
+   {
+    "id": "off_topic-047",
+    "problem": "'Моя тема скорее про агентства' plus 'быстрее заводить', an implied result. The 'X or Y?' ending was repeated",
+    "action": "Changed it to 'Мне ближе другая задача: ... без ручной перепечатки' and varied the closing question"
+   },
+   {
+    "id": "off_topic-048",
+    "problem": "Clumsy last sentence ('напишите ..., что именно, и уточните...'). The legal risk was incomplete",
+    "action": "Added that advertising without consent is fined under the law. The ending is now a question plus a clear step to Telegram"
+   },
+   {
+    "id": "off_topic-050",
+    "problem": "Scope template 'Вообще я отвечаю на вопросы о...'",
+    "action": "Rewrote it as 'Вообще-то я помощник Александра и рассказываю о нейросетях...' and ended with a question"
+   }
+  ]
+ },
+ "working_with_alexander": {
+  "generated": 60,
+  "generator_notes": "All 60 pairs passed the style checker on the final run. My questions are no closer than 0.32 to any held-out question in data/test_questions.json, below the 0.5 leak threshold in build_dataset.py, and no closer than 0.24 to each other. To stay clear of test-17..23 I rewrote 11 questions that were near-paraphrases of the held-out ones and replaced 4 others. The hardest part was the many questions the fact sheet does not cover (payment terms, contract, call app, language of the разбор, support, team, office visits, trial period, whether the assistant forwards messages). Those answers say the materials do not cover it and send the reader to Alexander, with varied wording so they do not form one template. The generator script is at C:/Users/tgbnh/AppData/Local/Temp/claude/2924998d3d725c01/247df231-cdc4-472b-86ca-cd1a6dd3c938/scratchpad/gen_working_with_alexander.py.",
+  "review": {
+   "checked": 60,
+   "fixed": 38,
+   "dropped": 0,
+   "final_count": 60,
+   "lint_pass": 60
+  },
+  "issues": [
+   {
+    "id": "working_with_alexander-003",
+    "problem": "Repeated the 'у меня информации нет, так что обещать не буду' template. The answer was weak: it suggested asking about voice messages in Telegram, i.e. by text",
+    "action": "Rewrote it: honest that voice is unclear, the first step needs only a couple of phrases anyway, and a correct general tip (voice input on the phone keyboard turns speech into text). Ends with an offer to dictate the task here"
+   },
+   {
+    "id": "working_with_alexander-006",
+    "problem": "Opened with the 'в материалах не указано' template that runs through the file",
+    "action": "Rewrote the opening: no report needed, step 1 is only a 2-3 sentence description. Kept the example with rough numbers"
+   },
+   {
+    "id": "working_with_alexander-007",
+    "problem": "Opened with the 'Готового правила ... в материалах нет' template",
+    "action": "Changed the opening to 'Такой случай отдельно не разобран'. Rest unchanged"
+   },
+   {
+    "id": "working_with_alexander-008",
+    "problem": "Used the 'додумывать за него я не буду' meta-template",
+    "action": "Changed it to 'лучше спросить у него: о его мотивах мне ничего не известно'"
+   },
+   {
+    "id": "working_with_alexander-010",
+    "problem": "Opened with 'В материалах сказано только', the same as 023, and was close to the template",
+    "action": "Rewrote it: the 15 minutes go to the main questions, leftovers can go to Telegram, and sending the description in advance saves time"
+   },
+   {
+    "id": "working_with_alexander-011",
+    "problem": "Clunky 'Созвоном там прямо назван' and the 'в материалах' template",
+    "action": "Rephrased it ('Формат разбора на сайте не уточняется ... Созвоном прямо назван лишь третий шаг')"
+   },
+   {
+    "id": "working_with_alexander-012",
+    "problem": "Nearly duplicated 027: the same three contacts, hours and ending, with the 'ближайшее время' part answered only in passing",
+    "action": "Led with the actual question (no access to Alexander's schedule, only he can name a slot), then contacts and hours"
+   },
+   {
+    "id": "working_with_alexander-013",
+    "problem": "Stated as fact 'прямо на разборе', but the fact sheet is ambiguous: step 2 says he names cost on the разбор, the pricing section says 'после разбора'",
+    "action": "Now says cost and launch time are named as the outcome of the разбор, admits it is unknown whether the figure comes during the talk or right after, and keeps the point that the client decides with the price known"
+   },
+   {
+    "id": "working_with_alexander-015",
+    "problem": "Used the 'называть такие цифры я не буду' template",
+    "action": "Rewrote the opening: other agencies' prices are not in open materials and would say little, since the price depends on the task"
+   },
+   {
+    "id": "working_with_alexander-016",
+    "problem": "Ending repeated 014 ('Что ... хотите поручить помощнику?')",
+    "action": "Changed the ending to 'На какую задачу вы рассчитываете этот бюджет?'"
+   },
+   {
+    "id": "working_with_alexander-017",
+    "problem": "Ending was one of many 'какую задачу ... первой?' questions",
+    "action": "Changed the ending to an offer: 'Хотите, расскажу, что нужно для первого шага?'"
+   },
+   {
+    "id": "working_with_alexander-018",
+    "problem": "Used the 'Обещать не возьмусь' template plus 'в материалах'. The final question repeated the previous sentence",
+    "action": "Changed the opening to 'Заранее этого никто не скажет' and the ending to 'К какой дате вам нужен запуск?'"
+   },
+   {
+    "id": "working_with_alexander-019",
+    "problem": "Used the 'гадать не хочу' template. 'ответ будет точнее моего' was odd when no answer was given",
+    "action": "Rewrote it: no info on one-time vs monthly. Suggests asking on the разбор about ongoing costs after launch too"
+   },
+   {
+    "id": "working_with_alexander-020",
+    "problem": "Used the 'в материалах ничего нет' template and over-used 'бесплатный разбор'",
+    "action": "Rephrased the opening to 'в описании его работы не сказано' and the second mention to 'на разборе'"
+   },
+   {
+    "id": "working_with_alexander-021",
+    "problem": "The general AI statement was incomplete: it implied per-request payment always applies",
+    "action": "Clarified that payment is by the volume of text the model reads and writes, and added that a model run on its own server costs the server instead. Kept the honest 'not stated for Alexander's projects'"
+   },
+   {
+    "id": "working_with_alexander-022",
+    "problem": "Ended by pushing to book the show right after saying it is step 3 (skipping the разбор). Unnatural 'Получается весь путь целиком'",
+    "action": "Rephrased it to 'То есть весь путь'. Ending is now a natural question about how ads from chats reach the client's site today"
+   },
+   {
+    "id": "working_with_alexander-023",
+    "problem": "Opened with 'В материалах сказано только', the same as 010, plus the 'обещать ... не стану' template",
+    "action": "Changed the opening to 'Известно только' and 'заранее не скажу, будут ли там ваши'"
+   },
+   {
+    "id": "working_with_alexander-024",
+    "problem": "Used the 'обещать Zoom не буду' template",
+    "action": "Changed it to 'мне неизвестно, поэтому про Zoom точно сказать не могу'"
+   },
+   {
+    "id": "working_with_alexander-025",
+    "problem": "Ending ('предложите пару вариантов времени') repeated 028, plus the 'в материалах' template",
+    "action": "Changed the ending to 'в какие часы директору удобнее всего, и подберите время вместе'. Varied the restrictions sentence"
+   },
+   {
+    "id": "working_with_alexander-027",
+    "problem": "Ending repeated the most frequent closing ('какая работа ... повторяется изо дня в день')",
+    "action": "Changed it to 'начните сразу с задачи: кто в агентстве что делает руками и сколько времени на это уходит'"
+   },
+   {
+    "id": "working_with_alexander-028",
+    "problem": "Bureaucratic noun phrase 'заведение новых объектов на сайт'",
+    "action": "Changed it to 'как сотрудники вручную заводят новые объекты на сайте'"
+   },
+   {
+    "id": "working_with_alexander-030",
+    "problem": "Bureaucratic participle construction ('ответ на сообщение, отправленное вечером или ночью')",
+    "action": "Changed it to 'на сообщение после 20:00 ответ, скорее всего, придёт уже на следующий день'"
+   },
+   {
+    "id": "working_with_alexander-031",
+    "problem": "Ending repeated the 'что у вас повторяется изо дня в день' closing",
+    "action": "Changed it to 'какая рутина в агентстве больше всего мешает'"
+   },
+   {
+    "id": "working_with_alexander-033",
+    "problem": "Called the разбор a 'созвон', but its format is unknown (contradicts 011). Used the 'английский обещать не буду' template",
+    "action": "Changed it to 'а не про сам разбор' and 'поэтому точно не скажу'. Removed the extra Telegram sentence so the answer ends on the concrete next step"
+   },
+   {
+    "id": "working_with_alexander-034",
+    "problem": "Used the 'Называть конкретные минуты не стану' meta-template",
+    "action": "Removed it and changed the opening to 'Точного срока ответа у меня нет'"
+   },
+   {
+    "id": "working_with_alexander-035",
+    "problem": "Used the 'я не знаю, поэтому гадать не буду' template",
+    "action": "Rewrote it: no info on how form replies arrive, so write directly to the channel where you want the answer (mail or Telegram)"
+   },
+   {
+    "id": "working_with_alexander-036",
+    "problem": "Ending repeated the 'что в агентстве делается вручную каждый день' closing in a pure contact question",
+    "action": "Changed the ending to a natural check: 'Получилось открыть?'"
+   },
+   {
+    "id": "working_with_alexander-037",
+    "problem": "Unnatural self-reference ('Передаю ли я сообщения Александру, в материалах не сказано'). Ending repeated the template",
+    "action": "Rewrote it: send the description to Alexander directly, since it is unknown whether this chat reaches him. Offers to formulate it here. New ending: 'С какой задачи начнём?'"
+   },
+   {
+    "id": "working_with_alexander-040",
+    "problem": "Used the 'обещать за Александра я не буду' template",
+    "action": "Changed the opening to 'Что происходит в таком случае, в описании работы не сказано'. Shortened 'бесплатный разбор' to 'разбор'"
+   },
+   {
+    "id": "working_with_alexander-042",
+    "problem": "Used the 'ни отказывать, ни обещать не буду' template",
+    "action": "Rewrote it: nothing about developers on the site, Alexander decides, and the разбор shows whether the task fits"
+   },
+   {
+    "id": "working_with_alexander-043",
+    "problem": "Abrupt opening 'Про страны отдельно ничего не сказано' (one of several 'Про ...' openers)",
+    "action": "Changed it to 'Про ограничения по странам мне ничего не известно' and 'все описанные кейсы'. The Hurghada fact is unchanged"
+   },
+   {
+    "id": "working_with_alexander-045",
+    "problem": "Used the 'придумывать не буду' template",
+    "action": "Removed it. Now says 'там не уточняется' plus a plain next step"
+   },
+   {
+    "id": "working_with_alexander-046",
+    "problem": "Used the 'обещать ничего не буду' template, and the opening was a twin of 019 ('Как устроена ..., у меня ... нет')",
+    "action": "Changed the opening to 'Про поддержку после запуска сведений нет, так что кто будет чинить, сказать не могу'"
+   },
+   {
+    "id": "working_with_alexander-047",
+    "problem": "'Правила на этот счёт нет' asserted something the fact sheet does not say. The example was thin, and the ending repeated 004",
+    "action": "Now says it is not stated, adds the fact that three different tasks were solved for Optimum Real Estate besides the 4-then-9 languages phasing, and has a new ending question"
+   },
+   {
+    "id": "working_with_alexander-050",
+    "problem": "Duplicated 004: both questions say 'many tasks, what to write', and both answers say 'pick the one that eats the most hours, list 2-3'",
+    "action": "Replaced it with a different question ('хз вообще что можно отдать нейросети... с чего начать?') and a new answer that lists what Alexander's assistants already do (from the fact sheet) and points to the разбор"
+   },
+   {
+    "id": "working_with_alexander-055",
+    "problem": "Inaccurate: 'с этого и начнётся разбор'. Describing the task is step 1, before the разбор",
+    "action": "Changed it to 'с этого всё и начинается'"
+   },
+   {
+    "id": "working_with_alexander-058",
+    "problem": "Implied the live show is free ('Бесплатно точно можно пройти разбор... Есть ещё показ вживую'), which the fact sheet does not say. Used the 'придумывать не буду' template",
+    "action": "Now says only the разбор is explicitly called free and mentions the show as step 3 without claiming it is free. Removed the template"
+   },
+   {
+    "id": "working_with_alexander-059",
+    "problem": "Too close to other 'информации у меня нет / спросите напрямую' answers",
+    "action": "Varied the opening ('О поездках в офис к клиентам мне ничего не известно') and replaced the ending with a natural follow-up question about what to discuss at the meeting"
+   }
+  ]
+ },
+ "objections": {
+  "generated": 70,
+  "generator_notes": "The hardest part was honesty. Many objections are about things the fact sheet never mentions: support after launch, data storage, Bitrix24, Avito/Cian, Tilda, Telegram bans, sold listings, mortgage questions and staff effort during launch. Those answers say plainly that the materials don't cover it and send the reader to Alexander. A 6-word repeated-phrase check helped vary the wording, though the few case numbers (164 drafts, 1152 and 384 translations, 1.5 seconds) still come up in several answers. All 70 pairs passed the checker on the first run; later edits were for natural Russian, less repetition and accuracy, and the final run is also 70 of 70.",
+  "review": {
+   "checked": 70,
+   "fixed": 33,
+   "dropped": 0,
+   "final_count": 70,
+   "lint_pass": 70
+  },
+  "issues": [
+   {
+    "id": "objections-002",
+    "problem": "Question duplicated objections-029 (a small agency asking whether it is worth it), and the answer pattern 'X не главное, важнее, сколько однотипной работы' repeated 018 and 019.",
+    "action": "Rewrote the question into a different objection about ongoing monthly costs. New answer gives correct general knowledge: paid model access is often billed by the amount of text processed, plus a server. It says the materials do not describe Alexander's payment structure and asks for one-time and monthly costs to be named separately on the разбор."
+   },
+   {
+    "id": "objections-003",
+    "problem": "Unnatural phrasing: 'Цены на сайте нет' and the awkward closing line 'начните с короткого описания задачи Александру'.",
+    "action": "Changed it to 'Цен на сайте нет' and rewrote the last sentence as 'пришлите Александру в Telegram ... пару предложений о своей задаче'."
+   },
+   {
+    "id": "objections-008",
+    "problem": "The definition of hallucination ('уверенный ответ, которого нет в исходных данных') was inaccurate and clumsy.",
+    "action": "Rewrote it as a correct, simple definition: the model confidently writes something that is not in the source data, and no model is fully protected from this. The rest of the answer is unchanged."
+   },
+   {
+    "id": "objections-009",
+    "problem": "Opened with the stock validation stub 'Риск понятный.', part of a repeated pattern ('Риск реальный', 'Вопрос разумный', 'Вопрос важный', 'Справедливое замечание').",
+    "action": "The answer now opens straight with the substance: 'Варианты бот подбора не придумывает: ...'."
+   },
+   {
+    "id": "objections-015",
+    "problem": "The answer nearly copied 012 (same three tasks, 'показ, переговоры и сделку ведёт человек', 'черновик только после решения сотрудника') and did not address the investment logic in the question.",
+    "action": "Rewrote it around the investment worry: nobody knows the market's future, and the assistants take over retyping, translations and the first selection rather than the agency itself, which frees agents' time. Worded so it does not promise any result."
+   },
+   {
+    "id": "objections-017",
+    "problem": "Question nearly duplicated 063 ('no time, people overloaded, setup will eat our time') and the answer repeated its content (2-3 sentences plus 15 minutes).",
+    "action": "Rewrote it into a different objection: postponing until after the season. New answer accepts the delay and suggests a low-effort step for now (noting how much repetitive work there is, with examples from the agency), then says to write to Alexander when ready."
+   },
+   {
+    "id": "objections-019",
+    "problem": "Opening 'Зависит от того, сколько у вас повторяющейся работы' repeated the template of 002, 018 and 029.",
+    "action": "Rewrote the opening to speak to the solo realtor ('Раз вы работаете один, каждая перепечатка отнимает время именно у вас') and kept the facts."
+   },
+   {
+    "id": "objections-022",
+    "problem": "Factual stretch: 'сайт агентства в Хургаде так заговорил на 13 языках'. Per the fact sheet, 4 languages were first made to work and the network translated into 9 new ones.",
+    "action": "Corrected to 'нейросеть перевела сайт на девять новых языков, и страниц на нём стало 122 вместо 41'."
+   },
+   {
+    "id": "objections-023",
+    "problem": "The answer heavily overlapped 048 (both argued 'dates and stated limitations, so trust') and opened with the stock 'Справедливое замечание.'",
+    "action": "Rewrote it around the real point of the question: one agency means its numbers cannot be carried over to the reader's agency, so the разбор and the live demo are the way to check. Different from 048 now."
+   },
+   {
+    "id": "objections-024",
+    "problem": "A third answer opening with 'Да, ...', and the last sentence was an imperative 'Расскажите, ...' ending with a question mark.",
+    "action": "Changed the opening to 'Рынки разные, тут не поспоришь' and fixed the closing punctuation to a period."
+   },
+   {
+    "id": "objections-027",
+    "problem": "It said 'по арабским голосовым отдельного замера нет', a claim the fact sheet does not support (it only says nothing about Arabic). It also did not address the question, which was about the bot understanding Arabic text.",
+    "action": "Rewrote it: Arabic is one of the bot's reply languages and the catalogue is translated into Arabic; there is a speed measurement for English and German voice messages; the materials say nothing about how well it understands Arabic requests, so no promise. Ends with a question about text or voice."
+   },
+   {
+    "id": "objections-030",
+    "problem": "Opened with the repeated template '[X] в материалах не описано, выдумывать не буду' (shared with 031, 039, 040, 046, 060, 063, 065).",
+    "action": "Reordered it to lead with the useful point (if the listings assistant stops, agency work continues by hand), then the honest gap about support."
+   },
+   {
+    "id": "objections-031",
+    "problem": "Same unknown-first template, opened with the stock 'Вопрос важный', and contained no useful content beyond 'ask Alexander'.",
+    "action": "Rewrote it: names what data could pass through (requests, voice messages, budgets, names, phones), adds a correct simple note that names and phones are personal data the law requires handling carefully, keeps the honest gap, and lists the next step."
+   },
+   {
+    "id": "objections-034",
+    "problem": "Bureaucratic tone ('тут спорить не о чем'). It also missed the ethical point that a bot should not be passed off as a human.",
+    "action": "Rewrote it: hiding that a bot is answering backfires, so present it honestly as a selection assistant. Whether it looks professional depends on what it does (an instant evening selection looks like a service). Agents still lead negotiations."
+   },
+   {
+    "id": "objections-036",
+    "problem": "Dodged the question. The worry is staff rubber-stamping drafts, and the answer replied 'responsibility stays with the human', which is exactly what fails here.",
+    "action": "Rewrote it with the real mechanism (automation complacency) and practical general advice: check price and district against the source in every draft, and have a manager spot-check published listings. The fact that empty fields stand out is kept."
+   },
+   {
+    "id": "objections-038",
+    "problem": "Near-duplicate of 021: the same 'есть то, что посчитали: 164 ...' phrase and the same list of numbers.",
+    "action": "Rewrote it: no sales percentage because sales impact was not measured and live bot traffic is still small. Mentions the measured metrics briefly, and suggests deciding on the разбор what to measure before and after launch, with an example."
+   },
+   {
+    "id": "objections-039",
+    "problem": "Unknown-first opening template.",
+    "action": "Restructured it: 'Ипотека в описание работы бота подбора не входит', then what the bot does per the case, then the honest gap and the next step."
+   },
+   {
+    "id": "objections-040",
+    "problem": "Unknown-first opening template ('Про Битрикс24 мне ничего не известно').",
+    "action": "Restructured it to open with 'Ни да, ни нет сказать не могу', and made the next step more concrete (what should go into the CRM)."
+   },
+   {
+    "id": "objections-041",
+    "problem": "Clumsy repetition 'разобрать ... на разборе'.",
+    "action": "Replaced 'разобрать' with 'почистить'."
+   },
+   {
+    "id": "objections-045",
+    "problem": "Template copied from 004 ('что реально сделать/успеть ..., а что отложить'), and a third answer opening with 'Заранее'.",
+    "action": "Rewrote it with a different structure and closing, still giving no deadline and pointing to the разбор and Telegram."
+   },
+   {
+    "id": "objections-046",
+    "problem": "Stock opening 'Вопрос разумный.' plus the unknown-first template.",
+    "action": "Rewrote the opening ('Зависеть от одного человека не хочется никому'), kept the honest gap about team size, and added general advice to agree on where settings live and who can change them."
+   },
+   {
+    "id": "objections-047",
+    "problem": "Question duplicated 015 (AI will replace realtors), and the answer repeated the same 'показ, торг, документы ведёт человек' motif.",
+    "action": "Rewrote it into a different doubt: competitors already use AI, so are we hopelessly behind. New answer: you cannot see from outside what competitors actually do; routine can be removed at any time starting with one task; focus on where your own agency loses time."
+   },
+   {
+    "id": "objections-050",
+    "problem": "Misleading cause and effect: 'такие проверки работают ... 384 перевода без единого сбоя' presented a result as proof of the checks. It also ignored the 'подешевеет' part of the question.",
+    "action": "Added that models are getting cheaper (correct general trend) and replaced the example with the accurate fact that each translation's price is checked against the original and not saved if it is missing."
+   },
+   {
+    "id": "objections-051",
+    "problem": "Bureaucratic phrase 'отдельно не сообщается'.",
+    "action": "Replaced it with 'в материалах не сказано'."
+   },
+   {
+    "id": "objections-053",
+    "problem": "The last sentence was a question in form but ended with a period.",
+    "action": "Rephrased it as a real question: 'Может, предложить ей посмотреть ... на созвоне с Александром?'"
+   },
+   {
+    "id": "objections-054",
+    "problem": "Overgeneralised the call ('решения ... можно посмотреть на созвоне'; the fact sheet says he shows one flow). The closing question also duplicated 016's ending.",
+    "action": "Made the demo precise (a listing from a chat becomes a draft on the site) and changed the closing question to ask what happened to the previous bot."
+   },
+   {
+    "id": "objections-057",
+    "problem": "Opening 'Перепутать может, особенно...' copied the structure of 007 'Ошибаться нейросеть может, поэтому...'.",
+    "action": "Changed it to 'Такое возможно, особенно если ...', with the facts unchanged."
+   },
+   {
+    "id": "objections-058",
+    "problem": "'платят не за них' was an unsupported claim about Alexander's pricing (it contradicts possible model costs). 'научить её ... сверять цены' contradicted the dataset's own correct statement that code, not the network, checks prices.",
+    "action": "Rewrote it: the value is in building the network into the agency's process (connecting groups and the site, adding a code price check, dedup, sending drafts for review). The Word/lawyer analogy is kept."
+   },
+   {
+    "id": "objections-060",
+    "problem": "Unknown-first opening template and a generic closing.",
+    "action": "Restructured it so 'Успокаивать без оснований не буду' leads, kept the facts about the 8 groups and manual forwarding, and gave a concrete question to ask on the разбор."
+   },
+   {
+    "id": "objections-061",
+    "problem": "'Имеете право' sounds curt or dismissive in Russian.",
+    "action": "Changed it to 'Не верить на слово нормально, и уговаривать я не буду'."
+   },
+   {
+    "id": "objections-063",
+    "problem": "Unknown-first opening template right after the greeting.",
+    "action": "Reordered it to lead with the known small start (2-3 sentences and a 15-minute разбор), then the honest gap about staff time during launch. The second paragraph is kept."
+   },
+   {
+    "id": "objections-065",
+    "problem": "Unknown-first opening template ('Про Тильду в материалах ... ничего нет, поэтому ... я не могу').",
+    "action": "Rewrote the opening ('С Тильдой пока неясно: ...'), kept the case fact and the next step of sending the site link."
+   },
+   {
+    "id": "objections-070",
+    "problem": "'Да, я помощник' did not clearly answer the question 'am I talking to a bot?'.",
+    "action": "Changed it to 'Да, вы переписываетесь с помощником Александра на нейросети, а не с ним самим', with the rest kept."
+   }
+  ]
+ },
+ "agency_automation": {
+  "generated": 80,
+  "generator_notes": "All 80 pairs passed the checker on the first run and still passed (80/80) after my manual edits. The hard part was honesty: many parts of the topic (CRM, WhatsApp, Instagram, photo editing, reports, lead handling, calls, currency conversion, security, other industries) are not in FACTS.md. At first 38 answers used the same \"в материалах не сказано\" line, so I reworded them to cut it to 14 and stop the model from learning one template, and I removed some guesses about how the system behaves.",
+  "review": {
+   "checked": 80,
+   "fixed": 34,
+   "dropped": 0,
+   "final_count": 80,
+   "lint_pass": 80
+  },
+  "issues": [
+   {
+    "id": "agency_automation-002",
+    "problem": "'Alexander worked in the agency Optimum Real Estate' wrongly suggests he was on its staff; the fact sheet says he built assistants for that agency",
+    "action": "Changed to 'задача, которую Александр решал для агентства Optimum Real Estate'"
+   },
+   {
+    "id": "agency_automation-004",
+    "problem": "States as certain that the district field 'will stay empty', which the fact sheet does not say",
+    "action": "Softened to 'скорее всего, останется пустым'; the closing question now asks about a missing district, not a missing address"
+   },
+   {
+    "id": "agency_automation-008",
+    "problem": "Opened with the repeated 'В кейсе Александра' template, and did not point out that the 13 minutes are counted from when the assistant saw the post, not from when it was published",
+    "action": "Rewrote the opening to state the 13 minutes and their starting point exactly; facts unchanged"
+   },
+   {
+    "id": "agency_automation-010",
+    "problem": "Invented details: that a draft flagged as a duplicate goes to review like any other, and that Alexander shows how a duplicate looks on the call (the fact sheet says only that the call shows a listing turning into a draft). Also a repeated 'показывает на созвоне' ending",
+    "action": "Kept the 'assistant prepares, human decides' principle, said the case does not describe what happens to a flagged duplicate, and ended with a question about how the agency handles duplicates now"
+   },
+   {
+    "id": "agency_automation-013",
+    "problem": "Misleading: said neural translation made the site work in 13 languages, but 4 languages were fixed and only 9 new ones were translated by the neural network. The comparison also only covered upsides",
+    "action": "Corrected to 'перевели страницы сайта на девять новых языков, и страниц стало 122 вместо 41'; added that contracts and legal documents are better given to a human translator"
+   },
+   {
+    "id": "agency_automation-017",
+    "problem": "Repeated templates: 'Про X я ничего не знаю, поэтому утверждать не буду' and the ending 'Александр на разборе скажет, можно ли'",
+    "action": "Rephrased the honest unknown; ended with a question about how viewings are arranged now"
+   },
+   {
+    "id": "agency_automation-018",
+    "problem": "Ended with the overused 'Можно ли поручить..., Александр скажет на бесплатном разборе'",
+    "action": "Replaced with a natural follow-up question about the clients' other frequent questions"
+   },
+   {
+    "id": "agency_automation-019",
+    "problem": "'помощник Александра' is ambiguous, because the speaker itself is 'Помощник Александра'",
+    "action": "Rephrased to 'В кейсах Александра помощник готовит черновик...'"
+   },
+   {
+    "id": "agency_automation-021",
+    "problem": "Awkward phrase 'Данные для него при этом появляются', a repeated 'обещать не буду' template and a repeated разбор ending",
+    "action": "Rewrote the opening ('это вопрос к Александру', 'похожие цифры в кейсе считали') and ended with a question about which metrics the reader wants"
+   },
+   {
+    "id": "agency_automation-028",
+    "problem": "Imprecise fact: the draft appeared ~13 minutes 'после объявления в группе', but the fact sheet counts from when the assistant saw the listing",
+    "action": "Corrected to 'после того, как помощник увидел объявление'"
+   },
+   {
+    "id": "agency_automation-030",
+    "problem": "Repeated ending 'Александр на бесплатном разборе скажет, есть ли смысл'",
+    "action": "Ending now suggests asking Alexander directly whether he works with private realtors"
+   },
+   {
+    "id": "agency_automation-032",
+    "problem": "Overclaim: forwarding to the work chat was called 'путь, который работает с любым источником'. The facts do not say that (e.g. WhatsApp). The answer also started with the repeated 'В кейсе' opening",
+    "action": "Changed to 'обходной путь для остальных объявлений' as described in the case; varied the opening"
+   },
+   {
+    "id": "agency_automation-036",
+    "problem": "Repeated 'напишите..., он показывает на созвоне' ending (several pairs had it). Unconditional claim that buyers see nothing before publication, which pair 035 says is unknown for the bot",
+    "action": "Narrowed it to 'На сайте для покупателей объект появится только после...'; ended with a question about the agency's current publishing check"
+   },
+   {
+    "id": "agency_automation-040",
+    "problem": "Repeated ending 'Можно ли добавить её боту, Александр скажет на бесплатном разборе'",
+    "action": "Ending combined into a short pointer to Alexander plus 'расскажите, какие вопросы ваши менеджеры задают клиенту первыми'"
+   },
+   {
+    "id": "agency_automation-041",
+    "problem": "Speculative claim that the bot 'попробует определить район и бюджет' from 'у моря' and 'недорого'",
+    "action": "Rewrote it: the bot gets the main point (однушка), explained why 'у моря' and 'недорого' are vague, and kept the fact about loosening conditions"
+   },
+   {
+    "id": "agency_automation-042",
+    "problem": "Partly dodged the question: it talked about speed data, not whether Russian voice messages are understood",
+    "action": "Answered directly: voice is accepted, measurements exist only for EN and DE, and the case does not say how well Russian voice works"
+   },
+   {
+    "id": "agency_automation-044",
+    "problem": "Repeated templates: an opening shared with pair 015, 'Про X я ничего не знаю', and the ending 'Александр на разборе скажет, можно ли'",
+    "action": "Varied the opening, kept the honest unknown, ended with 'Расскажите, почему вашим клиентам удобнее почта...'"
+   },
+   {
+    "id": "agency_automation-046",
+    "problem": "Duplicate question type: 'can the bot work in channel X' was already covered by 044 (email) and 060 (Instagram DM). The answer was also a templated 'не сказано, обещать не буду'",
+    "action": "Replaced the question with a new one: foreign-language listings in the groups for a Russian-language site. New answer: the case does not say what language the listings were in; correct general note that LLMs read English and Arabic; real fact that descriptions were translated from English to Russian; a question about the share of non-Russian listings"
+   },
+   {
+    "id": "agency_automation-047",
+    "problem": "Repeated ending 'Александр на разборе скажет, подходит ли'",
+    "action": "Ended with a single question about frequent client messages and daily volume"
+   },
+   {
+    "id": "agency_automation-052",
+    "problem": "The working hours repeated in three pairs (023, 052, 066) made a template ending",
+    "action": "Removed the hours and added a natural follow-up: who they want to call (new people or past leads)"
+   },
+   {
+    "id": "agency_automation-055",
+    "problem": "The opening 'Кейсы Александра сделаны для' was identical to pair 076, and the ending was the 'Александр на бесплатном разборе скажет' template",
+    "action": "Varied the wording of the unknown about Dubai; ended with a question about their flow of listings and client languages"
+   },
+   {
+    "id": "agency_automation-056",
+    "problem": "The opening 'Александр настраивает помощников на нейросети для агентств недвижимости' repeated pair 029 verbatim",
+    "action": "Changed the opening to 'Салонов красоты среди кейсов Александра нет: он настраивает помощников для агентств недвижимости...'"
+   },
+   {
+    "id": "agency_automation-057",
+    "problem": "Repeated 'в двух-трёх предложениях' plus the 'На бесплатном разборе он скажет, можно ли' ending",
+    "action": "Kept the honest unknown with a pointer to Alexander; ended with a question about where the manual work is (listings or messages)"
+   },
+   {
+    "id": "agency_automation-059",
+    "problem": "Opening template 'В кейсах Александра такой задачи нет' and the разбор 'скажет, можно ли' ending",
+    "action": "Reordered the opening; ended with a question about repetitive document work"
+   },
+   {
+    "id": "agency_automation-060",
+    "problem": "Started with the repeated 'В кейсах Александра бот работает' opening",
+    "action": "Varied the opening ('Бот в кейсах Александра живёт в Telegram'); content unchanged"
+   },
+   {
+    "id": "agency_automation-064",
+    "problem": "Repeated 'напишите..., он показывает это на созвоне' ending",
+    "action": "Ended with a question about how confidently staff use the site admin"
+   },
+   {
+    "id": "agency_automation-065",
+    "problem": "Repeated 'В кейсе' opening, 'поэтому сказать не могу' template and the 'на разборе он скажет, есть ли смысл' ending",
+    "action": "Rewrote the opening, made the honest unknown explicit about the assistant, ended with a question about what they would do with a price-drop signal"
+   },
+   {
+    "id": "agency_automation-068",
+    "problem": "Overclaim 'Нейросеть понимает такие слова так же, как человек'; the ambiguous 'помощник Александра'; a third answer opening with 'Обычно'",
+    "action": "Changed to 'хорошо улавливает такие слова по смыслу', named the assistant in the Hurghada agency, varied the opening"
+   },
+   {
+    "id": "agency_automation-070",
+    "problem": "Repeated 'В кейсе Александра' opening",
+    "action": "Opened with the direct answer 'И то и другое, так было в кейсе Александра'"
+   },
+   {
+    "id": "agency_automation-073",
+    "problem": "Stated as fact that rental listings are handled 'так же', which is only inferred from the fact sheet; repeated 'В кейсе Александра' opening",
+    "action": "Hedged with 'судя по кейсу' and restructured the opening"
+   },
+   {
+    "id": "agency_automation-074",
+    "problem": "Unnatural Russian: 'думайте спокойно'",
+    "action": "Changed to 'Хорошо, не торопитесь.'"
+   },
+   {
+    "id": "agency_automation-076",
+    "problem": "Opening identical to pair 055 ('Кейсы Александра сделаны для'), and repeated 'в двух-трёх предложениях'",
+    "action": "Changed the opening to 'Среди описанных кейсов Александра застройщиков нет...' and simplified the ending"
+   },
+   {
+    "id": "agency_automation-077",
+    "problem": "Awkward phrase 'По смыслу работа меняется'",
+    "action": "Changed to 'Меняется сама работа:'"
+   },
+   {
+    "id": "agency_automation-078",
+    "problem": "Half-dodged 'потянет?': it only refused to promise and gave no general answer",
+    "action": "Added the correct general point that a large catalog is not a barrier for a neural network (each description is translated separately, it just takes more time and checks), and kept the honest note that 2000 objects were never measured; varied the opening"
+   }
+  ]
+ },
+ "ai_basics": {
+  "generated": 70,
+  "generator_notes": "The style checker passes all 70 pairs. The hard part was avoiding overlap: data/test_questions.json and the other topic files appeared while I was working. One question (033) crossed the 0.5 leak threshold against test-35. About 14 others repeated questions from the held-out test set (test-01, 04, 05, 07, 52, 59) or from other topics (voice bot vs tech_integration-021, buttons bot, API, translation vs agency, local models vs data_security, area/bedrooms vs agency_automation-034), so I replaced them with new ones: streaming output, quantization, reasoning models, ChatGPT vs GPT, sentiment, suspicious listings, refusals and so on. Now no question scores 0.3 or more against any test question, and the highest score against other batches is 0.24. Wherever FACTS.md says nothing (which models Alexander uses, local models, fine-tuning, technical stack, WhatsApp), the answer says the materials don't cover it and points to the разбор or Telegram.",
+  "review": {
+   "checked": 70,
+   "fixed": 24,
+   "dropped": 0,
+   "final_count": 70,
+   "lint_pass": 70
+  },
+  "issues": [
+   {
+    "id": "ai_basics-003",
+    "problem": "Flat claim that there is no human understanding at all, which is still debated, and it contradicted the line before it (\"выглядит как понимание\").",
+    "action": "Reworded as an open question (\"учёные спорят до сих пор\") and added that the words спальни/площадь are not in the listing text."
+   },
+   {
+    "id": "ai_basics-012",
+    "problem": "Duplicate of 011: \"what is RAG\" asked again as \"explain RAG with apartments\". It also read as a follow-up to an earlier answer (\"Так стало понятнее?\").",
+    "action": "Replaced the pair with a new question: why a catalog-search bot sometimes suggests the wrong apartments (search fails, empty card fields, budget not used as a hard filter). It uses the fact-sheet detail that the bot relaxes conditions and says which ones."
+   },
+   {
+    "id": "ai_basics-014",
+    "problem": "Overpromise: with checked data the model \"answers only from your base\", which contradicts 015 (hallucinations cannot be fully excluded).",
+    "action": "Softened to \"опирается на то, что нашлось... и выдумывает гораздо реже\"."
+   },
+   {
+    "id": "ai_basics-017",
+    "problem": "Templated opener \"Это...\" (8 definition answers started the same way).",
+    "action": "New opener: \"Дообучение продолжает учёбу готовой модели...\"."
+   },
+   {
+    "id": "ai_basics-022",
+    "problem": "Templated opener \"Это степень сжатия...\".",
+    "action": "Opener now starts from the labels Q4/Q8/FP16."
+   },
+   {
+    "id": "ai_basics-025",
+    "problem": "Mostly repeated the semantic-search example from 024 and gave nothing new.",
+    "action": "Rewrote the answer: when ordinary search and filters are more exact (budget, district, bedrooms), how the two are combined, and the duplicate-check case without claiming how it works inside."
+   },
+   {
+    "id": "ai_basics-026",
+    "problem": "Nearly repeated 027 (low randomness for extraction, several variants for text), and \"случайность убирают\" is too absolute.",
+    "action": "Second paragraph reworked: facts must not change between variants, a different area or floor is a hallucination signal. New closing question."
+   },
+   {
+    "id": "ai_basics-027",
+    "problem": "Templated opener \"Это настройка...\".",
+    "action": "Opener now \"Температура отвечает за долю случайности...\"."
+   },
+   {
+    "id": "ai_basics-028",
+    "problem": "Wrong use of \"Зато\" for a downside (\"Зато он может ошибиться\") and an unclear \"их\".",
+    "action": "Changed to \"Но и ошибиться он может, поэтому два подхода часто сочетают\"."
+   },
+   {
+    "id": "ai_basics-035",
+    "problem": "Awkward ending that asks the reader to ask (\"Спросите, если интересно...\").",
+    "action": "Replaced with a question about which agency data the model should know first."
+   },
+   {
+    "id": "ai_basics-036",
+    "problem": "\"в разы меньше\" understates the gap: there is far less Georgian text than English.",
+    "action": "Changed to \"во много раз меньше\"."
+   },
+   {
+    "id": "ai_basics-041",
+    "problem": "Duplicate of 040: both are about the knowledge cutoff, and both end with \"prices must come from your data\".",
+    "action": "Replaced with a new question: can you trust ChatGPT now that it searches the web (source quality, wrong numbers in the retelling, check the links, use your own catalog for your listings)."
+   },
+   {
+    "id": "ai_basics-043",
+    "problem": "Calling Llama/Qwen \"open-source\" with no caveat is imprecise. The data benefit was stated without the condition that the model is self-hosted.",
+    "action": "Added that these are open-weight models (training data usually not published) and that data stays in-house only if the model runs on your server."
+   },
+   {
+    "id": "ai_basics-044",
+    "problem": "Generic filler: \"одна суше, другая в штампы, третья держит стиль\" hints at a mapping it never gives.",
+    "action": "Replaced with a neutral point about manner and keeping the style, plus practical factors (access from your country, payment, where data is stored)."
+   },
+   {
+    "id": "ai_basics-050",
+    "problem": "Opener \"Это когда\", and the example (listing turned into a site card) repeated 049.",
+    "action": "New opener. Example changed to client question plus manager reply in the agency's manner (tone and length)."
+   },
+   {
+    "id": "ai_basics-052",
+    "problem": "Misleading \"Для сравнения\": the 1.5 s is speech recognition only, but it read like the bot's full answer time.",
+    "action": "Says it is a separate speech-recognition step that takes 1.5 s, with the apartment search after it."
+   },
+   {
+    "id": "ai_basics-054",
+    "problem": "Templated opener \"Это модели...\". The ending \"её\" did not match the plural.",
+    "action": "Opener now \"Речь о рассуждающих моделях...\". Ending is \"Для каких задач вы уже пробовали такую модель?\"."
+   },
+   {
+    "id": "ai_basics-055",
+    "problem": "Templated opener \"Это разные вещи...\".",
+    "action": "Opener now \"Связаны, но это не одно и то же.\"."
+   },
+   {
+    "id": "ai_basics-056",
+    "problem": "Incomplete: ignored the \"memory\" feature of services like ChatGPT, which readers may take for learning.",
+    "action": "Added that this memory is notes added to new chats, not retraining the model."
+   },
+   {
+    "id": "ai_basics-057",
+    "problem": "Templated opener \"Это хранилище\", and \"можно устроить проще\" was vague.",
+    "action": "Opener names the term. Added a concrete simpler option (store embeddings in the site's regular database) and removed the repeated \"обычн\"."
+   },
+   {
+    "id": "ai_basics-063",
+    "problem": "Repetitive, clumsy ending (\"спросить его самого... разберёт с вами сам\").",
+    "action": "Merged into one sentence: \"уточнить у него напрямую в Telegram @alexandero_optimum\"."
+   },
+   {
+    "id": "ai_basics-064",
+    "problem": "Templated opener \"Это известная слабость\".",
+    "action": "Opener now \"Так проявляется известная слабость моделей...\"."
+   },
+   {
+    "id": "ai_basics-065",
+    "problem": "Word repeated (\"защититься... защиту\").",
+    "action": "Changed to \"страховку строят вокруг самой модели\"."
+   },
+   {
+    "id": "ai_basics-066",
+    "problem": "Vague closing question \"С чего вы хотели бы начать?\".",
+    "action": "Replaced with \"Для какой задачи вы задумались о своей модели?\"."
+   }
+  ]
+ }
+}

@@ -1,0 +1,17 @@
+# Ollama: дообученная Qwen3-4B-Instruct-2507 в tone of voice «Помощник Александра», GGUF Q4_K_M.
+# Сборка: ollama create brand-voice-qwen3-4b:q4_k_m -f deploy/Modelfile (GGUF лежит рядом, см. README).
+FROM ./brand-voice-qwen3-4b-q4_k_m.gguf
+
+TEMPLATE """{{ if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{ if .Prompt }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+{{ end }}<|im_start|>assistant
+{{ .Response }}<|im_end|>
+"""
+
+PARAMETER stop "<|im_end|>"
+PARAMETER stop "<|im_start|>"
+PARAMETER temperature 0.3
+PARAMETER repeat_penalty 1.1
+PARAMETER num_ctx 4096

@@ -1,0 +1,242 @@
+{
+ "test-01": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-02": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-03": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-04": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-05": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-06": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-07": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-08": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-09": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-10": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-11": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-12": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-13": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-14": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-15": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-16": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-17": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-18": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-19": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-20": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-21": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-22": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-23": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-24": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-25": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-26": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-27": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-28": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-29": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-30": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-31": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-32": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-33": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-34": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-35": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-36": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-37": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-38": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-39": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-40": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-41": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-42": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-43": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-44": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-45": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-46": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-47": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-48": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-49": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-50": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-51": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-52": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-53": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-54": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-55": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-56": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-57": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-58": {
+  "A": "lora",
+  "B": "base"
+ },
+ "test-59": {
+  "A": "base",
+  "B": "lora"
+ },
+ "test-60": {
+  "A": "base",
+  "B": "lora"
+ }
+}

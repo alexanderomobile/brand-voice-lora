@@ -1,0 +1,542 @@
+[
+ {
+  "id": "test-01",
+  "style": "B",
+  "helpful": "A",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A claims an LLM 'does not invent data' (false); B is plainer and honest, though it confuses itself about the monthly count."
+ },
+ {
+  "id": "test-02",
+  "style": "A",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "Both invent case details about token truncation; B at least explains why long text gets cut, A barely defines a token."
+ },
+ {
+  "id": "test-03",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A explains context window and the link to forgetting clearly but invents 'we limit to 10-15 messages'; B invents that the search bot keeps one request and ends confusingly."
+ },
+ {
+  "id": "test-04",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A says the model does not invent apartments ('interpolation'), which is wrong; B honestly admits hallucinations happen and explains the safeguard."
+ },
+ {
+  "id": "test-05",
+  "style": "A",
+  "helpful": "tie",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "Both recommend RAG for 300 objects; A is clean plain text, B is lowercase with dashes and fancy quotes."
+ },
+ {
+  "id": "test-06",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A covers privacy and a practical start recommendation; B is dash-free but drifts to an odd 'question to Alexander'."
+ },
+ {
+  "id": "test-07",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B degenerates into an endless repeated list of 'nalichie ...' fields; A gives a usable explanation of embeddings."
+ },
+ {
+  "id": "test-08",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A wrongly says photos are added manually (the case says drafts come with photos); B gives the correct case numbers in clean style."
+ },
+ {
+  "id": "test-09",
+  "style": "B",
+  "helpful": "tie",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "Both cite the translation case correctly; A reverses the direction (into English) and is lowercase with dashes, B is short and accurate."
+ },
+ {
+  "id": "test-10",
+  "style": "B",
+  "helpful": "A",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A claims 1.5 s recognition for Russian and that an employee approves the selection; B stays within the case facts."
+ },
+ {
+  "id": "test-11",
+  "style": "A",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A wrongly says duplicate detection is not in the cases, although the facts describe it; B correctly says yes."
+ },
+ {
+  "id": "test-12",
+  "style": "A",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A only restates the Hurghada bot and does not answer the night-to-morning handoff; B answers yes, but in lowercase with dashes."
+ },
+ {
+  "id": "test-13",
+  "style": "A",
+  "helpful": "tie",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "Both say photo work is not part of the materials; A is cleaner and gives correct contacts, B speaks as 'we' with dashes."
+ },
+ {
+  "id": "test-14",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A invents 'more than 100 drafts a week distributed among managers'; B honestly says such a report is not in the cases."
+ },
+ {
+  "id": "test-15",
+  "style": "A",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A dodges whether AI can write descriptions; B gives practical advice, though its example still uses the cliche 'uyutnuyu'."
+ },
+ {
+  "id": "test-16",
+  "style": "A",
+  "helpful": "B",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A honestly marks its answer as a guess and keeps brand style; B lists more boundaries but in 'we' voice with dashes and fancy quotes."
+ },
+ {
+  "id": "test-17",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A gives the exact start process (2-3 sentences, 15-minute review, live demo) cleanly; B is lowercase with dashes."
+ },
+ {
+  "id": "test-18",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B invents that the Hurghada basics were done 'without extra model training costs'; A keeps to the no-price rule."
+ },
+ {
+  "id": "test-19",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "B correctly says Alexander names cost and timeline at the review; A is generic, in 'we' voice and with a dash."
+ },
+ {
+  "id": "test-20",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A claims site access and the catalog export are not needed (unsupported) and slips into the informal 'prishli'; B matches the facts."
+ },
+ {
+  "id": "test-21",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A gives a practical tip to state the December deadline up front; B cites the irrelevant 13-minute figure."
+ },
+ {
+  "id": "test-22",
+  "style": "A",
+  "helpful": "B",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B claims the live demo is free and about 15 minutes (that is the review); A is accurate with both contacts."
+ },
+ {
+  "id": "test-23",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B wrongly says a message sent at 11 pm gets a reply the same day; A gives the correct hours."
+ },
+ {
+  "id": "test-24",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "Both give the correct case numbers; A adds honest notes on what is not measured, B adds an unsupported 'internal analysis' line."
+ },
+ {
+  "id": "test-25",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "Both say hours were not measured; A explains how to estimate payback, B ends with a garbled sentence."
+ },
+ {
+  "id": "test-26",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "B says the lost price was in Arabic (it was Chinese) and invents manual checks; A contradicts itself with 'no errors at all'."
+ },
+ {
+  "id": "test-27",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "Both honestly say sales were not measured; A adds that live requests are still few, B is shorter and cleaner."
+ },
+ {
+  "id": "test-28",
+  "style": "B",
+  "helpful": "tie",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "Both give correct numbers; B is more precise ('two checks') and dash-free."
+ },
+ {
+  "id": "test-29",
+  "style": "A",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A wrongly says there are two cases and that the second is not about one agency; B is right that all cases are one agency but invents 'work in other countries in progress'."
+ },
+ {
+  "id": "test-30",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A invents 'we started with one listing, then three'; B keeps the no-price rule but claims 'one assistant was enough'."
+ },
+ {
+  "id": "test-31",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "B wrongly says the 1152-translation check found no such error; A explains human approval but claims manual detection."
+ },
+ {
+  "id": "test-32",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A invents clients 'getting full data and then being intercepted' in the Hurghada case; B is confused but closer to the facts."
+ },
+ {
+  "id": "test-33",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B invents past cases of staff who doubted and then embraced the bot; A honestly says the cases have nothing on this."
+ },
+ {
+  "id": "test-34",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B invents 'about 160 objects' at the Hurghada agency; A is encouraging and gives the contact."
+ },
+ {
+  "id": "test-35",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "B explains what is actually paid for, with the correct process and contacts; A is lowercase with dashes."
+ },
+ {
+  "id": "test-36",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A gives a reasoned answer on why to keep investing in the team; B is short and its closing question is garbled."
+ },
+ {
+  "id": "test-37",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A claims the system 'trains on your studio's work' and uses hype; B is honest and points to the free review."
+ },
+ {
+  "id": "test-38",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B claims the assistant never receives or stores personal data; A honestly says this is not in the materials."
+ },
+ {
+  "id": "test-39",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B invents where messages are stored and that Alexander has no access; A is honest."
+ },
+ {
+  "id": "test-40",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B wrongly says data is 'not processed in real time, only used for training' and invents 'we use GPT'."
+ },
+ {
+  "id": "test-41",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A makes unsupported claims about data retention and that the AI stores no data; B honestly says it is not in the materials."
+ },
+ {
+  "id": "test-42",
+  "style": "A",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "A refuses basic data-hygiene advice; B gives it but invents that drafts containing a price or a name are auto-blocked."
+ },
+ {
+  "id": "test-43",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B gives weather and offers that Alexander will 'help find objects' (not a service); A declines and steers back, though clumsily."
+ },
+ {
+  "id": "test-44",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "Both decline; A steers back cleanly, B speaks as if it were Alexander and offers a marketing review."
+ },
+ {
+  "id": "test-45",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B gives wrong tax advice (gift taxation, a 'zero-value deal'); A declines and steers back."
+ },
+ {
+  "id": "test-46",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "Both decline; B claims capabilities it lacks (translating, setting up assistants) and calls the question off-topic for real estate."
+ },
+ {
+  "id": "test-47",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A invents a no-discount policy; B honestly says it cannot verify and points to Alexander."
+ },
+ {
+  "id": "test-48",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A claims the assistant passes questions to Alexander (it cannot); B calmly gives the correct contacts and hours."
+ },
+ {
+  "id": "test-49",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "Both refuse; A is dash-free and steers back to real cases with contacts."
+ },
+ {
+  "id": "test-50",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A greets properly and explains what Alexander does; B is lowercase and uses 'we'."
+ },
+ {
+  "id": "test-51",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A uses the informal 'zadal' and pitches; B gives a short, polite close with contacts."
+ },
+ {
+  "id": "test-52",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B falsely claims to be a living human prompt engineer."
+ },
+ {
+  "id": "test-53",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "B gives a short polite goodbye with contacts; A is lowercase and pitches again."
+ },
+ {
+  "id": "test-54",
+  "style": "A",
+  "helpful": "B",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A is clean and identifies itself correctly; B also answers 'how are you' but is lowercase with a dash and 'we'."
+ },
+ {
+  "id": "test-55",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A asserts WordPress compatibility as fact and uses 'we'; B honestly says it is not in the materials."
+ },
+ {
+  "id": "test-56",
+  "style": "A",
+  "helpful": "B",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B asserts the assistant can write into Bitrix24 (unsupported); A honestly says it is not in the materials."
+ },
+ {
+  "id": "test-57",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A states 'we have no direct amo-1C integration' as fact; B honestly says it is not in the materials."
+ },
+ {
+  "id": "test-58",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B wrongly claims WhatsApp has no open API for automation; A is honest about the Telegram-only cases."
+ },
+ {
+  "id": "test-59",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A invents GPT/Claude on the company's own servers; B honestly says this is not in the materials."
+ },
+ {
+  "id": "test-60",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A invents an existing API offering; B flatly says there is no API (also unsupported) but asks the right follow-up questions."
+ }
+]

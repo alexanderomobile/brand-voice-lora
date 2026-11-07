@@ -1,0 +1,28 @@
+08:37:15 INFO torch 2.8.0+cu128, CUDA 12.8, GPU: NVIDIA GeForce RTX 5070 Ti, dtype torch.bfloat16
+08:37:15 INFO модель /root/zc-ft/models/ai-forever_rugpt3small_based_on_gpt2 (gpt2): 125 млн параметров, шаблон: шаблон урока, загрузка 0.4 с
+08:37:15 INFO LoRA r=16 alpha=32 dropout=0.05: обучается 2.4 млн параметров (1.85%)
+08:37:15 INFO датасет train.json: 403 пар (пропущено пустых: 0)
+08:37:15 INFO обучение 385, проверка 18 пар; длина в токенах: средняя 123, макс 204; обрезано 0
+08:37:16 INFO шаг 1/75 | эпоха 0.04 | loss=4.455 | learning_rate=0 | grad_norm=0.6667
+08:37:16 INFO шаг 5/75 | эпоха 0.21 | loss=4.506 | learning_rate=0.0002 | grad_norm=0.6769
+08:37:16 INFO шаг 10/75 | эпоха 0.41 | loss=4.34 | learning_rate=0.0001976 | grad_norm=0.7181
+08:37:17 INFO шаг 15/75 | эпоха 0.62 | loss=4.176 | learning_rate=0.0001904 | grad_norm=0.8778
+08:37:17 INFO шаг 20/75 | эпоха 0.82 | loss=4.08 | learning_rate=0.0001788 | grad_norm=0.7941
+08:37:17 INFO шаг 25/75 | эпоха 1.00 | loss=3.885 | learning_rate=0.0001633 | grad_norm=3.139
+08:37:17 INFO шаг 25/75 | эпоха 1.00 | eval_loss=3.804
+08:37:18 INFO шаг 30/75 | эпоха 1.21 | loss=3.85 | learning_rate=0.0001448 | grad_norm=0.8183
+08:37:18 INFO шаг 35/75 | эпоха 1.41 | loss=3.823 | learning_rate=0.0001241 | grad_norm=0.8778
+08:37:19 INFO шаг 40/75 | эпоха 1.62 | loss=3.812 | learning_rate=0.0001022 | grad_norm=0.9356
+08:37:19 INFO шаг 45/75 | эпоха 1.82 | loss=3.767 | learning_rate=8.022e-05 | grad_norm=1.004
+08:37:19 INFO шаг 50/75 | эпоха 2.00 | loss=3.681 | learning_rate=5.919e-05 | grad_norm=3.271
+08:37:19 INFO шаг 50/75 | эпоха 2.00 | eval_loss=3.609
+08:37:20 INFO шаг 55/75 | эпоха 2.21 | loss=3.658 | learning_rate=4.015e-05 | grad_norm=1.024
+08:37:20 INFO шаг 60/75 | эпоха 2.41 | loss=3.649 | learning_rate=2.403e-05 | grad_norm=1.033
+08:37:20 INFO шаг 65/75 | эпоха 2.62 | loss=3.618 | learning_rate=1.161e-05 | grad_norm=1.012
+08:37:21 INFO шаг 70/75 | эпоха 2.82 | loss=3.608 | learning_rate=3.504e-06 | grad_norm=1.03
+08:37:21 INFO шаг 75/75 | эпоха 3.00 | loss=3.654 | learning_rate=9.788e-08 | grad_norm=3.75
+08:37:21 INFO шаг 75/75 | эпоха 3.00 | eval_loss=3.569
+08:37:21 INFO шаг 75/75 | эпоха 3.00
+08:37:21 INFO шаг 75/75 | эпоха 3.00 | eval_loss=3.569
+08:37:21 INFO обучение заняло 0.1 мин, train loss 3.8732, eval loss 3.5688798427581787, пик памяти GPU 1.5 ГБ
+08:37:21 INFO адаптер сохранён: runs/rugpt3small-brand/adapter

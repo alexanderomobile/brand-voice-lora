@@ -1,0 +1,4882 @@
+[
+ {
+  "test_id": "test-01",
+  "train_id": "ai_basics-002",
+  "cosine": 0.719,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "both ask what an LLM is",
+  "why_2": "Same part: what is an LLM"
+ },
+ {
+  "test_id": "test-02",
+  "train_id": "data_security-011",
+  "cosine": 0.66,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "memory of client data, not tokens or truncation",
+  "why_2": "Memory of phone numbers, not tokens"
+ },
+ {
+  "test_id": "test-02",
+  "train_id": "tech_integration-020",
+  "cosine": 0.657,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "price vs phone parsing, different question",
+  "why_2": "Price vs phone parsing, not tokens"
+ },
+ {
+  "test_id": "test-02",
+  "train_id": "ai_basics-005",
+  "cosine": 0.657,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "language token cost, not what tokens are or truncation",
+  "why_2": "Russian token cost, not token definition or truncation"
+ },
+ {
+  "test_id": "test-03",
+  "train_id": "ai_basics-007",
+  "cosine": 0.667,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "system vs user prompt, different aspect",
+  "why_2": "System prompt vs message, different aspect"
+ },
+ {
+  "test_id": "test-03",
+  "train_id": "ai_basics-008",
+  "cosine": 0.66,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "both ask what a context window is",
+  "why_2": "Same part: what is a context window"
+ },
+ {
+  "test_id": "test-04",
+  "train_id": "ai_basics-026",
+  "cosine": 0.745,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: why different answers to identical request",
+  "why_2": "Same part: why different answers each time"
+ },
+ {
+  "test_id": "test-04",
+  "train_id": "objections-008",
+  "cosine": 0.718,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: fear of hallucinations",
+  "why_2": "Same part: hallucinations, inventing things"
+ },
+ {
+  "test_id": "test-04",
+  "train_id": "objections-067",
+  "cosine": 0.71,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "bland text quality, not randomness or invention",
+  "why_2": "Bland repetitive texts, different issue"
+ },
+ {
+  "test_id": "test-04",
+  "train_id": "ai_basics-058",
+  "cosine": 0.688,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "refusals, different topic",
+  "why_2": "Refusals, different issue"
+ },
+ {
+  "test_id": "test-04",
+  "train_id": "ai_basics-003",
+  "cosine": 0.686,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "how prediction works, not variability or hallucination",
+  "why_2": "Next-word prediction mechanism, different aspect"
+ },
+ {
+  "test_id": "test-04",
+  "train_id": "ai_basics-035",
+  "cosine": 0.665,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "training origin, different question",
+  "why_2": "Where knowledge comes from, different"
+ },
+ {
+  "test_id": "test-04",
+  "train_id": "agency_automation-043",
+  "cosine": 0.66,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: inventing apartment not in catalog",
+  "why_2": "Same part: inventing apartment not in catalog"
+ },
+ {
+  "test_id": "test-04",
+  "train_id": "ai_basics-064",
+  "cosine": 0.652,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "sycophancy, different aspect",
+  "why_2": "Sycophancy, different issue"
+ },
+ {
+  "test_id": "test-05",
+  "train_id": "ai_basics-010",
+  "cosine": 0.672,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "both ask how to make NN know agency catalog",
+  "why_2": "Same need: how model knows our catalog"
+ },
+ {
+  "test_id": "test-06",
+  "train_id": "tech_integration-004",
+  "cosine": 0.657,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "which model inside, not local vs cloud",
+  "why_2": "Which model inside, not local vs cloud"
+ },
+ {
+  "test_id": "test-06",
+  "train_id": "agency_automation-067",
+  "cosine": 0.653,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "data leak concern, not local vs cloud cost",
+  "why_2": "Data leakage, not local vs cloud"
+ },
+ {
+  "test_id": "test-07",
+  "train_id": "ai_basics-026",
+  "cosine": 0.77,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "generation variability, not duplicate matching",
+  "why_2": "Output variability, not duplicate detection"
+ },
+ {
+  "test_id": "test-07",
+  "train_id": "tech_integration-020",
+  "cosine": 0.741,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "price vs phone parsing, different",
+  "why_2": "Number parsing, not semantic similarity"
+ },
+ {
+  "test_id": "test-07",
+  "train_id": "objections-067",
+  "cosine": 0.708,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "bland texts, different",
+  "why_2": "Bland texts, unrelated"
+ },
+ {
+  "test_id": "test-07",
+  "train_id": "ai_basics-051",
+  "cosine": 0.705,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "fraud detection, different",
+  "why_2": "Fraud detection, different"
+ },
+ {
+  "test_id": "test-07",
+  "train_id": "cases-010",
+  "cosine": 0.69,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: recognizing same apartment worded differently",
+  "why_2": "Same: detecting same apartment written differently"
+ },
+ {
+  "test_id": "test-07",
+  "train_id": "agency_automation-025",
+  "cosine": 0.672,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "invented details, different",
+  "why_2": "Hallucination, different"
+ },
+ {
+  "test_id": "test-07",
+  "train_id": "data_security-011",
+  "cosine": 0.671,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "data memory, different",
+  "why_2": "Memory of data, different"
+ },
+ {
+  "test_id": "test-07",
+  "train_id": "ai_basics-003",
+  "cosine": 0.669,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "next-word prediction, different",
+  "why_2": "Next-word prediction, different"
+ },
+ {
+  "test_id": "test-07",
+  "train_id": "cases-023",
+  "cosine": 0.667,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "translation price check, different",
+  "why_2": "Translation price check, different"
+ },
+ {
+  "test_id": "test-07",
+  "train_id": "ai_basics-037",
+  "cosine": 0.662,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "descriptions from photos, different",
+  "why_2": "Photos to description, different"
+ },
+ {
+  "test_id": "test-07",
+  "train_id": "ai_basics-049",
+  "cosine": 0.662,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "listing format, different",
+  "why_2": "Ad format, different"
+ },
+ {
+  "test_id": "test-07",
+  "train_id": "tech_integration-011",
+  "cosine": 0.66,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: detecting rewritten duplicate listings",
+  "why_2": "Same: detecting rewritten duplicate ads"
+ },
+ {
+  "test_id": "test-07",
+  "train_id": "agency_automation-043",
+  "cosine": 0.654,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "inventing apartments, different",
+  "why_2": "Hallucinated apartments, different"
+ },
+ {
+  "test_id": "test-07",
+  "train_id": "objections-057",
+  "cosine": 0.653,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "district confusion, different",
+  "why_2": "District confusion, different"
+ },
+ {
+  "test_id": "test-07",
+  "train_id": "ai_basics-069",
+  "cosine": 0.652,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "slang understanding, different",
+  "why_2": "Slang understanding, different"
+ },
+ {
+  "test_id": "test-08",
+  "train_id": "agency_automation-026",
+  "cosine": 0.709,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "asks cost, not feasibility",
+  "why_2": "Asks price of automation, not feasibility"
+ },
+ {
+  "test_id": "test-08",
+  "train_id": "agency_automation-002",
+  "cosine": 0.695,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: automate retyping chat listings to site",
+  "why_2": "Same: retyping chat ads to site, automatable"
+ },
+ {
+  "test_id": "test-08",
+  "train_id": "working_with_alexander-052",
+  "cosine": 0.685,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: manual copying listings from chats to site",
+  "why_2": "Same: manual copying chat ads to site"
+ },
+ {
+  "test_id": "test-08",
+  "train_id": "agency_automation-001",
+  "cosine": 0.663,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "general automation scope, broader",
+  "why_2": "General automation scope, broader"
+ },
+ {
+  "test_id": "test-08",
+  "train_id": "agency_automation-057",
+  "cosine": 0.655,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "Avito and Instagram, no site, different",
+  "why_2": "Avito/Instagram without site, different"
+ },
+ {
+  "test_id": "test-08",
+  "train_id": "agency_automation-073",
+  "cosine": 0.652,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "rental automation, different",
+  "why_2": "Rental automation, different"
+ },
+ {
+  "test_id": "test-09",
+  "train_id": "data_security-040",
+  "cosine": 0.697,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "data security of translation, not accuracy",
+  "why_2": "Translation data security, not accuracy"
+ },
+ {
+  "test_id": "test-09",
+  "train_id": "ai_basics-068",
+  "cosine": 0.678,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "cross-language search, not translating catalog",
+  "why_2": "Cross-language search, different"
+ },
+ {
+  "test_id": "test-09",
+  "train_id": "agency_automation-011",
+  "cosine": 0.675,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: translating catalog into other languages",
+  "why_2": "Same part: can NN translate catalog"
+ },
+ {
+  "test_id": "test-09",
+  "train_id": "agency_automation-012",
+  "cosine": 0.664,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: translation errors and how checked",
+  "why_2": "Same part: translation errors and checks"
+ },
+ {
+  "test_id": "test-09",
+  "train_id": "agency_automation-046",
+  "cosine": 0.654,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "incoming foreign listings, not catalog translation",
+  "why_2": "Incoming foreign ads, different use case"
+ },
+ {
+  "test_id": "test-10",
+  "train_id": "agency_automation-040",
+  "cosine": 0.726,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "lead qualification, not voice-based matching",
+  "why_2": "Lead qualification, not voice search"
+ },
+ {
+  "test_id": "test-10",
+  "train_id": "cases-040",
+  "cosine": 0.688,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: bot matching free-form sea/budget request",
+  "why_2": "Same: bot understands free-form request and picks"
+ },
+ {
+  "test_id": "test-10",
+  "train_id": "agency_automation-018",
+  "cosine": 0.678,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "FAQ answers, different",
+  "why_2": "FAQ answers, different"
+ },
+ {
+  "test_id": "test-10",
+  "train_id": "small_talk-015",
+  "cosine": 0.662,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "small talk",
+  "why_2": "Compliment, not a question"
+ },
+ {
+  "test_id": "test-10",
+  "train_id": "cases-032",
+  "cosine": 0.66,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: bot picking apartments from voice",
+  "why_2": "Same: how voice apartment-picking bot works"
+ },
+ {
+  "test_id": "test-10",
+  "train_id": "ai_basics-012",
+  "cosine": 0.655,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "wrong matches cause, different",
+  "why_2": "Wrong matches cause, different"
+ },
+ {
+  "test_id": "test-10",
+  "train_id": "objections-068",
+  "cosine": 0.652,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "accent and noise robustness, different aspect",
+  "why_2": "Accent and noise robustness, different aspect"
+ },
+ {
+  "test_id": "test-10",
+  "train_id": "working_with_alexander-026",
+  "cosine": 0.65,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "demo request, different",
+  "why_2": "Demo request, different"
+ },
+ {
+  "test_id": "test-11",
+  "train_id": "agency_automation-009",
+  "cosine": 0.769,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: auto-detecting duplicate objects",
+  "why_2": "Same: catching duplicate listings automatically"
+ },
+ {
+  "test_id": "test-11",
+  "train_id": "objections-041",
+  "cosine": 0.692,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "both about catching duplicates automatically",
+  "why_2": "Same concern: duplicates in catalog handled"
+ },
+ {
+  "test_id": "test-11",
+  "train_id": "agency_automation-079",
+  "cosine": 0.658,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "mailing new objects, different",
+  "why_2": "Matching objects to old clients, different"
+ },
+ {
+  "test_id": "test-12",
+  "train_id": "agency_automation-014",
+  "cosine": 0.73,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: bot answering when managers off",
+  "why_2": "Same part: bot answers off-hours"
+ },
+ {
+  "test_id": "test-12",
+  "train_id": "cases-048",
+  "cosine": 0.727,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "building catalog bot, not night qualification",
+  "why_2": "Replicate case bot, not off-hours qualification"
+ },
+ {
+  "test_id": "test-12",
+  "train_id": "agency_automation-040",
+  "cosine": 0.724,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: bot qualifies budget and hands to manager",
+  "why_2": "Same part: qualify budget and hand to manager"
+ },
+ {
+  "test_id": "test-12",
+  "train_id": "objections-027",
+  "cosine": 0.71,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "Arabic understanding, different",
+  "why_2": "Arabic language, different"
+ },
+ {
+  "test_id": "test-12",
+  "train_id": "objections-011",
+  "cosine": 0.693,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "elderly clients prefer calls, different",
+  "why_2": "Elderly clients, different"
+ },
+ {
+  "test_id": "test-12",
+  "train_id": "objections-037",
+  "cosine": 0.685,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "why bot at all, different",
+  "why_2": "Need for bot objection, different"
+ },
+ {
+  "test_id": "test-12",
+  "train_id": "working_with_alexander-032",
+  "cosine": 0.684,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "when to write Alexander, different",
+  "why_2": "When to write Alexander, different"
+ },
+ {
+  "test_id": "test-12",
+  "train_id": "cases-038",
+  "cosine": 0.682,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "bot languages, different",
+  "why_2": "Bot languages, different"
+ },
+ {
+  "test_id": "test-12",
+  "train_id": "tech_integration-022",
+  "cosine": 0.673,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "adding Turkish, different",
+  "why_2": "Turkish support, different"
+ },
+ {
+  "test_id": "test-12",
+  "train_id": "agency_automation-048",
+  "cosine": 0.67,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "Arabic site and bot, different",
+  "why_2": "Arabic site, different"
+ },
+ {
+  "test_id": "test-12",
+  "train_id": "agency_automation-055",
+  "cosine": 0.669,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "Dubai suitability in general, different",
+  "why_2": "Dubai fit in general, different"
+ },
+ {
+  "test_id": "test-12",
+  "train_id": "tech_integration-044",
+  "cosine": 0.667,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "bot statistics, different",
+  "why_2": "Statistics, different"
+ },
+ {
+  "test_id": "test-12",
+  "train_id": "data_security-013",
+  "cosine": 0.654,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "GDPR, different",
+  "why_2": "GDPR, different"
+ },
+ {
+  "test_id": "test-12",
+  "train_id": "objections-026",
+  "cosine": 0.653,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "bot misbehaving at night, different",
+  "why_2": "Rudeness unsupervised, different"
+ },
+ {
+  "test_id": "test-12",
+  "train_id": "agency_automation-060",
+  "cosine": 0.652,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "Instagram direct, different",
+  "why_2": "Instagram channel, different"
+ },
+ {
+  "test_id": "test-13",
+  "train_id": "agency_automation-020",
+  "cosine": 0.705,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: watermark removal and brightness",
+  "why_2": "Same: watermark removal and brightness"
+ },
+ {
+  "test_id": "test-14",
+  "train_id": "agency_automation-021",
+  "cosine": 0.726,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: weekly report on objects and requests",
+  "why_2": "Same: weekly report on objects and leads"
+ },
+ {
+  "test_id": "test-14",
+  "train_id": "data_security-018",
+  "cosine": 0.671,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "privacy of work chat, different",
+  "why_2": "Privacy in work chat, different"
+ },
+ {
+  "test_id": "test-14",
+  "train_id": "tech_integration-040",
+  "cosine": 0.668,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "email parsing, different",
+  "why_2": "Email parsing, different"
+ },
+ {
+  "test_id": "test-14",
+  "train_id": "objections-051",
+  "cosine": 0.663,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "error statistics, different",
+  "why_2": "Error statistics, different"
+ },
+ {
+  "test_id": "test-14",
+  "train_id": "tech_integration-007",
+  "cosine": 0.662,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "1C integration, different",
+  "why_2": "1C integration, different"
+ },
+ {
+  "test_id": "test-15",
+  "train_id": "ai_basics-026",
+  "cosine": 0.718,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "generation variability, different",
+  "why_2": "Output variability, different"
+ },
+ {
+  "test_id": "test-15",
+  "train_id": "objections-067",
+  "cosine": 0.708,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: avoiding bland cliched AI descriptions",
+  "why_2": "Same part: avoiding bland AI-sounding texts"
+ },
+ {
+  "test_id": "test-15",
+  "train_id": "ai_basics-037",
+  "cosine": 0.705,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "descriptions from photos, different input",
+  "why_2": "Descriptions from photos, different input"
+ },
+ {
+  "test_id": "test-15",
+  "train_id": "ai_basics-049",
+  "cosine": 0.684,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "structured listing format, different aspect",
+  "why_2": "Template format adherence, different aspect"
+ },
+ {
+  "test_id": "test-15",
+  "train_id": "agency_automation-019",
+  "cosine": 0.679,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: can NN write object descriptions",
+  "why_2": "Same: can it write descriptions for us"
+ },
+ {
+  "test_id": "test-16",
+  "train_id": "agency_automation-038",
+  "cosine": 0.802,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: tasks not to give NN",
+  "why_2": "Same: tasks not to give to NN"
+ },
+ {
+  "test_id": "test-17",
+  "train_id": "agency_automation-029",
+  "cosine": 0.755,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "general capabilities, not first steps",
+  "why_2": "What you offer, not first step"
+ },
+ {
+  "test_id": "test-17",
+  "train_id": "working_with_alexander-028",
+  "cosine": 0.731,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "email address request",
+  "why_2": "Email address, different"
+ },
+ {
+  "test_id": "test-17",
+  "train_id": "working_with_alexander-057",
+  "cosine": 0.728,
+  "same_1": false,
+  "same_2": true,
+  "same": true,
+  "why_1": "wish to cooperate, not asking first steps",
+  "why_2": "Same: want to start cooperation, next step"
+ },
+ {
+  "test_id": "test-17",
+  "train_id": "working_with_alexander-059",
+  "cosine": 0.704,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "office visit, different",
+  "why_2": "Office visit, different"
+ },
+ {
+  "test_id": "test-17",
+  "train_id": "working_with_alexander-001",
+  "cosine": 0.702,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: steps of starting work with Alexander",
+  "why_2": "Same: process steps, covers where to start"
+ },
+ {
+  "test_id": "test-17",
+  "train_id": "small_talk-026",
+  "cosine": 0.696,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "small talk about experience",
+  "why_2": "Alexander's experience, different"
+ },
+ {
+  "test_id": "test-17",
+  "train_id": "working_with_alexander-027",
+  "cosine": 0.686,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "contact request, not first steps",
+  "why_2": "Contact method, not first step"
+ },
+ {
+  "test_id": "test-17",
+  "train_id": "small_talk-006",
+  "cosine": 0.684,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "just introducing, different",
+  "why_2": "Just browsing, different"
+ },
+ {
+  "test_id": "test-17",
+  "train_id": "small_talk-007",
+  "cosine": 0.682,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "is this Alexander, different",
+  "why_2": "Is this Alexander, different"
+ },
+ {
+  "test_id": "test-17",
+  "train_id": "off_topic-006",
+  "cosine": 0.673,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "discounts, different",
+  "why_2": "Discounts, different"
+ },
+ {
+  "test_id": "test-17",
+  "train_id": "off_topic-027",
+  "cosine": 0.663,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "price manipulation, different",
+  "why_2": "Price manipulation, different"
+ },
+ {
+  "test_id": "test-17",
+  "train_id": "off_topic-036",
+  "cosine": 0.66,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "resume help, off topic",
+  "why_2": "Resume help, off topic"
+ },
+ {
+  "test_id": "test-17",
+  "train_id": "off_topic-035",
+  "cosine": 0.659,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "personal contacts request, different",
+  "why_2": "Personal contacts, different"
+ },
+ {
+  "test_id": "test-17",
+  "train_id": "off_topic-012",
+  "cosine": 0.651,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "beauty salon bot, different",
+  "why_2": "Beauty salon bot, different"
+ },
+ {
+  "test_id": "test-18",
+  "train_id": "objections-055",
+  "cosine": 0.72,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: asks price range",
+  "why_2": "Same: approximate price range"
+ },
+ {
+  "test_id": "test-18",
+  "train_id": "objections-032",
+  "cosine": 0.686,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "in-house programmer objection, different",
+  "why_2": "In-house programmer objection, different"
+ },
+ {
+  "test_id": "test-18",
+  "train_id": "objections-001",
+  "cosine": 0.675,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: how much the assistant costs",
+  "why_2": "Same: how much does it cost"
+ },
+ {
+  "test_id": "test-18",
+  "train_id": "off_topic-027",
+  "cosine": 0.675,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: cost of agency bot",
+  "why_2": "Same: how much does bot cost"
+ },
+ {
+  "test_id": "test-18",
+  "train_id": "tech_integration-034",
+  "cosine": 0.653,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "website widget, different",
+  "why_2": "Website widget, different"
+ },
+ {
+  "test_id": "test-19",
+  "train_id": "working_with_alexander-009",
+  "cosine": 0.69,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: what free 15-minute review really gives",
+  "why_2": "Same: what happens in 15-minute review"
+ },
+ {
+  "test_id": "test-20",
+  "train_id": "working_with_alexander-027",
+  "cosine": 0.772,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "contact method, not call prep",
+  "why_2": "Contact method, not preparation"
+ },
+ {
+  "test_id": "test-20",
+  "train_id": "working_with_alexander-001",
+  "cosine": 0.711,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "overall process, not call preparation",
+  "why_2": "Process overview, not preparation"
+ },
+ {
+  "test_id": "test-20",
+  "train_id": "working_with_alexander-057",
+  "cosine": 0.708,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "cooperation request, different",
+  "why_2": "Cooperation request, not preparation"
+ },
+ {
+  "test_id": "test-20",
+  "train_id": "data_security-037",
+  "cosine": 0.708,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: what to show or prepare for review",
+  "why_2": "Same: what to show/prepare for review"
+ },
+ {
+  "test_id": "test-20",
+  "train_id": "off_topic-035",
+  "cosine": 0.68,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "personal contacts, different",
+  "why_2": "Personal contacts, different"
+ },
+ {
+  "test_id": "test-20",
+  "train_id": "data_security-006",
+  "cosine": 0.679,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "admin access security concern, not call prep",
+  "why_2": "Admin access for work, not call prep"
+ },
+ {
+  "test_id": "test-20",
+  "train_id": "tech_integration-027",
+  "cosine": 0.676,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "implementation access concern, not call prep",
+  "why_2": "Access for implementation, not call prep"
+ },
+ {
+  "test_id": "test-20",
+  "train_id": "small_talk-026",
+  "cosine": 0.674,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "small talk",
+  "why_2": "Alexander's experience, different"
+ },
+ {
+  "test_id": "test-20",
+  "train_id": "off_topic-010",
+  "cosine": 0.672,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "callback demand, different",
+  "why_2": "Callback demand, different"
+ },
+ {
+  "test_id": "test-20",
+  "train_id": "working_with_alexander-059",
+  "cosine": 0.665,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "office visit, different",
+  "why_2": "Office visit, different"
+ },
+ {
+  "test_id": "test-20",
+  "train_id": "small_talk-007",
+  "cosine": 0.651,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "is this Alexander, different",
+  "why_2": "Is this Alexander, different"
+ },
+ {
+  "test_id": "test-21",
+  "train_id": "objections-045",
+  "cosine": 0.783,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: launch timeline before season",
+  "why_2": "Same: launch timeline before season"
+ },
+ {
+  "test_id": "test-22",
+  "train_id": "working_with_alexander-027",
+  "cosine": 0.765,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: how to contact Alexander",
+  "why_2": "Same part: how to contact Alexander"
+ },
+ {
+  "test_id": "test-22",
+  "train_id": "working_with_alexander-001",
+  "cosine": 0.728,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "process steps, different",
+  "why_2": "Process steps, not demo or channel"
+ },
+ {
+  "test_id": "test-22",
+  "train_id": "small_talk-005",
+  "cosine": 0.708,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: preferred channel to reach Alexander",
+  "why_2": "Same part: best channel to reach Alexander"
+ },
+ {
+  "test_id": "test-22",
+  "train_id": "agency_automation-066",
+  "cosine": 0.703,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: see it working before deciding",
+  "why_2": "Same part: see it working before deciding"
+ },
+ {
+  "test_id": "test-22",
+  "train_id": "working_with_alexander-057",
+  "cosine": 0.699,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "cooperation request, different",
+  "why_2": "Cooperation request, different"
+ },
+ {
+  "test_id": "test-22",
+  "train_id": "working_with_alexander-059",
+  "cosine": 0.686,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "office visit, different",
+  "why_2": "Office visit, different"
+ },
+ {
+  "test_id": "test-22",
+  "train_id": "off_topic-035",
+  "cosine": 0.678,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "personal number and address, different",
+  "why_2": "Private contact data request, different"
+ },
+ {
+  "test_id": "test-22",
+  "train_id": "working_with_alexander-013",
+  "cosine": 0.676,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "when price is named, different",
+  "why_2": "When price is named, different"
+ },
+ {
+  "test_id": "test-22",
+  "train_id": "working_with_alexander-029",
+  "cosine": 0.661,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: which contact channels exist",
+  "why_2": "Same part: which contact channels exist"
+ },
+ {
+  "test_id": "test-22",
+  "train_id": "small_talk-026",
+  "cosine": 0.658,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "small talk",
+  "why_2": "Alexander's experience, different"
+ },
+ {
+  "test_id": "test-23",
+  "train_id": "working_with_alexander-012",
+  "cosine": 0.665,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "booking slot, not response time or obligations",
+  "why_2": "Booking review, not response time or obligation"
+ },
+ {
+  "test_id": "test-25",
+  "train_id": "cases-011",
+  "cosine": 0.853,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: hours saved in Hurghada",
+  "why_2": "Same: hours saved in Hurghada"
+ },
+ {
+  "test_id": "test-25",
+  "train_id": "objections-005",
+  "cosine": 0.714,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: hours saved and payback",
+  "why_2": "Same: hours saved, payback estimate"
+ },
+ {
+  "test_id": "test-25",
+  "train_id": "cases-045",
+  "cosine": 0.711,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "project cost, different",
+  "why_2": "Project cost, different"
+ },
+ {
+  "test_id": "test-25",
+  "train_id": "agency_automation-028",
+  "cosine": 0.665,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: real time-saving figures",
+  "why_2": "Same: real time-saving numbers"
+ },
+ {
+  "test_id": "test-26",
+  "train_id": "cases-019",
+  "cosine": 0.796,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "list of languages, not verification",
+  "why_2": "Which languages, not verification"
+ },
+ {
+  "test_id": "test-26",
+  "train_id": "cases-018",
+  "cosine": 0.788,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "general case story, not verification",
+  "why_2": "General translation story, not verification"
+ },
+ {
+  "test_id": "test-26",
+  "train_id": "cases-020",
+  "cosine": 0.687,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: who checked translation quality",
+  "why_2": "Same: who checked translation quality"
+ },
+ {
+  "test_id": "test-26",
+  "train_id": "cases-029",
+  "cosine": 0.667,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "language limit, different",
+  "why_2": "More languages possible, different"
+ },
+ {
+  "test_id": "test-26",
+  "train_id": "tech_integration-014",
+  "cosine": 0.656,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: checking prices survive translation",
+  "why_2": "Same: verifying prices survive translation"
+ },
+ {
+  "test_id": "test-26",
+  "train_id": "cases-026",
+  "cosine": 0.655,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "translation coverage, different",
+  "why_2": "Coverage of descriptions, different"
+ },
+ {
+  "test_id": "test-27",
+  "train_id": "cases-032",
+  "cosine": 0.839,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "how bot works, not sales results",
+  "why_2": "How bot works, not sales results"
+ },
+ {
+  "test_id": "test-27",
+  "train_id": "working_with_alexander-026",
+  "cosine": 0.786,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "demo request, different",
+  "why_2": "Demo request, different"
+ },
+ {
+  "test_id": "test-27",
+  "train_id": "agency_automation-045",
+  "cosine": 0.77,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: how many clients bot brought",
+  "why_2": "Same: clients/sales brought by bot"
+ },
+ {
+  "test_id": "test-27",
+  "train_id": "agency_automation-015",
+  "cosine": 0.759,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "bot languages, different",
+  "why_2": "Bot languages, different"
+ },
+ {
+  "test_id": "test-27",
+  "train_id": "cases-035",
+  "cosine": 0.748,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: clients and sales via bot",
+  "why_2": "Same: clients and sales via bot"
+ },
+ {
+  "test_id": "test-27",
+  "train_id": "ai_basics-012",
+  "cosine": 0.72,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "wrong matches, different",
+  "why_2": "Wrong matches, different"
+ },
+ {
+  "test_id": "test-27",
+  "train_id": "cases-037",
+  "cosine": 0.718,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "data source, different",
+  "why_2": "Data source, different"
+ },
+ {
+  "test_id": "test-27",
+  "train_id": "data_security-025",
+  "cosine": 0.703,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "client data needed, different",
+  "why_2": "Client data needed, different"
+ },
+ {
+  "test_id": "test-27",
+  "train_id": "agency_automation-062",
+  "cosine": 0.692,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "ordering bot, different",
+  "why_2": "Order request, different"
+ },
+ {
+  "test_id": "test-27",
+  "train_id": "objections-009",
+  "cosine": 0.69,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "wrong match objection, different",
+  "why_2": "Wrong pick risk, different"
+ },
+ {
+  "test_id": "test-27",
+  "train_id": "objections-052",
+  "cosine": 0.688,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "sold apartment, different",
+  "why_2": "Sold apartment risk, different"
+ },
+ {
+  "test_id": "test-27",
+  "train_id": "tech_integration-044",
+  "cosine": 0.676,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "statistics feature, not actual results",
+  "why_2": "Statistics feature, not results"
+ },
+ {
+  "test_id": "test-27",
+  "train_id": "tech_integration-026",
+  "cosine": 0.657,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "Google Sheets catalog, different",
+  "why_2": "Google Sheets source, different"
+ },
+ {
+  "test_id": "test-27",
+  "train_id": "tech_integration-005",
+  "cosine": 0.653,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "WhatsApp, different",
+  "why_2": "WhatsApp, different"
+ },
+ {
+  "test_id": "test-28",
+  "train_id": "data_security-014",
+  "cosine": 0.76,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "draft storage location, different",
+  "why_2": "Draft storage location, different"
+ },
+ {
+  "test_id": "test-28",
+  "train_id": "agency_automation-005",
+  "cosine": 0.743,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "publishing step, different",
+  "why_2": "Publishing step, different"
+ },
+ {
+  "test_id": "test-28",
+  "train_id": "agency_automation-003",
+  "cosine": 0.722,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "extraction mechanism, not manual completion",
+  "why_2": "Extraction mechanism, not manual completion"
+ },
+ {
+  "test_id": "test-28",
+  "train_id": "agency_automation-008",
+  "cosine": 0.719,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: how fast draft appears",
+  "why_2": "Same part: how fast draft appears"
+ },
+ {
+  "test_id": "test-28",
+  "train_id": "tech_integration-008",
+  "cosine": 0.71,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "editing drafts, different aspect",
+  "why_2": "Editing drafts, different aspect"
+ },
+ {
+  "test_id": "test-28",
+  "train_id": "tech_integration-029",
+  "cosine": 0.665,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "price update handling, different",
+  "why_2": "Updated listing handling, different"
+ },
+ {
+  "test_id": "test-28",
+  "train_id": "agency_automation-004",
+  "cosine": 0.662,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: missing district, who fills it",
+  "why_2": "Same part: missing field, employee fills"
+ },
+ {
+  "test_id": "test-28",
+  "train_id": "cases-016",
+  "cosine": 0.655,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "price error rate, not manual filling",
+  "why_2": "Price error rate, not completeness"
+ },
+ {
+  "test_id": "test-28",
+  "train_id": "agency_automation-077",
+  "cosine": 0.651,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "review time per draft, different",
+  "why_2": "Review time per draft, different"
+ },
+ {
+  "test_id": "test-28",
+  "train_id": "tech_integration-001",
+  "cosine": 0.651,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "WordPress drafts, different",
+  "why_2": "WordPress drafts, different"
+ },
+ {
+  "test_id": "test-29",
+  "train_id": "cases-044",
+  "cosine": 0.73,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: cases only in Egypt or elsewhere",
+  "why_2": "Same part: cases only in Egypt"
+ },
+ {
+  "test_id": "test-29",
+  "train_id": "objections-023",
+  "cosine": 0.686,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: only one agency in cases",
+  "why_2": "Same part: only one agency in cases"
+ },
+ {
+  "test_id": "test-30",
+  "train_id": "objections-050",
+  "cosine": 0.681,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "waiting for maturity, not budget objection",
+  "why_2": "Wait for maturity, not budget objection"
+ },
+ {
+  "test_id": "test-31",
+  "train_id": "objections-009",
+  "cosine": 0.768,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "wrong apartment match, different",
+  "why_2": "Wrong apartment pick, different"
+ },
+ {
+  "test_id": "test-31",
+  "train_id": "objections-007",
+  "cosine": 0.743,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: wrong price and liability",
+  "why_2": "Same: wrong price, client blames us"
+ },
+ {
+  "test_id": "test-31",
+  "train_id": "objections-052",
+  "cosine": 0.74,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "sold apartment, different",
+  "why_2": "Sold apartment, different"
+ },
+ {
+  "test_id": "test-31",
+  "train_id": "ai_basics-012",
+  "cosine": 0.726,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "wrong matches, different",
+  "why_2": "Wrong matches, different"
+ },
+ {
+  "test_id": "test-31",
+  "train_id": "objections-039",
+  "cosine": 0.686,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "unknown questions, different",
+  "why_2": "Unknown questions, different"
+ },
+ {
+  "test_id": "test-31",
+  "train_id": "off_topic-042",
+  "cosine": 0.684,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "inflating prices, different",
+  "why_2": "Inflating prices unethically, different"
+ },
+ {
+  "test_id": "test-31",
+  "train_id": "objections-026",
+  "cosine": 0.679,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "rude bot, different",
+  "why_2": "Rudeness, different"
+ },
+ {
+  "test_id": "test-31",
+  "train_id": "ai_basics-065",
+  "cosine": 0.675,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "prompt injection, different",
+  "why_2": "Prompt injection, different"
+ },
+ {
+  "test_id": "test-31",
+  "train_id": "data_security-025",
+  "cosine": 0.675,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "client data, different",
+  "why_2": "Client data needed, different"
+ },
+ {
+  "test_id": "test-31",
+  "train_id": "cases-037",
+  "cosine": 0.663,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "data source, different",
+  "why_2": "Data source, different"
+ },
+ {
+  "test_id": "test-31",
+  "train_id": "data_security-005",
+  "cosine": 0.663,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "chat visibility, different",
+  "why_2": "Chat visibility, different"
+ },
+ {
+  "test_id": "test-31",
+  "train_id": "ai_basics-070",
+  "cosine": 0.655,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "service blocking, different",
+  "why_2": "Service outage, different"
+ },
+ {
+  "test_id": "test-31",
+  "train_id": "cases-016",
+  "cosine": 0.652,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "both about assistant publishing wrong price",
+  "why_2": "Same concern: assistant puts wrong price"
+ },
+ {
+  "test_id": "test-31",
+  "train_id": "cases-032",
+  "cosine": 0.652,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "voice bot mechanics, different",
+  "why_2": "How bot works, different"
+ },
+ {
+  "test_id": "test-32",
+  "train_id": "objections-010",
+  "cosine": 0.871,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: clients hate bots, want human",
+  "why_2": "Same: clients hate bots, want human"
+ },
+ {
+  "test_id": "test-32",
+  "train_id": "objections-037",
+  "cosine": 0.768,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "managers already fast, different",
+  "why_2": "Managers already fast, different"
+ },
+ {
+  "test_id": "test-32",
+  "train_id": "objections-011",
+  "cosine": 0.714,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "elderly prefer calls, different objection",
+  "why_2": "Elderly prefer calls, different objection"
+ },
+ {
+  "test_id": "test-32",
+  "train_id": "cases-039",
+  "cosine": 0.698,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "replacing sales manager, different",
+  "why_2": "Replace sales manager, different"
+ },
+ {
+  "test_id": "test-32",
+  "train_id": "tech_integration-041",
+  "cosine": 0.693,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "installation, different",
+  "why_2": "Install requirements, different"
+ },
+ {
+  "test_id": "test-32",
+  "train_id": "data_security-005",
+  "cosine": 0.686,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "chat visibility, different",
+  "why_2": "Chat visibility, different"
+ },
+ {
+  "test_id": "test-32",
+  "train_id": "ai_basics-059",
+  "cosine": 0.684,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "unsupervised bot risk, different",
+  "why_2": "Unsupervised answering risk, different"
+ },
+ {
+  "test_id": "test-32",
+  "train_id": "agency_automation-014",
+  "cosine": 0.672,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "night answering, different",
+  "why_2": "Night answers, different"
+ },
+ {
+  "test_id": "test-32",
+  "train_id": "objections-026",
+  "cosine": 0.67,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "rude bot, different",
+  "why_2": "Rudeness, different"
+ },
+ {
+  "test_id": "test-32",
+  "train_id": "ai_basics-012",
+  "cosine": 0.664,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "wrong matches, different",
+  "why_2": "Wrong matches, different"
+ },
+ {
+  "test_id": "test-32",
+  "train_id": "off_topic-042",
+  "cosine": 0.664,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "inflating prices, different",
+  "why_2": "Inflating prices, different"
+ },
+ {
+  "test_id": "test-32",
+  "train_id": "objections-034",
+  "cosine": 0.658,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "owner's professionalism concern, different",
+  "why_2": "Image of robot, different objection"
+ },
+ {
+  "test_id": "test-32",
+  "train_id": "tech_integration-044",
+  "cosine": 0.657,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "statistics, different",
+  "why_2": "Statistics, different"
+ },
+ {
+  "test_id": "test-32",
+  "train_id": "cases-035",
+  "cosine": 0.653,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "results via bot, different",
+  "why_2": "Sales results, different"
+ },
+ {
+  "test_id": "test-33",
+  "train_id": "objections-012",
+  "cosine": 0.732,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: staff fear replacement and resist",
+  "why_2": "Same: staff resist, fear replacement"
+ },
+ {
+  "test_id": "test-33",
+  "train_id": "objections-036",
+  "cosine": 0.664,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "staff complacency, different",
+  "why_2": "Staff complacency, different"
+ },
+ {
+  "test_id": "test-33",
+  "train_id": "off_topic-030",
+  "cosine": 0.664,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "cheaper competitors, different",
+  "why_2": "Cheaper competitors, different"
+ },
+ {
+  "test_id": "test-33",
+  "train_id": "agency_automation-037",
+  "cosine": 0.663,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: staff fear being replaced",
+  "why_2": "Same: agents fear replacement"
+ },
+ {
+  "test_id": "test-33",
+  "train_id": "off_topic-026",
+  "cosine": 0.66,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "payback promise manipulation, different",
+  "why_2": "Roleplay promise, different"
+ },
+ {
+  "test_id": "test-35",
+  "train_id": "objections-014",
+  "cosine": 0.733,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: why pay if ChatGPT is free",
+  "why_2": "Same: why pay if ChatGPT does it"
+ },
+ {
+  "test_id": "test-35",
+  "train_id": "working_with_alexander-008",
+  "cosine": 0.673,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "why review is free, different",
+  "why_2": "Why review is free, different"
+ },
+ {
+  "test_id": "test-36",
+  "train_id": "objections-015",
+  "cosine": 0.758,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: AI replacing realtors, why invest",
+  "why_2": "Same: AI will replace realtors"
+ },
+ {
+  "test_id": "test-36",
+  "train_id": "agency_automation-037",
+  "cosine": 0.707,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "explaining to staff, not owner's future question",
+  "why_2": "Explaining to staff, different scope"
+ },
+ {
+  "test_id": "test-37",
+  "train_id": "objections-016",
+  "cosine": 0.724,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: past bot failed, clients complained",
+  "why_2": "Same: past chatbot failed, complaints"
+ },
+ {
+  "test_id": "test-37",
+  "train_id": "objections-037",
+  "cosine": 0.712,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "managers fast, different",
+  "why_2": "Managers fast, different"
+ },
+ {
+  "test_id": "test-37",
+  "train_id": "objections-054",
+  "cosine": 0.701,
+  "same_1": false,
+  "same_2": true,
+  "same": true,
+  "why_1": "freelancer vanished, different failure cause",
+  "why_2": "Same: past bot failed, why different now"
+ },
+ {
+  "test_id": "test-37",
+  "train_id": "objections-010",
+  "cosine": 0.684,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "clients hate bots, different",
+  "why_2": "Clients hate bots, different"
+ },
+ {
+  "test_id": "test-37",
+  "train_id": "objections-032",
+  "cosine": 0.673,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "in-house programmer, different",
+  "why_2": "In-house programmer, different"
+ },
+ {
+  "test_id": "test-37",
+  "train_id": "ai_basics-012",
+  "cosine": 0.661,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "wrong matches, different",
+  "why_2": "Why bot mismatches, different intent"
+ },
+ {
+  "test_id": "test-38",
+  "train_id": "tech_integration-016",
+  "cosine": 0.729,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: where chats stored, 152-FZ",
+  "why_2": "Same: where chats stored, 152-FZ"
+ },
+ {
+  "test_id": "test-38",
+  "train_id": "objections-031",
+  "cosine": 0.652,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: where client data goes",
+  "why_2": "Same: where client data stored"
+ },
+ {
+  "test_id": "test-39",
+  "train_id": "data_security-005",
+  "cosine": 0.795,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: who sees client chats",
+  "why_2": "Same part: who can read chats"
+ },
+ {
+  "test_id": "test-39",
+  "train_id": "tech_integration-048",
+  "cosine": 0.773,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "manager notification, different",
+  "why_2": "Manager notification, different"
+ },
+ {
+  "test_id": "test-39",
+  "train_id": "objections-070",
+  "cosine": 0.762,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "talking to bot, different",
+  "why_2": "Am I talking to bot, different"
+ },
+ {
+  "test_id": "test-39",
+  "train_id": "agency_automation-039",
+  "cosine": 0.734,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "trusting bot fully, different",
+  "why_2": "Trusting bot fully, different"
+ },
+ {
+  "test_id": "test-39",
+  "train_id": "off_topic-012",
+  "cosine": 0.723,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "beauty salon, off topic",
+  "why_2": "Beauty salon, different"
+ },
+ {
+  "test_id": "test-39",
+  "train_id": "data_security-034",
+  "cosine": 0.705,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "both about stored conversation logs and access",
+  "why_2": "Same: does Alexander store message logs"
+ },
+ {
+  "test_id": "test-39",
+  "train_id": "tech_integration-016",
+  "cosine": 0.703,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: where bot chats are stored",
+  "why_2": "Same part: where chats are stored"
+ },
+ {
+  "test_id": "test-39",
+  "train_id": "data_security-039",
+  "cosine": 0.686,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "cross-client leakage via prompt, different",
+  "why_2": "Cross-client leakage attack, different"
+ },
+ {
+  "test_id": "test-39",
+  "train_id": "objections-031",
+  "cosine": 0.672,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: where client data stored",
+  "why_2": "Same part: where client data stored"
+ },
+ {
+  "test_id": "test-39",
+  "train_id": "tech_integration-041",
+  "cosine": 0.656,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "installation, different",
+  "why_2": "Install requirements, different"
+ },
+ {
+  "test_id": "test-39",
+  "train_id": "tech_integration-044",
+  "cosine": 0.656,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "statistics, different",
+  "why_2": "Statistics, different"
+ },
+ {
+  "test_id": "test-40",
+  "train_id": "tech_integration-004",
+  "cosine": 0.666,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "which model, not OpenAI training on data",
+  "why_2": "Which model inside, different"
+ },
+ {
+  "test_id": "test-40",
+  "train_id": "data_security-016",
+  "cosine": 0.652,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: does OpenAI read our messages",
+  "why_2": "Same: OpenAI reads our messages"
+ },
+ {
+  "test_id": "test-41",
+  "train_id": "data_security-009",
+  "cosine": 0.816,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: data deletion after ending work",
+  "why_2": "Same: data deleted after stopping"
+ },
+ {
+  "test_id": "test-41",
+  "train_id": "objections-031",
+  "cosine": 0.809,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "storage and leaks, not after termination",
+  "why_2": "Storage location, different"
+ },
+ {
+  "test_id": "test-41",
+  "train_id": "agency_automation-067",
+  "cosine": 0.665,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "leak concern, different",
+  "why_2": "Leak risk, different"
+ },
+ {
+  "test_id": "test-41",
+  "train_id": "tech_integration-036",
+  "cosine": 0.659,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "NN outage, different",
+  "why_2": "Outage, different"
+ },
+ {
+  "test_id": "test-42",
+  "train_id": "data_security-007",
+  "cosine": 0.772,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: what not to send chatbot",
+  "why_2": "Same: what not to send to chatbot"
+ },
+ {
+  "test_id": "test-42",
+  "train_id": "data_security-020",
+  "cosine": 0.735,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: what staff may send ChatGPT",
+  "why_2": "Same: what managers may send to ChatGPT"
+ },
+ {
+  "test_id": "test-42",
+  "train_id": "data_security-001",
+  "cosine": 0.682,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "risk of unknown Telegram bot, different",
+  "why_2": "Risk of unknown bot, different aspect"
+ },
+ {
+  "test_id": "test-42",
+  "train_id": "agency_automation-039",
+  "cosine": 0.671,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "trusting bot with chats, different",
+  "why_2": "Trusting bot, different"
+ },
+ {
+  "test_id": "test-42",
+  "train_id": "data_security-002",
+  "cosine": 0.669,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "ChatGPT leaking base, different aspect",
+  "why_2": "Leak of client base, different aspect"
+ },
+ {
+  "test_id": "test-42",
+  "train_id": "objections-014",
+  "cosine": 0.668,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "why pay vs ChatGPT, different",
+  "why_2": "Why pay you, different"
+ },
+ {
+  "test_id": "test-42",
+  "train_id": "data_security-005",
+  "cosine": 0.663,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "chat visibility, different",
+  "why_2": "Chat visibility, different"
+ },
+ {
+  "test_id": "test-47",
+  "train_id": "working_with_alexander-057",
+  "cosine": 0.682,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "cooperation request, not discount",
+  "why_2": "Cooperation request, not discount"
+ },
+ {
+  "test_id": "test-47",
+  "train_id": "small_talk-026",
+  "cosine": 0.678,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "small talk, not discount",
+  "why_2": "Alexander's experience, different"
+ },
+ {
+  "test_id": "test-47",
+  "train_id": "off_topic-035",
+  "cosine": 0.653,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "personal contacts, not discount",
+  "why_2": "Personal contacts, different"
+ },
+ {
+  "test_id": "test-50",
+  "train_id": "small_talk-001",
+  "cosine": 0.911,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same greeting",
+  "why_2": "Same: plain greeting"
+ },
+ {
+  "test_id": "test-50",
+  "train_id": "working_with_alexander-053",
+  "cosine": 0.741,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "are you online, different",
+  "why_2": "Are you online, different"
+ },
+ {
+  "test_id": "test-50",
+  "train_id": "small_talk-021",
+  "cosine": 0.73,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "thanks, not greeting",
+  "why_2": "Thanks, not greeting"
+ },
+ {
+  "test_id": "test-50",
+  "train_id": "small_talk-003",
+  "cosine": 0.729,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "are you a bot, different",
+  "why_2": "Are you bot, different"
+ },
+ {
+  "test_id": "test-50",
+  "train_id": "small_talk-004",
+  "cosine": 0.709,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same greeting",
+  "why_2": "Same: plain greeting"
+ },
+ {
+  "test_id": "test-50",
+  "train_id": "cases-001",
+  "cosine": 0.707,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "asks about cases",
+  "why_2": "Asks about cases, different"
+ },
+ {
+  "test_id": "test-50",
+  "train_id": "small_talk-016",
+  "cosine": 0.697,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "how are you, different",
+  "why_2": "How are you, different"
+ },
+ {
+  "test_id": "test-50",
+  "train_id": "small_talk-002",
+  "cosine": 0.678,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "greeting plus asking permission, different",
+  "why_2": "Asks to ask questions, different"
+ },
+ {
+  "test_id": "test-50",
+  "train_id": "small_talk-007",
+  "cosine": 0.67,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "is this Alexander, different",
+  "why_2": "Is this Alexander, different"
+ },
+ {
+  "test_id": "test-50",
+  "train_id": "agency_automation-029",
+  "cosine": 0.657,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "asks what you offer",
+  "why_2": "What can you do, different"
+ },
+ {
+  "test_id": "test-51",
+  "train_id": "small_talk-021",
+  "cosine": 0.855,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: thanks",
+  "why_2": "Same: thanks"
+ },
+ {
+  "test_id": "test-51",
+  "train_id": "small_talk-028",
+  "cosine": 0.783,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: understood",
+  "why_2": "Same: understood acknowledgment"
+ },
+ {
+  "test_id": "test-51",
+  "train_id": "agency_automation-074",
+  "cosine": 0.761,
+  "same_1": true,
+  "same_2": false,
+  "same": true,
+  "why_1": "same: thanks and closing",
+  "why_2": "Adds deliberation, different closing"
+ },
+ {
+  "test_id": "test-51",
+  "train_id": "small_talk-022",
+  "cosine": 0.759,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: thanks",
+  "why_2": "Same: thanks"
+ },
+ {
+  "test_id": "test-51",
+  "train_id": "small_talk-025",
+  "cosine": 0.699,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "will pass to boss, specific follow-up",
+  "why_2": "Adds passing to manager"
+ },
+ {
+  "test_id": "test-51",
+  "train_id": "cases-050",
+  "cosine": 0.697,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "comments on cases, different",
+  "why_2": "Adds comment on cases"
+ },
+ {
+  "test_id": "test-51",
+  "train_id": "small_talk-001",
+  "cosine": 0.678,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "greeting, not thanks",
+  "why_2": "Greeting, not thanks"
+ },
+ {
+  "test_id": "test-51",
+  "train_id": "working_with_alexander-054",
+  "cosine": 0.663,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "will write him tomorrow, specific follow-up",
+  "why_2": "Adds plan to write Alexander"
+ },
+ {
+  "test_id": "test-52",
+  "train_id": "small_talk-003",
+  "cosine": 0.839,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: are you a bot",
+  "why_2": "Same: are you a bot"
+ },
+ {
+  "test_id": "test-52",
+  "train_id": "tech_integration-038",
+  "cosine": 0.691,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "bot comparison, different",
+  "why_2": "Bot vs button bot, different"
+ },
+ {
+  "test_id": "test-53",
+  "train_id": "small_talk-033",
+  "cosine": 0.863,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same farewell",
+  "why_2": "Same: goodbye"
+ },
+ {
+  "test_id": "test-53",
+  "train_id": "working_with_alexander-056",
+  "cosine": 0.804,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same farewell",
+  "why_2": "Same: goodbye"
+ },
+ {
+  "test_id": "test-53",
+  "train_id": "small_talk-027",
+  "cosine": 0.763,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: ok acknowledgment",
+  "why_2": "Same part: ok"
+ },
+ {
+  "test_id": "test-53",
+  "train_id": "working_with_alexander-055",
+  "cosine": 0.763,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: ok acknowledgment",
+  "why_2": "Same part: ok"
+ },
+ {
+  "test_id": "test-53",
+  "train_id": "objections-066",
+  "cosine": 0.72,
+  "same_1": true,
+  "same_2": false,
+  "same": true,
+  "why_1": "same: neutral closing",
+  "why_2": "Will think, not farewell"
+ },
+ {
+  "test_id": "test-53",
+  "train_id": "small_talk-030",
+  "cosine": 0.72,
+  "same_1": true,
+  "same_2": false,
+  "same": true,
+  "why_1": "same: neutral closing",
+  "why_2": "Will think, not farewell"
+ },
+ {
+  "test_id": "test-53",
+  "train_id": "off_topic-049",
+  "cosine": 0.69,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "hostile farewell, different",
+  "why_2": "Hostile farewell, different"
+ },
+ {
+  "test_id": "test-53",
+  "train_id": "objections-069",
+  "cosine": 0.675,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "polite decline, different",
+  "why_2": "Polite decline, different"
+ },
+ {
+  "test_id": "test-54",
+  "train_id": "small_talk-016",
+  "cosine": 0.802,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: how are you",
+  "why_2": "Same part: how are you"
+ },
+ {
+  "test_id": "test-54",
+  "train_id": "small_talk-012",
+  "cosine": 0.757,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: who are you",
+  "why_2": "Same part: who are you"
+ },
+ {
+  "test_id": "test-54",
+  "train_id": "small_talk-010",
+  "cosine": 0.739,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: who are you",
+  "why_2": "Same part: who are you"
+ },
+ {
+  "test_id": "test-54",
+  "train_id": "cases-001",
+  "cosine": 0.654,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "asks about cases",
+  "why_2": "Asks about cases, different"
+ },
+ {
+  "test_id": "test-55",
+  "train_id": "objections-065",
+  "cosine": 0.767,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "Tilda not WordPress, answer differs",
+  "why_2": "Tilda compatibility, different platform"
+ },
+ {
+  "test_id": "test-55",
+  "train_id": "tech_integration-029",
+  "cosine": 0.662,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "price update handling, different",
+  "why_2": "Listing updates, different"
+ },
+ {
+  "test_id": "test-56",
+  "train_id": "agency_automation-023",
+  "cosine": 0.728,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: Bitrix24 integration",
+  "why_2": "Same: Bitrix24 integration"
+ },
+ {
+  "test_id": "test-56",
+  "train_id": "tech_integration-031",
+  "cosine": 0.711,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "Telegram channel posting, different",
+  "why_2": "Telegram channel posting, different"
+ },
+ {
+  "test_id": "test-56",
+  "train_id": "tech_integration-007",
+  "cosine": 0.668,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "1C not Bitrix24, different system",
+  "why_2": "1C integration, different system"
+ },
+ {
+  "test_id": "test-58",
+  "train_id": "tech_integration-005",
+  "cosine": 0.791,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: bot working in WhatsApp",
+  "why_2": "Same: bot in WhatsApp"
+ },
+ {
+  "test_id": "test-58",
+  "train_id": "objections-011",
+  "cosine": 0.662,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "elderly prefer calls, different",
+  "why_2": "Elderly prefer calls, different"
+ },
+ {
+  "test_id": "test-58",
+  "train_id": "agency_automation-045",
+  "cosine": 0.662,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "sales results, different",
+  "why_2": "Sales results, different"
+ },
+ {
+  "test_id": "test-59",
+  "train_id": "tech_integration-004",
+  "cosine": 0.718,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: which model inside",
+  "why_2": "Same part: which model inside"
+ },
+ {
+  "test_id": "test-59",
+  "train_id": "ai_basics-044",
+  "cosine": 0.69,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "best Russian writer, different",
+  "why_2": "Best model for Russian, different"
+ },
+ {
+  "test_id": "test-59",
+  "train_id": "cases-047",
+  "cosine": 0.666,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: which model used",
+  "why_2": "Same part: which model used"
+ },
+ {
+  "test_id": "test-60",
+  "train_id": "tech_integration-012",
+  "cosine": 0.691,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: API for matching",
+  "why_2": "Same: API for apartment selection"
+ },
+ {
+  "test_id": "test-60",
+  "train_id": "tech_integration-050",
+  "cosine": 0.69,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "what API is, different",
+  "why_2": "What is API, different"
+ },
+ {
+  "test_id": "test-60",
+  "train_id": "agency_automation-062",
+  "cosine": 0.668,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "ordering bot, different",
+  "why_2": "Order request, different"
+ },
+ {
+  "test_id": "test-01",
+  "train_id": "objections-039",
+  "cosine": 0.559,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "unknown-topic handling, not what an LLM is",
+  "why_2": "unknown-topic handling vs what an LLM is"
+ },
+ {
+  "test_id": "test-01",
+  "train_id": "objections-023",
+  "cosine": 0.558,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "trust in cases, not LLM explanation",
+  "why_2": "trust in cases vs LLM explanation"
+ },
+ {
+  "test_id": "test-01",
+  "train_id": "objections-042",
+  "cosine": 0.556,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "fear of wasting money, not LLM capabilities",
+  "why_2": "fear of wasted money vs what LLM is"
+ },
+ {
+  "test_id": "test-01",
+  "train_id": "small_talk-014",
+  "cosine": 0.551,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "wants demo of answers, different intent",
+  "why_2": "just watching answers vs LLM explanation"
+ },
+ {
+  "test_id": "test-02",
+  "train_id": "agency_automation-012",
+  "cosine": 0.618,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "translation quality check, not tokens or truncation",
+  "why_2": "translation checks vs tokens and truncation"
+ },
+ {
+  "test_id": "test-02",
+  "train_id": "ai_basics-026",
+  "cosine": 0.612,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "output variability, not tokens",
+  "why_2": "output randomness vs tokens and truncation"
+ },
+ {
+  "test_id": "test-02",
+  "train_id": "agency_automation-025",
+  "cosine": 0.609,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "hallucination in listings, not tokens",
+  "why_2": "hallucinations vs tokens and truncation"
+ },
+ {
+  "test_id": "test-02",
+  "train_id": "ai_basics-035",
+  "cosine": 0.602,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "how model was trained, not tokens",
+  "why_2": "model training origin vs tokens"
+ },
+ {
+  "test_id": "test-02",
+  "train_id": "ai_basics-069",
+  "cosine": 0.601,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "slang understanding, not tokens",
+  "why_2": "slang understanding vs tokens"
+ },
+ {
+  "test_id": "test-03",
+  "train_id": "tech_integration-048",
+  "cosine": 0.643,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "manager notification, not context window",
+  "why_2": "manager notification vs context window"
+ },
+ {
+  "test_id": "test-03",
+  "train_id": "ai_basics-009",
+  "cosine": 0.636,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "bot forgets earlier budget: same context-window forgetting issue",
+  "why_2": "bot forgets earlier info in long chat: context window"
+ },
+ {
+  "test_id": "test-03",
+  "train_id": "objections-064",
+  "cosine": 0.606,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "comparison with button bots, different",
+  "why_2": "button bot comparison vs prompt/context"
+ },
+ {
+  "test_id": "test-03",
+  "train_id": "objections-052",
+  "cosine": 0.606,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "sold apartments, different",
+  "why_2": "sold apartment offered vs context window"
+ },
+ {
+  "test_id": "test-03",
+  "train_id": "objections-039",
+  "cosine": 0.606,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "unknown questions handling, different",
+  "why_2": "unknown questions vs context window"
+ },
+ {
+  "test_id": "test-03",
+  "train_id": "data_security-005",
+  "cosine": 0.593,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "who sees chats, privacy topic",
+  "why_2": "who sees chats vs context window"
+ },
+ {
+  "test_id": "test-05",
+  "train_id": "agency_automation-037",
+  "cosine": 0.641,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "staff fear of replacement, unrelated",
+  "why_2": "agent replacement fear vs fine-tune vs RAG"
+ },
+ {
+  "test_id": "test-05",
+  "train_id": "ai_basics-062",
+  "cosine": 0.638,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "RAG chunking details, not fine-tune vs RAG choice",
+  "why_2": "chunking details vs choosing fine-tune or RAG"
+ },
+ {
+  "test_id": "test-05",
+  "train_id": "ai_basics-045",
+  "cosine": 0.625,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "hardware needs, different",
+  "why_2": "hardware needs vs fine-tune vs RAG"
+ },
+ {
+  "test_id": "test-05",
+  "train_id": "ai_basics-061",
+  "cosine": 0.615,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "task suitability in general, different",
+  "why_2": "task suitability vs fine-tune vs RAG"
+ },
+ {
+  "test_id": "test-05",
+  "train_id": "agency_automation-078",
+  "cosine": 0.613,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "translation volume, different",
+  "why_2": "translation volume vs fine-tune vs RAG"
+ },
+ {
+  "test_id": "test-05",
+  "train_id": "data_security-004",
+  "cosine": 0.611,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "data privacy, different",
+  "why_2": "data residency vs fine-tune vs RAG"
+ },
+ {
+  "test_id": "test-05",
+  "train_id": "agency_automation-043",
+  "cosine": 0.611,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "catalog hallucination, not fine-tune vs RAG",
+  "why_2": "invented listings vs fine-tune vs RAG choice"
+ },
+ {
+  "test_id": "test-06",
+  "train_id": "objections-058",
+  "cosine": 0.635,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "service pricing objection, not local vs cloud",
+  "why_2": "service value objection vs local vs cloud"
+ },
+ {
+  "test_id": "test-06",
+  "train_id": "small_talk-008",
+  "cosine": 0.619,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "consultation pricing, different",
+  "why_2": "is consultation paid vs local vs cloud"
+ },
+ {
+  "test_id": "test-06",
+  "train_id": "data_security-030",
+  "cosine": 0.617,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "only local model quality, narrower than full comparison",
+  "why_2": "only quality gap, not overall comparison and cost"
+ },
+ {
+  "test_id": "test-06",
+  "train_id": "agency_automation-043",
+  "cosine": 0.612,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "hallucination, different",
+  "why_2": "invented listings vs local vs cloud"
+ },
+ {
+  "test_id": "test-06",
+  "train_id": "ai_basics-021",
+  "cosine": 0.611,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "cloud definition only, not practical comparison or cost",
+  "why_2": "cloud definition only, not comparison or cost"
+ },
+ {
+  "test_id": "test-06",
+  "train_id": "data_security-028",
+  "cosine": 0.61,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "site security, different",
+  "why_2": "site vulnerability vs local vs cloud"
+ },
+ {
+  "test_id": "test-08",
+  "train_id": "data_security-001",
+  "cosine": 0.65,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "risk of free GPT bot, different",
+  "why_2": "risk of free GPT bot vs automating import"
+ },
+ {
+  "test_id": "test-08",
+  "train_id": "cases-014",
+  "cosine": 0.639,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same chat-listings-to-site automation applicability question",
+  "why_2": "can chat-ad import automation apply to us"
+ },
+ {
+  "test_id": "test-09",
+  "train_id": "cases-023",
+  "cosine": 0.649,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same fear: price lost in translation",
+  "why_2": "price not lost in translation"
+ },
+ {
+  "test_id": "test-09",
+  "train_id": "tech_integration-014",
+  "cosine": 0.644,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: how price is verified in translation",
+  "why_2": "price not lost in translation check"
+ },
+ {
+  "test_id": "test-09",
+  "train_id": "agency_automation-078",
+  "cosine": 0.639,
+  "same_1": false,
+  "same_2": true,
+  "same": true,
+  "why_1": "translation volume scale, not language or price accuracy",
+  "why_2": "can NN translate whole catalog"
+ },
+ {
+  "test_id": "test-11",
+  "train_id": "tech_integration-011",
+  "cosine": 0.643,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same automatic duplicate detection question",
+  "why_2": "detecting rewritten duplicate listings"
+ },
+ {
+  "test_id": "test-11",
+  "train_id": "cases-010",
+  "cosine": 0.638,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: detecting reposted same object in different words",
+  "why_2": "detecting same apartment posted multiple times"
+ },
+ {
+  "test_id": "test-11",
+  "train_id": "agency_automation-021",
+  "cosine": 0.63,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "weekly report request, not duplicate detection",
+  "why_2": "weekly report vs duplicate detection"
+ },
+ {
+  "test_id": "test-11",
+  "train_id": "working_with_alexander-052",
+  "cosine": 0.621,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "chat-to-site copying, not duplicates",
+  "why_2": "manual copying fit vs duplicate detection"
+ },
+ {
+  "test_id": "test-11",
+  "train_id": "tech_integration-007",
+  "cosine": 0.617,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "1C integration, different",
+  "why_2": "1C integration vs duplicate detection"
+ },
+ {
+  "test_id": "test-13",
+  "train_id": "ai_basics-037",
+  "cosine": 0.609,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "photo description vs photo editing, different task",
+  "why_2": "describing photos vs editing photos"
+ },
+ {
+  "test_id": "test-13",
+  "train_id": "ai_basics-039",
+  "cosine": 0.578,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "Google comparison, unrelated",
+  "why_2": "NN vs Google vs photo editing"
+ },
+ {
+  "test_id": "test-13",
+  "train_id": "ai_basics-001",
+  "cosine": 0.569,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "how NN works, unrelated",
+  "why_2": "how NN works vs photo editing"
+ },
+ {
+  "test_id": "test-13",
+  "train_id": "working_with_alexander-050",
+  "cosine": 0.569,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "where to start, unrelated",
+  "why_2": "where to start vs photo editing"
+ },
+ {
+  "test_id": "test-13",
+  "train_id": "data_security-004",
+  "cosine": 0.567,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "data privacy, unrelated",
+  "why_2": "data residency vs photo editing"
+ },
+ {
+  "test_id": "test-13",
+  "train_id": "ai_basics-046",
+  "cosine": 0.567,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "offline work, unrelated",
+  "why_2": "offline work vs photo editing"
+ },
+ {
+  "test_id": "test-13",
+  "train_id": "agency_automation-037",
+  "cosine": 0.565,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "staff fears, unrelated",
+  "why_2": "replacement fear vs photo editing"
+ },
+ {
+  "test_id": "test-14",
+  "train_id": "data_security-035",
+  "cosine": 0.636,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "owner phone publication, not reports",
+  "why_2": "owner phone leak vs weekly report"
+ },
+ {
+  "test_id": "test-14",
+  "train_id": "tech_integration-010",
+  "cosine": 0.626,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "hosting location, not reports",
+  "why_2": "hosting location vs weekly report"
+ },
+ {
+  "test_id": "test-14",
+  "train_id": "working_with_alexander-048",
+  "cosine": 0.617,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "booking review as manager, unrelated",
+  "why_2": "who can book review vs weekly report"
+ },
+ {
+  "test_id": "test-15",
+  "train_id": "objections-059",
+  "cosine": 0.615,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "asks to audit site, not description writing",
+  "why_2": "no time to describe tasks vs descriptions"
+ },
+ {
+  "test_id": "test-15",
+  "train_id": "ai_basics-010",
+  "cosine": 0.605,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "loading catalog into model, different",
+  "why_2": "loading catalog vs writing descriptions"
+ },
+ {
+  "test_id": "test-15",
+  "train_id": "agency_automation-047",
+  "cosine": 0.596,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "client replies drafting, not listing descriptions",
+  "why_2": "client replies vs listing descriptions"
+ },
+ {
+  "test_id": "test-16",
+  "train_id": "data_security-004",
+  "cosine": 0.649,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "data privacy, not task boundaries",
+  "why_2": "data residency vs what not to delegate"
+ },
+ {
+  "test_id": "test-16",
+  "train_id": "agency_automation-037",
+  "cosine": 0.645,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "staff replacement fear, different",
+  "why_2": "explaining to agents vs delegation limits"
+ },
+ {
+  "test_id": "test-16",
+  "train_id": "working_with_alexander-050",
+  "cosine": 0.641,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "what to start with, not what to avoid",
+  "why_2": "what to start with vs what to avoid"
+ },
+ {
+  "test_id": "test-16",
+  "train_id": "agency_automation-067",
+  "cosine": 0.616,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "data leakage, different",
+  "why_2": "data leaks vs delegation limits"
+ },
+ {
+  "test_id": "test-16",
+  "train_id": "ai_basics-066",
+  "cosine": 0.615,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "building own model, different",
+  "why_2": "training own model vs delegation limits"
+ },
+ {
+  "test_id": "test-16",
+  "train_id": "off_topic-007",
+  "cosine": 0.591,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "hostile dismissal, different",
+  "why_2": "hostile dismissal vs delegation limits"
+ },
+ {
+  "test_id": "test-16",
+  "train_id": "objections-028",
+  "cosine": 0.583,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "translation quality objection, different",
+  "why_2": "translation quality objection vs delegation limits"
+ },
+ {
+  "test_id": "test-18",
+  "train_id": "agency_automation-040",
+  "cosine": 0.641,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "lead qualification feature, not price",
+  "why_2": "lead qualification feature vs price"
+ },
+ {
+  "test_id": "test-18",
+  "train_id": "objections-002",
+  "cosine": 0.638,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "cost question; answer covers price and running costs",
+  "why_2": "how much the bot costs"
+ },
+ {
+  "test_id": "test-18",
+  "train_id": "working_with_alexander-014",
+  "cosine": 0.634,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: how much does it cost",
+  "why_2": "how much it costs"
+ },
+ {
+  "test_id": "test-19",
+  "train_id": "working_with_alexander-012",
+  "cosine": 0.642,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "booking logistics, not what review is",
+  "why_2": "booking logistics vs what review is"
+ },
+ {
+  "test_id": "test-19",
+  "train_id": "cases-036",
+  "cosine": 0.626,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "voice latency, unrelated",
+  "why_2": "response latency vs review"
+ },
+ {
+  "test_id": "test-19",
+  "train_id": "working_with_alexander-008",
+  "cosine": 0.6,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "why review is free: same doubt about sales pitch",
+  "why_2": "why review is free, is it a sales pitch"
+ },
+ {
+  "test_id": "test-19",
+  "train_id": "working_with_alexander-010",
+  "cosine": 0.598,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "overrun of 15 minutes, different",
+  "why_2": "overtime vs what review is"
+ },
+ {
+  "test_id": "test-19",
+  "train_id": "working_with_alexander-049",
+  "cosine": 0.597,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "review vs demo distinction, different focus",
+  "why_2": "review vs demo difference"
+ },
+ {
+  "test_id": "test-19",
+  "train_id": "objections-059",
+  "cosine": 0.593,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "asks to audit site, different",
+  "why_2": "site audit request vs review nature"
+ },
+ {
+  "test_id": "test-19",
+  "train_id": "agency_automation-077",
+  "cosine": 0.58,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "draft check time, unrelated",
+  "why_2": "draft check time vs review"
+ },
+ {
+  "test_id": "test-21",
+  "train_id": "agency_automation-027",
+  "cosine": 0.64,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: launch timeframe",
+  "why_2": "typical launch timeframe"
+ },
+ {
+  "test_id": "test-21",
+  "train_id": "cases-046",
+  "cosine": 0.603,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: launch timeframe with deadline",
+  "why_2": "launch timeframe under deadline"
+ },
+ {
+  "test_id": "test-21",
+  "train_id": "working_with_alexander-017",
+  "cosine": 0.603,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "when deadline is stated, different aspect",
+  "why_2": "when timeframe is announced, not duration"
+ },
+ {
+  "test_id": "test-21",
+  "train_id": "objections-017",
+  "cosine": 0.592,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "postponing due to season, different",
+  "why_2": "postpone objection vs launch time"
+ },
+ {
+  "test_id": "test-21",
+  "train_id": "working_with_alexander-058",
+  "cosine": 0.565,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "trial period, different",
+  "why_2": "trial period vs launch time"
+ },
+ {
+  "test_id": "test-23",
+  "train_id": "working_with_alexander-035",
+  "cosine": 0.622,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "reply channel, not reply timing",
+  "why_2": "reply channel vs reply time"
+ },
+ {
+  "test_id": "test-23",
+  "train_id": "small_talk-038",
+  "cosine": 0.619,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: late-evening message, when will Alexander answer",
+  "why_2": "late-night message, when will Alexander answer"
+ },
+ {
+  "test_id": "test-23",
+  "train_id": "small_talk-031",
+  "cosine": 0.619,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "acknowledgement, no question",
+  "why_2": "closing remark vs reply time"
+ },
+ {
+  "test_id": "test-23",
+  "train_id": "tech_integration-040",
+  "cosine": 0.615,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "email parsing, unrelated",
+  "why_2": "email parsing vs reply time"
+ },
+ {
+  "test_id": "test-23",
+  "train_id": "working_with_alexander-054",
+  "cosine": 0.614,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "acknowledgement, no question",
+  "why_2": "closing remark vs reply time"
+ },
+ {
+  "test_id": "test-23",
+  "train_id": "working_with_alexander-060",
+  "cosine": 0.613,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "materials for partners, different",
+  "why_2": "materials for partners vs reply time"
+ },
+ {
+  "test_id": "test-23",
+  "train_id": "working_with_alexander-032",
+  "cosine": 0.611,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "timezone: when to write and get reply, same part",
+  "why_2": "when to write and get answers across hours"
+ },
+ {
+  "test_id": "test-24",
+  "train_id": "cases-002",
+  "cosine": 0.645,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: tell about Telegram listings case",
+  "why_2": "tell about Telegram-chat ads case"
+ },
+ {
+  "test_id": "test-24",
+  "train_id": "cases-045",
+  "cosine": 0.63,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "project cost, not case results",
+  "why_2": "project price vs case results"
+ },
+ {
+  "test_id": "test-24",
+  "train_id": "ai_basics-040",
+  "cosine": 0.62,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "model knowledge of prices, unrelated",
+  "why_2": "market prices knowledge vs case"
+ },
+ {
+  "test_id": "test-24",
+  "train_id": "cases-011",
+  "cosine": 0.596,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "hours saved in Hurghada: the real case numbers",
+  "why_2": "Hurghada case hours saved: case numbers"
+ },
+ {
+  "test_id": "test-24",
+  "train_id": "ai_basics-014",
+  "cosine": 0.592,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "hallucination example, unrelated",
+  "why_2": "hallucinations vs case numbers"
+ },
+ {
+  "test_id": "test-24",
+  "train_id": "objections-048",
+  "cosine": 0.579,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "trust in numbers, not telling numbers",
+  "why_2": "trust in numbers vs giving case numbers"
+ },
+ {
+  "test_id": "test-24",
+  "train_id": "objections-024",
+  "cosine": 0.577,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "market applicability, different",
+  "why_2": "market difference vs case numbers"
+ },
+ {
+  "test_id": "test-24",
+  "train_id": "agency_automation-033",
+  "cosine": 0.57,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "photo-only listings, different",
+  "why_2": "photo-only ads vs case numbers"
+ },
+ {
+  "test_id": "test-25",
+  "train_id": "working_with_alexander-015",
+  "cosine": 0.59,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "cost for others, not hours saved",
+  "why_2": "cost for others vs hours saved"
+ },
+ {
+  "test_id": "test-25",
+  "train_id": "cases-012",
+  "cosine": 0.571,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "manual time per object, different metric",
+  "why_2": "manual time per object vs weekly hours saved"
+ },
+ {
+  "test_id": "test-25",
+  "train_id": "ai_basics-040",
+  "cosine": 0.557,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "model knowledge of prices, unrelated",
+  "why_2": "market prices vs hours saved"
+ },
+ {
+  "test_id": "test-25",
+  "train_id": "off_topic-027",
+  "cosine": 0.556,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "price manipulation, different",
+  "why_2": "price manipulation vs hours saved"
+ },
+ {
+  "test_id": "test-26",
+  "train_id": "agency_automation-012",
+  "cosine": 0.645,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: how translations are checked",
+  "why_2": "how translations are checked"
+ },
+ {
+  "test_id": "test-26",
+  "train_id": "agency_automation-069",
+  "cosine": 0.645,
+  "same_1": true,
+  "same_2": false,
+  "same": true,
+  "why_1": "same: the 13-language case itself",
+  "why_2": "whose case vs translation checking"
+ },
+ {
+  "test_id": "test-29",
+  "train_id": "objections-024",
+  "cosine": 0.65,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "market applicability, not client references",
+  "why_2": "market fit objection vs references"
+ },
+ {
+  "test_id": "test-29",
+  "train_id": "small_talk-006",
+  "cosine": 0.647,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "greeting, unrelated",
+  "why_2": "greeting vs references"
+ },
+ {
+  "test_id": "test-29",
+  "train_id": "cases-014",
+  "cosine": 0.623,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "case applicability, not other clients",
+  "why_2": "case applicability vs other clients"
+ },
+ {
+  "test_id": "test-29",
+  "train_id": "agency_automation-055",
+  "cosine": 0.623,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "Dubai applicability, not existing clients or references",
+  "why_2": "Dubai applicability vs existing clients"
+ },
+ {
+  "test_id": "test-29",
+  "train_id": "working_with_alexander-043",
+  "cosine": 0.598,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "service geography, not existing clients or references",
+  "why_2": "service geography vs references"
+ },
+ {
+  "test_id": "test-29",
+  "train_id": "off_topic-006",
+  "cosine": 0.581,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "discounts, unrelated",
+  "why_2": "discounts vs references"
+ },
+ {
+  "test_id": "test-30",
+  "train_id": "objections-069",
+  "cosine": 0.614,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "plain refusal, not cost objection",
+  "why_2": "plain refusal vs price objection"
+ },
+ {
+  "test_id": "test-30",
+  "train_id": "objections-063",
+  "cosine": 0.603,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "time cost objection, not money",
+  "why_2": "time cost vs money objection"
+ },
+ {
+  "test_id": "test-30",
+  "train_id": "objections-001",
+  "cosine": 0.592,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same objection: sounds good but surely expensive",
+  "why_2": "sounds nice but probably expensive objection"
+ },
+ {
+  "test_id": "test-30",
+  "train_id": "objections-002",
+  "cosine": 0.585,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same expensiveness objection",
+  "why_2": "probably expensive objection"
+ },
+ {
+  "test_id": "test-30",
+  "train_id": "objections-044",
+  "cosine": 0.58,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "premium clients fear, different",
+  "why_2": "premium clients vs price"
+ },
+ {
+  "test_id": "test-30",
+  "train_id": "objections-017",
+  "cosine": 0.565,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "busy season, not money",
+  "why_2": "timing postponement vs price"
+ },
+ {
+  "test_id": "test-30",
+  "train_id": "working_with_alexander-014",
+  "cosine": 0.565,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "plain price query, not investment objection",
+  "why_2": "neutral price query vs objection"
+ },
+ {
+  "test_id": "test-33",
+  "train_id": "working_with_alexander-039",
+  "cosine": 0.633,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "Alexander refusing tasks, different",
+  "why_2": "task refusal vs staff resistance"
+ },
+ {
+  "test_id": "test-33",
+  "train_id": "off_topic-012",
+  "cosine": 0.633,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "off-topic beauty salon, unrelated",
+  "why_2": "beauty salon vs staff resistance"
+ },
+ {
+  "test_id": "test-33",
+  "train_id": "off_topic-010",
+  "cosine": 0.629,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "callback demand, unrelated",
+  "why_2": "callback demand vs staff resistance"
+ },
+ {
+  "test_id": "test-34",
+  "train_id": "objections-029",
+  "cosine": 0.65,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: tiny agency, is it worth it",
+  "why_2": "tiny agency, is it worth it"
+ },
+ {
+  "test_id": "test-34",
+  "train_id": "agency_automation-078",
+  "cosine": 0.642,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "translation volume, different",
+  "why_2": "translation volume vs small agency fit"
+ },
+ {
+  "test_id": "test-34",
+  "train_id": "ai_basics-010",
+  "cosine": 0.612,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "loading catalog into model, different",
+  "why_2": "loading catalog vs small agency fit"
+ },
+ {
+  "test_id": "test-34",
+  "train_id": "tech_integration-049",
+  "cosine": 0.606,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "Excel import, different",
+  "why_2": "Excel import vs small agency fit"
+ },
+ {
+  "test_id": "test-34",
+  "train_id": "working_with_alexander-041",
+  "cosine": 0.604,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "multi-office review, different",
+  "why_2": "multi-office review vs small agency"
+ },
+ {
+  "test_id": "test-34",
+  "train_id": "tech_integration-042",
+  "cosine": 0.604,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "group count scaling, different",
+  "why_2": "group scaling vs small agency"
+ },
+ {
+  "test_id": "test-34",
+  "train_id": "agency_automation-067",
+  "cosine": 0.596,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "data leakage, different",
+  "why_2": "data leaks vs small agency"
+ },
+ {
+  "test_id": "test-34",
+  "train_id": "cases-048",
+  "cosine": 0.59,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "case replication for 300 objects, different",
+  "why_2": "same bot request vs worth it"
+ },
+ {
+  "test_id": "test-35",
+  "train_id": "ai_basics-032",
+  "cosine": 0.644,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same: ChatGPT vs the assistant Alexander builds",
+  "why_2": "ChatGPT vs Alexander assistant difference"
+ },
+ {
+  "test_id": "test-35",
+  "train_id": "off_topic-027",
+  "cosine": 0.643,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "price manipulation, different",
+  "why_2": "price manipulation vs ChatGPT value"
+ },
+ {
+  "test_id": "test-35",
+  "train_id": "agency_automation-026",
+  "cosine": 0.638,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "automation price, not ChatGPT comparison",
+  "why_2": "automation price vs ChatGPT value"
+ },
+ {
+  "test_id": "test-35",
+  "train_id": "data_security-020",
+  "cosine": 0.636,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "ChatGPT usage rules, different",
+  "why_2": "ChatGPT usage rules vs value"
+ },
+ {
+  "test_id": "test-35",
+  "train_id": "objections-070",
+  "cosine": 0.627,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "bot vs human, different",
+  "why_2": "bot vs Alexander vs ChatGPT value"
+ },
+ {
+  "test_id": "test-35",
+  "train_id": "working_with_alexander-013",
+  "cosine": 0.621,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "when price is told, different",
+  "why_2": "when price is named vs value"
+ },
+ {
+  "test_id": "test-36",
+  "train_id": "objections-013",
+  "cosine": 0.649,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "staff resistance, different",
+  "why_2": "staff adoption vs replacing realtors"
+ },
+ {
+  "test_id": "test-36",
+  "train_id": "objections-022",
+  "cosine": 0.639,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "hype skepticism, different",
+  "why_2": "hype fear vs replacing realtors"
+ },
+ {
+  "test_id": "test-36",
+  "train_id": "objections-047",
+  "cosine": 0.639,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "competitors ahead, different",
+  "why_2": "falling behind vs replacing realtors"
+ },
+ {
+  "test_id": "test-36",
+  "train_id": "objections-037",
+  "cosine": 0.623,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "managers already fast, different",
+  "why_2": "bot necessity vs replacing realtors"
+ },
+ {
+  "test_id": "test-36",
+  "train_id": "ai_basics-066",
+  "cosine": 0.623,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "own model, different",
+  "why_2": "own model vs replacing realtors"
+ },
+ {
+  "test_id": "test-36",
+  "train_id": "objections-044",
+  "cosine": 0.615,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "premium clients, different",
+  "why_2": "premium clients vs replacing realtors"
+ },
+ {
+  "test_id": "test-37",
+  "train_id": "tech_integration-041",
+  "cosine": 0.649,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "client installation, unrelated",
+  "why_2": "client installation vs past failure"
+ },
+ {
+  "test_id": "test-37",
+  "train_id": "ai_basics-009",
+  "cosine": 0.649,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "bot forgetting budget, not failed past bot",
+  "why_2": "bot forgetting vs why now will work"
+ },
+ {
+  "test_id": "test-38",
+  "train_id": "data_security-022",
+  "cosine": 0.62,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "subcontractor access, not data flow",
+  "why_2": "who accesses data vs where data goes"
+ },
+ {
+  "test_id": "test-38",
+  "train_id": "tech_integration-007",
+  "cosine": 0.62,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "1C integration, unrelated",
+  "why_2": "1C integration vs personal data flow"
+ },
+ {
+  "test_id": "test-38",
+  "train_id": "data_security-038",
+  "cosine": 0.618,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "acknowledgement, no question",
+  "why_2": "acknowledgement vs data flow"
+ },
+ {
+  "test_id": "test-38",
+  "train_id": "data_security-018",
+  "cosine": 0.613,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "bot reading work chat, different",
+  "why_2": "work chat reading vs data flow"
+ },
+ {
+  "test_id": "test-38",
+  "train_id": "data_security-004",
+  "cosine": 0.611,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "keeping client data in-house: where data goes",
+  "why_2": "can client data stay inside, where it goes"
+ },
+ {
+  "test_id": "test-38",
+  "train_id": "data_security-012",
+  "cosine": 0.609,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same 152-FZ compliance part",
+  "why_2": "152-FZ compliance"
+ },
+ {
+  "test_id": "test-40",
+  "train_id": "off_topic-038",
+  "cosine": 0.63,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "API key request, unrelated",
+  "why_2": "API key request vs OpenAI training"
+ },
+ {
+  "test_id": "test-40",
+  "train_id": "data_security-011",
+  "cosine": 0.628,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "does model learn from what is written",
+  "why_2": "does NN remember/learn from what is written"
+ },
+ {
+  "test_id": "test-40",
+  "train_id": "data_security-003",
+  "cosine": 0.598,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "local vs OpenAI security, same part",
+  "why_2": "local vs OpenAI security"
+ },
+ {
+  "test_id": "test-40",
+  "train_id": "data_security-020",
+  "cosine": 0.596,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "usage rules for staff, different",
+  "why_2": "what to write in ChatGPT vs training"
+ },
+ {
+  "test_id": "test-40",
+  "train_id": "objections-067",
+  "cosine": 0.595,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "watery texts, unrelated",
+  "why_2": "bland texts vs data use"
+ },
+ {
+  "test_id": "test-40",
+  "train_id": "ai_basics-030",
+  "cosine": 0.593,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "verbosity, unrelated",
+  "why_2": "verbosity vs data use"
+ },
+ {
+  "test_id": "test-41",
+  "train_id": "data_security-015",
+  "cosine": 0.647,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "voice retention during use, not after termination",
+  "why_2": "voice retention vs data after termination"
+ },
+ {
+  "test_id": "test-41",
+  "train_id": "data_security-022",
+  "cosine": 0.641,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "third-party access, different",
+  "why_2": "third-party access vs termination"
+ },
+ {
+  "test_id": "test-41",
+  "train_id": "agency_automation-024",
+  "cosine": 0.63,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "staff role after automation, unrelated",
+  "why_2": "staff roles vs data after termination"
+ },
+ {
+  "test_id": "test-41",
+  "train_id": "data_security-033",
+  "cosine": 0.629,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "ex-employee access, not termination data fate",
+  "why_2": "employee access vs client data after exit"
+ },
+ {
+  "test_id": "test-42",
+  "train_id": "data_security-036",
+  "cosine": 0.642,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "bot processing documents, not what not to send",
+  "why_2": "bot processing passports vs what not to send"
+ },
+ {
+  "test_id": "test-43",
+  "train_id": "ai_basics-040",
+  "cosine": 0.555,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "price knowledge vs weather, unrelated",
+  "why_2": "market prices vs weather"
+ },
+ {
+  "test_id": "test-45",
+  "train_id": "off_topic-003",
+  "cosine": 0.59,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "different legal question: remote sale",
+  "why_2": "remote sale vs NDFL avoidance"
+ },
+ {
+  "test_id": "test-45",
+  "train_id": "off_topic-004",
+  "cosine": 0.578,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "different legal question: tax deduction",
+  "why_2": "tax deduction docs vs NDFL avoidance"
+ },
+ {
+  "test_id": "test-45",
+  "train_id": "off_topic-043",
+  "cosine": 0.557,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "fake renovation photo, unrelated",
+  "why_2": "fake renovation photo vs tax"
+ },
+ {
+  "test_id": "test-47",
+  "train_id": "working_with_alexander-059",
+  "cosine": 0.628,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "office visit, unrelated",
+  "why_2": "office visit vs discount demand"
+ },
+ {
+  "test_id": "test-47",
+  "train_id": "small_talk-007",
+  "cosine": 0.625,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "identity check, not discount",
+  "why_2": "is this Alexander vs discount"
+ },
+ {
+  "test_id": "test-47",
+  "train_id": "off_topic-026",
+  "cosine": 0.624,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "impersonation promise, not discount",
+  "why_2": "impersonation promise vs discount"
+ },
+ {
+  "test_id": "test-47",
+  "train_id": "working_with_alexander-038",
+  "cosine": 0.622,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "discuss without Alexander, different",
+  "why_2": "discuss without Alexander vs discount"
+ },
+ {
+  "test_id": "test-47",
+  "train_id": "off_topic-010",
+  "cosine": 0.622,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "callback ultimatum, not discount",
+  "why_2": "callback ultimatum vs discount"
+ },
+ {
+  "test_id": "test-48",
+  "train_id": "off_topic-019",
+  "cosine": 0.605,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "informal address, different",
+  "why_2": "informal address vs insult"
+ },
+ {
+  "test_id": "test-48",
+  "train_id": "off_topic-029",
+  "cosine": 0.603,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "chit-chat request, different",
+  "why_2": "chit-chat vs insult and human request"
+ },
+ {
+  "test_id": "test-48",
+  "train_id": "small_talk-018",
+  "cosine": 0.599,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "chit-chat request, different",
+  "why_2": "chit-chat vs insult and human request"
+ },
+ {
+  "test_id": "test-48",
+  "train_id": "small_talk-023",
+  "cosine": 0.587,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "confusion, not insult or human request",
+  "why_2": "confusion vs demand for human"
+ },
+ {
+  "test_id": "test-48",
+  "train_id": "small_talk-031",
+  "cosine": 0.581,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "acknowledgement, unrelated",
+  "why_2": "closing remark vs insult"
+ },
+ {
+  "test_id": "test-48",
+  "train_id": "working_with_alexander-038",
+  "cosine": 0.573,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "opposite: prefers bot over Alexander",
+  "why_2": "avoid Alexander vs demand human"
+ },
+ {
+  "test_id": "test-48",
+  "train_id": "objections-034",
+  "cosine": 0.564,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "client perception of robot, different",
+  "why_2": "clients seeing robot vs insult"
+ },
+ {
+  "test_id": "test-48",
+  "train_id": "objections-061",
+  "cosine": 0.564,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "general disbelief, different",
+  "why_2": "disbelief vs demand human"
+ },
+ {
+  "test_id": "test-49",
+  "train_id": "small_talk-011",
+  "cosine": 0.64,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "identity question, not injection",
+  "why_2": "identity question vs prompt injection"
+ },
+ {
+  "test_id": "test-49",
+  "train_id": "ai_basics-030",
+  "cosine": 0.616,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "verbosity, unrelated",
+  "why_2": "verbosity vs prompt injection"
+ },
+ {
+  "test_id": "test-49",
+  "train_id": "ai_basics-034",
+  "cosine": 0.613,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "streaming output, unrelated",
+  "why_2": "streaming vs prompt injection"
+ },
+ {
+  "test_id": "test-49",
+  "train_id": "data_security-020",
+  "cosine": 0.612,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "usage rules, unrelated",
+  "why_2": "usage rules vs prompt injection"
+ },
+ {
+  "test_id": "test-49",
+  "train_id": "ai_basics-055",
+  "cosine": 0.606,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "terminology, unrelated",
+  "why_2": "ChatGPT vs GPT vs injection"
+ },
+ {
+  "test_id": "test-49",
+  "train_id": "objections-014",
+  "cosine": 0.577,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "why pay you objection, unrelated",
+  "why_2": "value objection vs prompt injection"
+ },
+ {
+  "test_id": "test-49",
+  "train_id": "ai_basics-007",
+  "cosine": 0.573,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "concept of system prompt, not request to reveal",
+  "why_2": "system prompt concept vs reveal request"
+ },
+ {
+  "test_id": "test-49",
+  "train_id": "ai_basics-032",
+  "cosine": 0.552,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "product comparison, unrelated",
+  "why_2": "product comparison vs injection"
+ },
+ {
+  "test_id": "test-52",
+  "train_id": "agency_automation-045",
+  "cosine": 0.64,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "bot sales results, not bot identity",
+  "why_2": "bot sales results vs bot or human"
+ },
+ {
+  "test_id": "test-52",
+  "train_id": "tech_integration-021",
+  "cosine": 0.639,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "voice recognition, unrelated",
+  "why_2": "voice recognition vs bot or human"
+ },
+ {
+  "test_id": "test-52",
+  "train_id": "cases-032",
+  "cosine": 0.638,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "voice selection bot, unrelated",
+  "why_2": "voice bot case vs bot or human"
+ },
+ {
+  "test_id": "test-52",
+  "train_id": "cases-033",
+  "cosine": 0.635,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "voice language support, unrelated",
+  "why_2": "Russian voice vs bot or human"
+ },
+ {
+  "test_id": "test-52",
+  "train_id": "tech_integration-024",
+  "cosine": 0.628,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "bot branding, unrelated",
+  "why_2": "bot branding vs bot or human"
+ },
+ {
+  "test_id": "test-52",
+  "train_id": "objections-037",
+  "cosine": 0.626,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "need for bot, unrelated",
+  "why_2": "bot necessity vs bot or human"
+ },
+ {
+  "test_id": "test-54",
+  "train_id": "small_talk-013",
+  "cosine": 0.635,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "smartness question, not identity",
+  "why_2": "are you smart vs who are you"
+ },
+ {
+  "test_id": "test-54",
+  "train_id": "working_with_alexander-053",
+  "cosine": 0.614,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "availability check, different",
+  "why_2": "still online vs who are you"
+ },
+ {
+  "test_id": "test-54",
+  "train_id": "small_talk-019",
+  "cosine": 0.611,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "informal address, different",
+  "why_2": "informal address vs who are you"
+ },
+ {
+  "test_id": "test-54",
+  "train_id": "small_talk-007",
+  "cosine": 0.604,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "is this Alexander: answer explains who the assistant is",
+  "why_2": "is this Alexander: answer identifies assistant"
+ },
+ {
+  "test_id": "test-55",
+  "train_id": "tech_integration-001",
+  "cosine": 0.645,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same WordPress compatibility question",
+  "why_2": "assistant compatibility with WordPress site"
+ },
+ {
+  "test_id": "test-55",
+  "train_id": "agency_automation-005",
+  "cosine": 0.644,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "publishing workflow, not WordPress compatibility",
+  "why_2": "auto-publishing vs WordPress compatibility"
+ },
+ {
+  "test_id": "test-55",
+  "train_id": "tech_integration-010",
+  "cosine": 0.641,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "hosting location, different",
+  "why_2": "hosting vs WordPress compatibility"
+ },
+ {
+  "test_id": "test-55",
+  "train_id": "tech_integration-007",
+  "cosine": 0.623,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "1C integration, different",
+  "why_2": "1C vs WordPress"
+ },
+ {
+  "test_id": "test-55",
+  "train_id": "agency_automation-070",
+  "cosine": 0.621,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "translation scope, different",
+  "why_2": "translation scope vs WordPress"
+ },
+ {
+  "test_id": "test-55",
+  "train_id": "agency_automation-046",
+  "cosine": 0.621,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "foreign-language groups, different",
+  "why_2": "source languages vs WordPress"
+ },
+ {
+  "test_id": "test-56",
+  "train_id": "objections-040",
+  "cosine": 0.648,
+  "same_1": true,
+  "same_2": true,
+  "same": true,
+  "why_1": "same Bitrix24 integration question",
+  "why_2": "Bitrix24 integration"
+ },
+ {
+  "test_id": "test-56",
+  "train_id": "agency_automation-005",
+  "cosine": 0.646,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "site publishing, not Bitrix24",
+  "why_2": "site publishing vs Bitrix24 leads"
+ },
+ {
+  "test_id": "test-56",
+  "train_id": "tech_integration-029",
+  "cosine": 0.633,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "price update handling, different",
+  "why_2": "listing update vs Bitrix24"
+ },
+ {
+  "test_id": "test-56",
+  "train_id": "agency_automation-079",
+  "cosine": 0.623,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "mailing to old clients, different",
+  "why_2": "client mailing vs Bitrix24"
+ },
+ {
+  "test_id": "test-56",
+  "train_id": "data_security-018",
+  "cosine": 0.619,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "bot reading work chat, different",
+  "why_2": "chat reading vs Bitrix24"
+ },
+ {
+  "test_id": "test-58",
+  "train_id": "data_security-036",
+  "cosine": 0.635,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "document processing, not WhatsApp",
+  "why_2": "passport photos vs WhatsApp support"
+ },
+ {
+  "test_id": "test-58",
+  "train_id": "tech_integration-041",
+  "cosine": 0.634,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "client installation, not WhatsApp",
+  "why_2": "client installation vs WhatsApp"
+ },
+ {
+  "test_id": "test-58",
+  "train_id": "tech_integration-013",
+  "cosine": 0.626,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "no-website applicability, different",
+  "why_2": "no website fit vs WhatsApp"
+ },
+ {
+  "test_id": "test-58",
+  "train_id": "objections-060",
+  "cosine": 0.625,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "Telegram ban risk, different",
+  "why_2": "Telegram ban vs WhatsApp"
+ },
+ {
+  "test_id": "test-58",
+  "train_id": "objections-037",
+  "cosine": 0.624,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "need for bot, different",
+  "why_2": "bot necessity vs WhatsApp"
+ },
+ {
+  "test_id": "test-59",
+  "train_id": "off_topic-038",
+  "cosine": 0.593,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "API key request, different",
+  "why_2": "API key request vs which model"
+ },
+ {
+  "test_id": "test-59",
+  "train_id": "agency_automation-067",
+  "cosine": 0.58,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "data leakage, different",
+  "why_2": "data leaks vs model and hosting"
+ },
+ {
+  "test_id": "test-59",
+  "train_id": "ai_basics-021",
+  "cosine": 0.559,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "generic cloud location, not this system's hosting",
+  "why_2": "generic cloud concept vs product model/hosting"
+ },
+ {
+  "test_id": "test-59",
+  "train_id": "objections-002",
+  "cosine": 0.559,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "monthly cost, different",
+  "why_2": "cost vs model and hosting"
+ },
+ {
+  "test_id": "test-60",
+  "train_id": "ai_basics-012",
+  "cosine": 0.634,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "wrong matches cause, not API",
+  "why_2": "bad matches vs API access"
+ },
+ {
+  "test_id": "test-60",
+  "train_id": "tech_integration-005",
+  "cosine": 0.632,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "WhatsApp support, not API",
+  "why_2": "WhatsApp vs API access"
+ },
+ {
+  "test_id": "test-60",
+  "train_id": "cases-010",
+  "cosine": 0.614,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "duplicate detection, unrelated",
+  "why_2": "duplicates vs API"
+ },
+ {
+  "test_id": "test-60",
+  "train_id": "working_with_alexander-026",
+  "cosine": 0.605,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "demo request, not API",
+  "why_2": "demo request vs API"
+ },
+ {
+  "test_id": "test-60",
+  "train_id": "agency_automation-019",
+  "cosine": 0.603,
+  "same_1": false,
+  "same_2": false,
+  "same": false,
+  "why_1": "description writing, unrelated",
+  "why_2": "descriptions vs API"
+ }
+]

@@ -1,0 +1,71 @@
+{
+ "lora_facts_vs_base_prompt": {
+  "judges": 3,
+  "questions": 60,
+  "style": {
+   "lora_facts": 59,
+   "base_prompt": 1,
+   "tie": 0
+  },
+  "helpful": {
+   "lora_facts": 25,
+   "base_prompt": 28,
+   "tie": 7
+  },
+  "overall": {
+   "lora_facts": 36,
+   "base_prompt": 23,
+   "tie": 1
+  },
+  "invented_facts": {
+   "lora_facts": 21,
+   "base_prompt": 33
+  }
+ },
+ "lora_facts_vs_lora": {
+  "judges": 3,
+  "questions": 60,
+  "style": {
+   "lora_facts": 20,
+   "lora": 10,
+   "tie": 30
+  },
+  "helpful": {
+   "lora_facts": 41,
+   "lora": 17,
+   "tie": 2
+  },
+  "overall": {
+   "lora_facts": 40,
+   "lora": 19,
+   "tie": 1
+  },
+  "invented_facts": {
+   "lora_facts": 22,
+   "lora": 40
+  }
+ },
+ "lora_vs_base": {
+  "judges": 3,
+  "questions": 60,
+  "style": {
+   "lora": 60,
+   "base": 0,
+   "tie": 0
+  },
+  "helpful": {
+   "lora": 30,
+   "base": 30,
+   "tie": 0
+  },
+  "overall": {
+   "lora": 42,
+   "base": 18,
+   "tie": 0
+  },
+  "invented_facts": {
+   "lora": 39,
+   "base": 36
+  }
+ }
+}

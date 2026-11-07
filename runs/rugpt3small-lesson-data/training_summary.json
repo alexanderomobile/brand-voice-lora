@@ -1,0 +1,43 @@
+{
+ "model_name": "/root/zc-ft/models/ai-forever_rugpt3small_based_on_gpt2",
+ "model_type": "gpt2",
+ "dataset": "../lesson-code/example_dataset.json",
+ "dataset_sha256": "bfdc82b19c01d4a55330a1dd42addfb05b2d0588dbfa0a591a673066cbf8cc71",
+ "pairs": 87,
+ "train_pairs": 87,
+ "val_pairs": 0,
+ "val_ids": [],
+ "args": {
+  "model_name": "/root/zc-ft/models/ai-forever_rugpt3small_based_on_gpt2",
+  "dataset_path": "../lesson-code/example_dataset.json",
+  "output_dir": "runs/rugpt3small-lesson-data",
+  "num_train_epochs": "3",
+  "learning_rate": "0.0002",
+  "per_device_train_batch_size": "4",
+  "gradient_accumulation_steps": "4",
+  "max_length": "768",
+  "lora_r": "16",
+  "lora_alpha": "32",
+  "lora_dropout": "0.05",
+  "warmup_ratio": "0.05",
+  "val_ratio": "0.0",
+  "seed": "42",
+  "gradient_checkpointing": "False",
+  "device": "auto"
+ },
+ "trainable_params": 2359296,
+ "total_params": 127590912,
+ "train_minutes": 0.04,
+ "train_loss": 2.884355982144674,
+ "eval_loss": null,
+ "steps": 18,
+ "gpu": "NVIDIA GeForce RTX 5070 Ti",
+ "dtype": "torch.bfloat16",
+ "peak_gpu_gb": 2.27,
+ "versions": {
+  "torch": "2.8.0+cu128",
+  "transformers": "4.57.1",
+  "peft": "0.17.1"
+ },
+ "finished": "2026-11-07 06:26:56"
+}

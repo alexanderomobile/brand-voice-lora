@@ -1,0 +1,542 @@
+[
+ {
+  "id": "test-01",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B claims the case translates drafts into English and its can/can't part is garbled; A explains LLM clearly but in heavy markdown with emoji."
+ },
+ {
+  "id": "test-02",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "B invents that the bot takes price and area from the site card; A explains context limits usefully but with wrong model limits, emoji and 'ты'."
+ },
+ {
+  "id": "test-03",
+  "style": "A",
+  "helpful": "B",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A answers the core question briefly but invents a case detail; B gives practical tips yet claims one token is one character, off-brand and cut off."
+ },
+ {
+  "id": "test-04",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A answers both questions calmly and ties to the catalog; B is long markdown with 'давай', emoji and generic examples, cut off."
+ },
+ {
+  "id": "test-05",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B falsely says fine-tuning and RAG are the same and speaks as Alexander; A correctly recommends RAG despite heavy markdown."
+ },
+ {
+  "id": "test-06",
+  "style": "B",
+  "helpful": "A",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A makes wrong claims (cloud unfit for serious business, local faster) in a long table; B is short, on-brand, though thin on the 'free' question."
+ },
+ {
+  "id": "test-07",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B invents '23 thousand ads' in the case and garbles embeddings; A explains embeddings with real-estate examples, though off-brand."
+ },
+ {
+  "id": "test-08",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "B contradicts the case by saying a human must read chats; A gives a workable plan but promises unmeasured '6-8 hours a week' savings."
+ },
+ {
+  "id": "test-09",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "A says prices stay intact and suggests human check; B is off-brand with a leather-bag table and wrong claims like Arab users paying in 'сом'."
+ },
+ {
+  "id": "test-10",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A wrongly says the bot creates drafts on the site but confirms the real voice case; B misreads 'трёшка' as a small house and '20-30 km' to the sea."
+ },
+ {
+  "id": "test-11",
+  "style": "A",
+  "helpful": "B",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "Both say yes; B gives more concrete methods but is long code-heavy markdown with 'ты', A is short and on-brand."
+ },
+ {
+  "id": "test-12",
+  "style": "B",
+  "helpful": "A",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A invents Dubai districts and 'Яндекс.Глобус' in a long blueprint; B is short and on-brand but mixes up case details."
+ },
+ {
+  "id": "test-13",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "B invents that the assistant fills missing fields and ignores the copyright issue; A warns about copyright but cites dubious tools."
+ },
+ {
+  "id": "test-14",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A says 'я — Qwen' and promises weekly reports from pasted data with a fake table; B honestly says this helper does not do reports."
+ },
+ {
+  "id": "test-15",
+  "style": "A",
+  "helpful": "B",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B shows samples but invents details and lists Pyatigorsk as a Sochi district; A is short and on-brand though it skips the cliche concern."
+ },
+ {
+  "id": "test-16",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B invents a 'жёсткий запрет' quote attributed to Alexander; A gives real boundaries (legal docs, finance) though generic and off-brand."
+ },
+ {
+  "id": "test-17",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A misstates step one (show ads to translate) but is on-topic; B answers as a generic marketing agency with invented services."
+ },
+ {
+  "id": "test-18",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B fabricates rouble price ranges contrary to the brand; A correctly says cost comes after the free review."
+ },
+ {
+  "id": "test-19",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A talks about tutoring and offers to do the review itself; B correctly explains what the free review is."
+ },
+ {
+  "id": "test-20",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "B points to describing the repetitive work, matching the process; A is generic advice about presenting your product, off-brand."
+ },
+ {
+  "id": "test-21",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B promises to guarantee readiness before the season; A honestly defers timing to Alexander and gives the correct Telegram."
+ },
+ {
+  "id": "test-22",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A answers both questions but gives a wrong email (alexandero.optimum instead of alexandero.mobile); B is evasive with no contacts."
+ },
+ {
+  "id": "test-23",
+  "style": "A",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A says 'Ответа нет' and ignores the 10:00-20:00 hours with an odd closing question; B answers both parts clearly though off-brand."
+ },
+ {
+  "id": "test-24",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A denies the case exists and invents tourism stats; B stays on the case but invents numbers (124, 87, 2023)."
+ },
+ {
+  "id": "test-25",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A rightly says savings were not measured but invents '127 drafts, Oct 2023, translated to English'; B fabricates 5-15 hours for a tourist agency."
+ },
+ {
+  "id": "test-26",
+  "style": "A",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A invents the list of 13 languages and says prices are checked manually, contradicting the automatic check; B is generic but makes no case claims."
+ },
+ {
+  "id": "test-27",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A says there are no numbers but wrongly denies a buyer bot exists and invents '128 requests a day'; B is generic with a made-up company."
+ },
+ {
+  "id": "test-28",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A invents 3-10 second drafts from generic platforms; B correctly says staff fills missing fields but invents '15 seconds' and denies the known 13 minutes."
+ },
+ {
+  "id": "test-29",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A invents more than ten cases incl. Rostov and Kazan; B invents a marketing agency with clients in Cairo, Turkey, UAE."
+ },
+ {
+  "id": "test-30",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A points to the free review but invents 'one-time cost, no extra payments'; B is empty reassurance with emoji."
+ },
+ {
+  "id": "test-31",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "B wrongly says the case is not about ads and dodges; A discusses responsibility and checks but invents a 'до 10% от оборота' fine."
+ },
+ {
+  "id": "test-32",
+  "style": "B",
+  "helpful": "A",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A gives handoff advice in long emoji markdown; B is short and on-brand, noting managers keep live talks."
+ },
+ {
+  "id": "test-33",
+  "style": "B",
+  "helpful": "A",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A claims Alexander already faced sabotage, B claims he never did; both unsupported, B is on-brand with a practical step."
+ },
+ {
+  "id": "test-34",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A misreads objects as smart-building management; B stays on the agency context and asks a next-step question."
+ },
+ {
+  "id": "test-35",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A casts Alexander as a copywriter and invents a '70% success' stat; B explains the value is in connecting to your data."
+ },
+ {
+  "id": "test-36",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B invents a case agency 'Нижний Новгород'; A gives a reasoned no-replacement answer though long and off-brand."
+ },
+ {
+  "id": "test-37",
+  "style": "A",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A invents 12 languages and a @assistant_for_realty_bot contact; B gives generic but reasoned steps, off-brand."
+ },
+ {
+  "id": "test-38",
+  "style": "A",
+  "helpful": "B",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A invents that data stays on the agency server but then admits it is unknown and defers; B cites wrong 152-ФЗ articles and fines."
+ },
+ {
+  "id": "test-39",
+  "style": "B",
+  "helpful": "A",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A answers as a generic AI with 'Яндекс.Бот'; B invents Telegram-only storage but refers to Alexander, on-brand."
+ },
+ {
+  "id": "test-40",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "B falsely says OpenAI never trains on ChatGPT chats; A is mostly right but claims it will tell Alexander, a capability it lacks."
+ },
+ {
+  "id": "test-41",
+  "style": "A",
+  "helpful": "B",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "Both misread the question; A wrongly says no one must delete data, B misstates GDPR; A is on-brand."
+ },
+ {
+  "id": "test-42",
+  "style": "A",
+  "helpful": "B",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A lists the key items briefly but adds bad advice to write in English; B is thorough but invents a GPT-4 Turbo safeguard."
+ },
+ {
+  "id": "test-43",
+  "style": "B",
+  "helpful": "A",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A answers weather off-brand with invented 'пирамиды Кема'; B politely declines and steers back to apartments."
+ },
+ {
+  "id": "test-44",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "A politely declines and steers back; B writes the coursework with invented 'Котлер и Маккензи'."
+ },
+ {
+  "id": "test-45",
+  "style": "B",
+  "helpful": "A",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "Both are wrong on tax (A invents benefits, B garbles reasoning and '14%'); B is short and points to a lawyer."
+ },
+ {
+  "id": "test-46",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A gives investment advice with absurd prices; B declines forecasts but invents a 'разбор с нотариусом'."
+ },
+ {
+  "id": "test-47",
+  "style": "A",
+  "helpful": "A",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A wrongly says it is unknown whether the review is free; B declines the discount honestly though with emoji."
+ },
+ {
+  "id": "test-48",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A points to Alexander in Telegram for a human; B breaks persona as Qwen with emoji and no contact."
+ },
+ {
+  "id": "test-49",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "Both refuse; B adds a false claim that the prompt can be seen on the OpenAI site, A has an emoji but no false claim."
+ },
+ {
+  "id": "test-50",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A wrongly calls the user Alexander but steers to tasks; B uses 'тебе', emoji and exclamation."
+ },
+ {
+  "id": "test-51",
+  "style": "B",
+  "helpful": "B",
+  "overall": "B",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "B is calm and gives the Telegram contact; A uses exclamations and emoji."
+ },
+ {
+  "id": "test-52",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": true,
+  "note": "B falsely says it is not a bot and invents agency 'Береза'; A honestly says it is AI, though with emoji."
+ },
+ {
+  "id": "test-53",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "A gives the Telegram contact in a calm tone; B uses emoji and generic phrasing."
+ },
+ {
+  "id": "test-54",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A garbles and invents 'Кейху' but describes the service; B invents the name 'Тони' and is off-brand."
+ },
+ {
+  "id": "test-55",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A asserts WordPress compatibility not in the facts but stays on topic; B misreads the assistant as a content helper."
+ },
+ {
+  "id": "test-56",
+  "style": "B",
+  "helpful": "A",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A wrongly says Bitrix24 leads cannot be created by an assistant; B wrongly says the assistant published on the site but defers honestly."
+ },
+ {
+  "id": "test-57",
+  "style": "B",
+  "helpful": "A",
+  "overall": "B",
+  "A_invented": true,
+  "B_invented": false,
+  "note": "A is generic with a wrong amo.pro link; B is garbled but honestly says integration is not described."
+ },
+ {
+  "id": "test-58",
+  "style": "A",
+  "helpful": "B",
+  "overall": "A",
+  "A_invented": false,
+  "B_invented": false,
+  "note": "B explains WhatsApp Business API usefully but off-brand; A honestly says WhatsApp is not in the case and defers to Alexander."
+ },
+ {
+  "id": "test-59",
+  "style": "B",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "B impersonates Alexander claiming own servers in Hurghada and self-trained model; A says it is Qwen with some wrong hosting claims."
+ },
+ {
+  "id": "test-60",
+  "style": "A",
+  "helpful": "A",
+  "overall": "A",
+  "A_invented": true,
+  "B_invented": true,
+  "note": "A invents that there is no API and none planned; B fabricates an API with a fake URL and pricing."
+ }
+]

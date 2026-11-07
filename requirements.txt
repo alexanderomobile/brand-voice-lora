@@ -1,0 +1,11 @@
+# torch ставится отдельно с колесом под свою CUDA (для RTX 50xx нужна CUDA 12.8):
+#   pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cu128
+torch==2.8.0
+transformers==4.57.1
+peft==0.17.1
+datasets==4.3.0
+accelerate==1.11.0
+huggingface_hub[hf_xet]==0.36.0
+safetensors==0.6.2
+sentencepiece==0.2.1
+protobuf==6.33.0
